@@ -50,7 +50,7 @@
       "\t\t$1",
       "\t}",
     ],
-    "description": "if-else语句"
+    "description": "if下的else语句"
   },
 
   "jsifelseif": {
@@ -61,7 +61,7 @@
       "\t\t$0",
       "\t}"
     ],
-    "description": "if-elseif-else语句"
+    "description": "if下的elseif语句"
   },
 
   "ifplus": {
