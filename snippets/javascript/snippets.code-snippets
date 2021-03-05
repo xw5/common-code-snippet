@@ -1,0 +1,76 @@
+{
+  "jsfor": {
+    "prefix": "jsfor",
+    "body": [
+      "for(let ${2:index}=0; i<${1:array}.length; i++) {",
+      "\tlet item = array[i];",
+      "\t$0",
+      "}"
+    ],
+    "description": "普通for循环"
+  },
+
+  "jsforof": {
+    "prefix": "jsforof",
+    "body": [
+      "for(${2:item} of ${1:obj}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "for-of循环,ES6新引入循环,较推荐的循环用法"
+  },
+
+  "jsforin": {
+    "prefix": "jsforin",
+    "body": [
+      "for(${2:key} in ${1:obj}) {",
+      "\tlet ${3:item} = obj[${2:key}];",
+      "\t$0",
+      "}"
+    ],
+    "description": "for-in循环,并不适合用来遍历 Array 中的元素，其更适合遍历对象中的属性"
+  },
+
+  "jsif": {
+    "prefix": "jsif",
+    "body": [
+      "if (${1:condition})",
+      "\t{",
+      "\t\t$0",
+      "\t}"
+    ],
+    "description": "if语句"
+  },
+
+  "jsifelse": {
+    "prefix": "jselse",
+    "body": [
+      "\telse",
+      "\t{",
+      "\t\t$1",
+      "\t}",
+    ],
+    "description": "if-else语句"
+  },
+
+  "jsifelseif": {
+    "prefix": "jselseif",
+    "body": [
+      "\telse if (${1:condition})",
+      "\t{",
+      "\t\t$0",
+      "\t}"
+    ],
+    "description": "if-elseif-else语句"
+  },
+
+  "ifplus": {
+    "prefix": "ifplus",
+    "body": [
+      "// #ifdef ${1:WEB} ",
+      "\t$0",
+      "// #endif"
+    ],
+    "description": "ifplus-loader专用条件编译语句"
+  },
+}

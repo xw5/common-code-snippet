@@ -1,0 +1,11 @@
+{
+  "ifplus": {
+    "prefix": "ifplus",
+    "body": [
+      "/* #ifdef ${1:web} */",
+      "\t$0",
+      "/* #endif */"
+    ],
+    "description": "ifplus-loader专用条件编译语句"
+  },
+}

@@ -1,0 +1,29 @@
+{
+    "name": "common-code-snippet",
+    "displayName": "Common-Code-Snippet",
+    "description": "前端开发日常使用代码片段插件",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript/snippets.code-snippets"
+            },{
+                "language": "css",
+                "path": "./snippets/css/snippets.code-snippets"
+            },{
+                "language": "html",
+                "path": "./snippets/html/snippets.code-snippets"
+            },{
+                "language": "json",
+                "path": "./snippets/javascript/snippets.code-snippets"
+            }
+        ]
+    }
+}
