@@ -1,4 +1,29 @@
 {
+  "overellipsis": {
+    "prefix": "ellipsis",
+    "body": [
+      "width: ${1:100px};",
+      "overflow:hidden;",
+      "text-overflow: ellipsis;",
+      "white-space: nowrap;",
+      "$0"
+    ],
+    "description": "css超出文本省略号"
+  },
+
+  "overellipsismulti": {
+    "prefix": "overellipsismulti",
+    "body": [
+      "width: ${1:100px};",
+      "overflow: hidden;",
+      "text-overflow: ellipsis;",
+      "display: -webkit-box;",
+      "-webkit-line-clamp: ${2:2};",
+      "-webkit-box-orient: vertical;",
+    ],
+    "description": "css多行超出文本省略号"
+  },
+
   "ifplus": {
     "prefix": "ifplus",
     "body": [

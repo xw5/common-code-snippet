@@ -14,6 +14,11 @@
 |  jsif  |  if语句
 |  jsifelse  |  if下的else语句
 |  jselseif  |  if下的elseif语句
+|  jsswitch  |  js switch语句
+|  jsfunction  |  js function定义结构
+|  jslog  |  js下console.log语句
+|  jsclass  |  js 类定义结构
+|  jspromise  |  js Promise定义结构
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段
 <br />
 
@@ -21,6 +26,8 @@
 
 |  缩写  |  模板  
 |  ----  |  ----  
+|  overellipsis  |  单行文本超出省略号
+|  overellipsismulti  |  多行文本超出省略号
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
 
@@ -36,3 +43,12 @@
 |  缩写  |  模板  
 |  ----  |  ----  
 |  ifplus  |  json下专为ifplus-loader定义的条件代码段
+<br />
+
+### 全局代码段
+
+|  缩写  |  模板  
+|  ----  |  ----  
+|  testtxt  |  生成中文占位文本
+|  testtxten  |  生成英文占位文本
+|  testdate  |  生成日期占位文字

@@ -30,6 +30,9 @@
             },{
                 "language": "json",
                 "path": "./snippets/javascript/snippets.code-snippets"
+            },{
+                "language": "",
+                "path": "./snippets/global/snippets.code-snippets"
             }
         ]
     }

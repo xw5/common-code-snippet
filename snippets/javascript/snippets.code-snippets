@@ -64,6 +64,72 @@
     "description": "if下的elseif语句"
   },
 
+  "jsswitch": {
+    "prefix": "jsswitch",
+    "body": [
+      "switch(${1:label}) {",
+      "\tcase ${2:label}:",
+      "\t\t${3:code}",
+      "\t\tbreak;",
+      "\tdefault:",
+      "\t\t${4:code}",
+      "}"
+    ],
+    "description": "if下的elseif语句"
+  },
+
+  "jsfunction": {
+    "prefix": "jsfunction",
+    "body": [
+      "/**",
+      "* ${1:函数注释}",
+      "* @param {${4:*}} ${3:param} 函数参数",
+      "*/",
+      "function ${2:test}(${3:param}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "js下的函数定义语句"
+  },
+
+  "jslog": {
+    "prefix": "jslog",
+    "body": [
+      "console.log($1)"
+    ],
+    "description": "js下console.log语句"
+  },
+
+  "jsclass": {
+    "prefix": "jsclass",
+    "body": [
+      "class ${1:Class} {",
+      "\tconstructor(${2}) {",
+      "\t\tsuper(${2})",
+      "\t}",
+      "\n",
+      "\t${3:fn}() {",
+      "\t}",
+      "}"
+    ],
+    "description": "js下类的定义语句"
+  },
+
+  "jspromise": {
+    "prefix": "jspromise",
+    "body": [
+      "new Promise((resolve, reject) => {",
+      "\t$1",
+      "\tif (${2:condition}){",
+      "\t\tresolve(${3:val});",
+      "\t} else {",
+      "\t\treject(${3:err});",
+      "\t}",
+      "});"
+    ],
+    "description": "js下Promise语句"
+  },
+
   "ifplus": {
     "prefix": "ifplus",
     "body": [
