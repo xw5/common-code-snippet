@@ -28,6 +28,10 @@
 |  ----  |  ----  
 |  overellipsis  |  单行文本超出省略号
 |  overellipsismulti  |  多行文本超出省略号
+|  arrowtop  |  css实现朝上箭头
+|  arrowbottom  |  css实现朝下箭头
+|  arrowleft  |  css实现朝左箭头
+|  arrowright  |  css实现朝右箭头
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
 

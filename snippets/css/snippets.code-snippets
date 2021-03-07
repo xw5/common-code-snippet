@@ -24,6 +24,58 @@
     "description": "css多行超出文本省略号"
   },
 
+  "arrowtop": {
+    "prefix": "arrowtop",
+    "body": [
+      "width:0;",
+      "height:0;",
+      "border-width:0 ${1:10}px ${1:10}px ${1:10}px;",
+      "border-color:transparent transparent ${2:red} transparent;",
+      "border-style: solid;",
+      "$0"
+    ],
+    "description": "css实现朝上箭头"
+  },
+
+  "arrowbottom": {
+    "prefix": "arrowbottom",
+    "body": [
+      "width:0;",
+      "height:0;",
+      "border-width:${1:10}px ${1:10}px 0 ${1:10}px;",
+      "border-color:${2:red} transparent transparent transparent;",
+      "border-style: solid;",
+      "$0"
+    ],
+    "description": "css实现朝下箭头"
+  },
+
+  "arrowleft": {
+    "prefix": "arrowleft",
+    "body": [
+      "width:0;",
+      "height:0;",
+      "border-width:${1:10}px ${1:10}px ${1:10}px 0;",
+      "border-color:transparent ${2:red} transparent  transparent;",
+      "border-style: solid;",
+      "$0"
+    ],
+    "description": "css实现朝左箭头"
+  },
+
+  "arrowright": {
+    "prefix": "arrowright",
+    "body": [
+      "width:0;",
+      "height:0;",
+      "border-width:${1:10}px 0 ${1:10}px ${1:10}px;",
+      "border-color:transparent transparent transparent ${2:red};",
+     "border-style: solid;",
+     "$0"
+    ],
+    "description": "css实现朝右箭头"
+  },
+
   "ifplus": {
     "prefix": "ifplus",
     "body": [
