@@ -19,6 +19,7 @@
 |  jslog  |  js下console.log语句
 |  jsclass  |  js 类定义结构
 |  jspromise  |  js Promise定义结构
+|  regexcommon  |  常用正则表达式集合(用户名、密码、手机号、邮箱、身份证...)
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段
 <br />
 
@@ -32,6 +33,10 @@
 |  arrowbottom  |  css实现朝下箭头
 |  arrowleft  |  css实现朝左箭头
 |  arrowright  |  css实现朝右箭头
+|  gray  |  置灰滤镜
+|  centerflex  |  flex方式子元素水平垂直居中
+|  centermargin  |  absolute+margin元素水平垂直居中
+|  centertransform  |  absolute+transform元素水平垂直居中
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
 

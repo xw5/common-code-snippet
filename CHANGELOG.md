@@ -1,9 +1,27 @@
 # Change Log
+更新日志记录
 
-All notable changes to the "common-code-snippet" extension will be documented in this file.
+## [0.0.3] - 2021-03-07
+### Added
+- CSS代码段：
+    - gray：置灰滤镜
+    - centerflex：flex方式子元素水平垂直居中
+    - centermargin：absolute+margin元素水平垂直居中
+    - centertransform：absolute+transform元素水平垂直居中
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- js代码段
+    - regexcommon：常用正则表达式集合
 
-## [Unreleased]
+### Changed
+...
+### Removed
+...
 
-- Initial release
+## [0.0.2] - 2021-03-07
+### Added
+- CSS代码段增加上下左右箭头代码段：arrowtop、arrowbottom、arrowleft、arrowright
+
+### Changed
+...
+### Removed
+...

@@ -76,6 +76,51 @@
     "description": "css实现朝右箭头"
   },
 
+  "gray":{
+    "prefix": "gray",
+    "body": [
+      "filter:gray;",
+      "-webkit-filter:grayscale(1);",
+      "$0"
+    ],
+    "description": "置灰滤镜"
+  },
+
+  "centerflex":{
+    "prefix": "centerflex",
+    "body": [
+      "display:flex;",
+      "align-items:center;",
+      "justify-content:center;",
+      "$0"
+    ],
+    "description": "flex方式子元素水平垂直居中"
+  },
+
+  "centermargin":{
+    "prefix": "centermargin",
+    "body": [
+      "position: absolute;",
+      "top: 50%;",
+      "left: 50%;",
+      "margin: -${1:元素高度一半}px 0 0 -${2:元素宽度一半}px;",
+      "$0"
+    ],
+    "description": "absolute+margin元素水平垂直居中"
+  },
+
+  "centertransform":{
+    "prefix": "centertransform",
+    "body": [
+      "position: absolute;",
+      "top: 50%;",
+      "left: 50%;",
+      "transform:translate(-50%, -50%)",
+      "$0"
+    ],
+    "description": "absolute+transform元素水平垂直居中"
+  },
+
   "ifplus": {
     "prefix": "ifplus",
     "body": [
