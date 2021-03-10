@@ -1,6 +1,6 @@
 {
   "jsfor": {
-    "prefix": "jsfor",
+    "prefix": ["for","jsfor"],
     "body": [
       "for(let ${2:index}=0; i<${1:array}.length; i++) {",
       "\tlet item = array[i];",
@@ -11,7 +11,7 @@
   },
 
   "jsforof": {
-    "prefix": "jsforof",
+    "prefix": ["forof","jsforof"],
     "body": [
       "for(${2:item} of ${1:obj}) {",
       "\t$0",
@@ -21,7 +21,7 @@
   },
 
   "jsforin": {
-    "prefix": "jsforin",
+    "prefix": ["forin","jsforin"],
     "body": [
       "for(${2:key} in ${1:obj}) {",
       "\tlet ${3:item} = obj[${2:key}];",
@@ -32,7 +32,7 @@
   },
 
   "jsif": {
-    "prefix": "jsif",
+    "prefix": ["if", "jsif"],
     "body": [
       "if (${1:condition})",
       "\t{",
@@ -43,7 +43,7 @@
   },
 
   "jsifelse": {
-    "prefix": "jselse",
+    "prefix": ["else", "jselse"],
     "body": [
       "\telse",
       "\t{",
@@ -54,7 +54,7 @@
   },
 
   "jsifelseif": {
-    "prefix": "jselseif",
+    "prefix": ["elseif", "jselseif"],
     "body": [
       "\telse if (${1:condition})",
       "\t{",
@@ -65,7 +65,7 @@
   },
 
   "jsswitch": {
-    "prefix": "jsswitch",
+    "prefix": ["switch", "jsswitch"],
     "body": [
       "switch(${1:label}) {",
       "\tcase ${2:label}:",
@@ -75,15 +75,15 @@
       "\t\t${4:code}",
       "}"
     ],
-    "description": "if下的elseif语句"
+    "description": "if下的switch语句"
   },
 
   "jsfunction": {
-    "prefix": "jsfunction",
+    "prefix": ["function","jsfunction"],
     "body": [
       "/**",
       "* ${1:函数注释}",
-      "* @param {${4:*}} ${3:param} 函数参数",
+      "* @param {${4|Number,String,Array,Object,Function|}} ${3:param} 函数参数",
       "*/",
       "function ${2:test}(${3:param}) {",
       "\t${0}",
@@ -92,16 +92,16 @@
     "description": "js下的函数定义语句"
   },
 
-  "jslog": {
-    "prefix": "jslog",
+  "js_log": {
+    "prefix": ["log","jslog"],
     "body": [
       "console.log($1)"
     ],
     "description": "js下console.log语句"
   },
 
-  "jsclass": {
-    "prefix": "jsclass",
+  "js_class": {
+    "prefix": ["class","jsclass"],
     "body": [
       "class ${1:Class} {",
       "\tconstructor(${2}) {",
@@ -115,8 +115,8 @@
     "description": "js下类的定义语句"
   },
 
-  "jspromise": {
-    "prefix": "jspromise",
+  "js_promise": {
+    "prefix": ["promise", "jspromise"],
     "body": [
       "new Promise((resolve, reject) => {",
       "\t$1",
@@ -130,8 +130,8 @@
     "description": "js下Promise语句"
   },
 
-  "regexcommon": {
-    "prefix": "regexcommon",
+  "jsregex": {
+    "prefix": ["regex", "jsregex"],
     "body": [
       "//用户名正则，4到16位（字母，数字，下划线，减号）",
       "/^[a-zA-Z0-9_-]{4,16}$/;",
@@ -156,9 +156,9 @@
   },
 
   "ifplus": {
-    "prefix": "ifplus",
+    "prefix": ["ifplus","jsifplus"],
     "body": [
-      "// #ifdef ${1:WEB} ",
+      "// #ifdef ${1:WEB}",
       "\t$0",
       "// #endif"
     ],

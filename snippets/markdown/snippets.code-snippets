@@ -1,0 +1,118 @@
+{
+  "mdh1": {
+    "prefix": ["mdh1","h1"],
+    "body": [
+      "# ${1:一级标题}"
+    ],
+    "description": "一级标题"
+  },
+
+  "mdh2": {
+    "prefix": ["mdh2","h2"],
+    "body": [
+      "## ${1:二级标题}"
+    ],
+    "description": "二级标题"
+  },
+
+  "mdh3": {
+    "prefix": ["mdh3","h3"],
+    "body": [
+      "### ${1:三级标题}"
+    ],
+    "description": "三级标题"
+  },
+
+  "mdol": {
+    "prefix": ["mdol","ol"],
+    "body": [
+      "- ${1:无序列表项}",
+      "- ${2:无序列表项}"
+    ],
+    "description": "无序列表"
+  },
+
+  "mdul": {
+    "prefix": ["mdul","ul"],
+    "body": [
+      "1. ${1:有序列表项}",
+      "2. ${2:有序列表项}"
+    ],
+    "description": "有序列表"
+  },
+
+  "mdimg": {
+    "prefix": ["mdimg","img"],
+    "body": [
+      "![${2:图片名称}](${1:https://5b0988e595225.cdn.sohucs.com/images/20180517/0928ec21b688419eac099a5ef087dd0d.jpeg} \"${图片Title}\")"
+    ],
+    "description": "图片插入"
+  },
+  
+  "mdlink": {
+    "prefix": ["mdlink","link"],
+    "body": [
+      "[${2:link}](${1:https://gitee.com/github-9819409/common-code-snippet} \"${3:title}\")"
+    ],
+    "description": "链接插入"
+  },
+
+  "mdtable": {
+    "prefix": ["mdtable","table"],
+    "body": [
+      "|学号|姓名|序号|",
+      "|-|-|-|",
+      "|小明明|男|5|"
+    ],
+    "description": "表格插入"
+  },
+
+  "mdb": {
+    "prefix": ["mdb","b"],
+    "body": [
+      "**粗体**"
+    ],
+    "description": "粗体文字"
+  },
+
+  "mdi": {
+    "prefix": ["mdi","i"],
+    "body": [
+      "*斜体*"
+    ],
+    "description": "斜体文字"
+  },
+
+  "mddel": {
+    "prefix": ["mddel","del"],
+    "body": [
+      "~~${1:删除文本}~~"
+    ],
+    "description": "删除文本"
+  },
+
+  "mdcode": {
+    "prefix": ["mdcode","code"],
+    "body": [
+      "``` ${1:js}",
+      "console.log(\"hello world!\");",
+      "```"
+    ],
+    "description": "引入代码块"
+  },
+
+  "mdtodo": {
+    "prefix": ["mdtodo","todo"],
+    "body": [
+      "- [ ] **${1:Cmd Markdown 开发}**",
+        "- [ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率",
+        "- [x] 新增Todo列表功能 [语法参考](https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments)",
+        "- [x] 改进 LaTex 功能",
+        "    - [x] 修复 LaTex 公式渲染问题",
+      "- [ ] **十月旅行准备**",
+      "    - [ ] 准备邮轮上需要携带的物品",
+      "    - [x] 购买蓝宝石公主号十月一日的船票"
+    ],
+    "description": "输入todolist"
+  },
+}

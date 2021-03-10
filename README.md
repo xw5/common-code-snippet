@@ -1,6 +1,27 @@
 # 开发常用代码段插件
+>根据缩写快速提供代码模板，提高开发速度，代码段持续更新中......
+<br />
 
-根据缩写快速提供代码模板，提高开发速度，代码段持续更新中......
+## 使用建议
+>考虑到用户的记忆成本，用户无需记忆所有代码段的缩写，输入特殊开头字符则会带出当前类别下的代码段，优化使用体验，定义如下使用规则：
+>- 在js下输入js则会带出所有属于js的代码段
+>- css下输入css则会带出所有属于css的代码段
+>- html下输入html会带出所有属于html的代码段
+>- 全局输入gb(global)，则会带出全局的代码段
+
+>同时也支持不带特殊符号的输入形式：如cssellipsis和ellipsis都能带出css下单行省略号的代码段
+<br />
+
+## 注意事项
+> - markdown等文本输入环境默认是无法开启代码提示和tab自动补全的，如果想要使用代码段则可在setting.json加如下配置
+>  ``` json
+>    "editor.tabCompletion": "on",
+>    "[markdown]": {
+>        "editor.wordWrap": "on",
+>        "editor.quickSuggestions": true
+>    }
+>  ```
+<br />
 
 ## 目前支持的模板
 
@@ -27,16 +48,16 @@
 
 |  缩写  |  模板  
 |  ----  |  ----  
-|  overellipsis  |  单行文本超出省略号
-|  overellipsismulti  |  多行文本超出省略号
-|  arrowtop  |  css实现朝上箭头
-|  arrowbottom  |  css实现朝下箭头
-|  arrowleft  |  css实现朝左箭头
-|  arrowright  |  css实现朝右箭头
-|  gray  |  置灰滤镜
-|  centerflex  |  flex方式子元素水平垂直居中
-|  centermargin  |  absolute+margin元素水平垂直居中
-|  centertransform  |  absolute+transform元素水平垂直居中
+|  cssellipsis  |  单行文本超出省略号
+|  cssellipsismulti  |  多行文本超出省略号
+|  cssarrowtop  |  css实现朝上箭头
+|  cssarrowbottom  |  css实现朝下箭头
+|  cssarrowleft  |  css实现朝左箭头
+|  cssarrowright  |  css实现朝右箭头
+|  cssgray  |  置灰滤镜
+|  csscenterflex  |  flex方式子元素水平垂直居中
+|  csscentermargin  |  absolute+margin元素水平垂直居中
+|  csscentertransform  |  absolute+transform元素水平垂直居中
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
 
@@ -54,10 +75,29 @@
 |  ifplus  |  json下专为ifplus-loader定义的条件代码段
 <br />
 
+### Maekdown代码段
+
+|  缩写  |  模板  
+|  ----  |  ----  
+|  mdh1  |  一级标题
+|  mdh2  |  二级标题
+|  mdh3  |  三级标题
+|  mdol  |  无序列表
+|  mdul  |  有序列表
+|  mdimg  |  图片插入
+|  mdlink  |  链接插入
+|  mdtable  |  表格插入
+|  mdb  |  粗体文字
+|  mdi  |  斜体文字
+|  mddel  |  删除文本
+|  mdcode  |  引入代码块
+|  mdtodo  |  输入todolist
+<br />
+
 ### 全局代码段
 
 |  缩写  |  模板  
 |  ----  |  ----  
-|  testtxt  |  生成中文占位文本
-|  testtxten  |  生成英文占位文本
-|  testdate  |  生成日期占位文字
+|  gbtesttxt  |  生成中文占位文本
+|  gbtesttxten  |  生成英文占位文本
+|  gbtestdate  |  生成日期占位文字

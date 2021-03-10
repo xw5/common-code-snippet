@@ -1,6 +1,6 @@
 {
   "ifplus": {
-    "prefix": "ifplus",
+    "prefix": ["htmlifplus","ifplus"],
     "body": [
       "<!-- #ifdef ${1:WEB} -->",
       "\t$0",

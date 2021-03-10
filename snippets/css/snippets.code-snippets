@@ -1,6 +1,6 @@
 {
-  "overellipsis": {
-    "prefix": "ellipsis",
+  "cssellipsis": {
+    "prefix": ["cssellipsis", "ellipsis"],
     "body": [
       "width: ${1:100px};",
       "overflow:hidden;",
@@ -11,8 +11,8 @@
     "description": "css超出文本省略号"
   },
 
-  "overellipsismulti": {
-    "prefix": "overellipsismulti",
+  "cssellipsismulti": {
+    "prefix": ["cssellipsismulti","ellipsismulti"],
     "body": [
       "width: ${1:100px};",
       "overflow: hidden;",
@@ -24,8 +24,8 @@
     "description": "css多行超出文本省略号"
   },
 
-  "arrowtop": {
-    "prefix": "arrowtop",
+  "cssarrowtop": {
+    "prefix": ["arrowtop", "cssarrowtop"],
     "body": [
       "width:0;",
       "height:0;",
@@ -37,8 +37,8 @@
     "description": "css实现朝上箭头"
   },
 
-  "arrowbottom": {
-    "prefix": "arrowbottom",
+  "cssarrowbottom": {
+    "prefix": ["arrowbottom", "cssarrowbottom"],
     "body": [
       "width:0;",
       "height:0;",
@@ -50,8 +50,8 @@
     "description": "css实现朝下箭头"
   },
 
-  "arrowleft": {
-    "prefix": "arrowleft",
+  "cssarrowleft": {
+    "prefix": [ "arrowleft","cssarrowleft"],
     "body": [
       "width:0;",
       "height:0;",
@@ -63,8 +63,8 @@
     "description": "css实现朝左箭头"
   },
 
-  "arrowright": {
-    "prefix": "arrowright",
+  "cssarrowright": {
+    "prefix": ["arrowright","cssarrowright"],
     "body": [
       "width:0;",
       "height:0;",
@@ -76,8 +76,8 @@
     "description": "css实现朝右箭头"
   },
 
-  "gray":{
-    "prefix": "gray",
+  "cssgray":{
+    "prefix": ["gray", "cssgray"],
     "body": [
       "filter:gray;",
       "-webkit-filter:grayscale(1);",
@@ -86,8 +86,8 @@
     "description": "置灰滤镜"
   },
 
-  "centerflex":{
-    "prefix": "centerflex",
+  "csscenterflex":{
+    "prefix": ["centerflex","csscenterflex"],
     "body": [
       "display:flex;",
       "align-items:center;",
@@ -97,8 +97,8 @@
     "description": "flex方式子元素水平垂直居中"
   },
 
-  "centermargin":{
-    "prefix": "centermargin",
+  "csscentermargin":{
+    "prefix": ["centermargin","csscentermargin"],
     "body": [
       "position: absolute;",
       "top: 50%;",
@@ -109,8 +109,8 @@
     "description": "absolute+margin元素水平垂直居中"
   },
 
-  "centertransform":{
-    "prefix": "centertransform",
+  "csscentertransform":{
+    "prefix": ["centertransform", "csscentertransform"],
     "body": [
       "position: absolute;",
       "top: 50%;",
@@ -122,7 +122,7 @@
   },
 
   "ifplus": {
-    "prefix": "ifplus",
+    "prefix": ["ifplus","cssifplus"],
     "body": [
       "/* #ifdef ${1:web} */",
       "\t$0",

@@ -1,22 +1,22 @@
 {
-  "testtxt": {
-    "prefix": "testtxt",
+  "gbtesttxt": {
+    "prefix": ["gbtesttxt","testtxt"],
     "body": [
       "只要人人都献出一点爱，世界将变成美好的人间！"
     ],
     "description": "占位文字"
   },
   
-  "testtxten": {
-    "prefix": "testtxten",
+  "gbtesttxten": {
+    "prefix": ["gbtesttxten","testtxten"],
     "body": [
       "As long as everyone gives a little love, the world will become a beautiful world!"
     ],
     "description": "英文占位文字"
   },
 
-  "testdate": {
-    "prefix": "testdate",
+  "gbtestdate": {
+    "prefix": ["gbtestdate","testdate"],
     "body": [
       "$CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME"
     ],

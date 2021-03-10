@@ -1,8 +1,8 @@
 {
     "name": "common-code-snippet",
     "displayName": "Common-Code-Snippet",
-    "description": "前端开发日常使用代码片段插件",
-    "version": "0.0.3",
+    "description": "开发日常使用代码片段插件",
+    "version": "0.0.4",
     "publisher":"msxw",
     "engines": {
         "vscode": "^1.46.0"
@@ -30,6 +30,9 @@
             },{
                 "language": "json",
                 "path": "./snippets/javascript/snippets.code-snippets"
+            },{
+                "language": "markdown",
+                "path": "./snippets/markdown/snippets.code-snippets"
             },{
                 "language": "",
                 "path": "./snippets/global/snippets.code-snippets"
