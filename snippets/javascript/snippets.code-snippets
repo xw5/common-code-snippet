@@ -92,6 +92,17 @@
     "description": "js下的函数定义语句"
   },
 
+  "jsfunctionnotes": {
+    "prefix": ["functionnotes","jsfunctionnotes"],
+    "body": [
+      "/**",
+      "* ${1:函数注释}",
+      "* @param {${4|Number,String,Array,Object,Function|}} ${3:param} 函数参数",
+      "*/"
+    ],
+    "description": "生成函数注释"
+  },
+
   "js_log": {
     "prefix": ["log","jslog"],
     "body": [

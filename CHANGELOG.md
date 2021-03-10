@@ -2,9 +2,14 @@
 更新日志记录
 
 ## [0.0.4] - 2021-03-10
+### Added
+- js代码段
+    - jsfunctionnotes：js下生成函数注释
+- 全局(gb)代码段：
+    - gbtestimg: 生成测试占位图片url
 ### Changed
-增加全新markdown若干代码段，基本覆盖markdown通用语法
-优化代码代码段使用方式，提高用户体验
+- 增加全新markdown若干代码段，基本覆盖markdown通用语法
+- 优化代码代码段使用方式，提高用户体验
 
 ## [0.0.3] - 2021-03-07
 ### Added
