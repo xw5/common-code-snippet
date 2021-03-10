@@ -10,7 +10,7 @@
     "categories": [
         "Snippets"
     ],
-    "keywords": ["common", "code-snippet", "common-code-snippet"],
+    "keywords": ["common", "code-snippet", "snippet", "common-code-snippet"],
     "homepage": "https://gitee.com/github-9819409/common-code-snippet",
     "repository": {
         "type": "git",
