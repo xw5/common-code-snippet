@@ -7,13 +7,15 @@
 >- 在js下输入js则会带出所有属于js的代码段
 >- css下输入css则会带出所有属于css的代码段
 >- html下输入html会带出所有属于html的代码段
->- 全局输入gb(global)，则会带出全局的代码段
+>- mardown下输入md会带出所有属于markdown的代码段
+>- 全局输入gb(global的缩写)会带出全局的代码段
+>- 支持不带特殊符号的输入形式：如cssellipsis和ellipsis都能带出css下单行省略号的代码段
+>- 代码段匹配字段都会尽量使用语义化的字段,如mdol:在mardown下输入无序列表;cssarrowtop:css实现的向上箭头，这样可以让用户记忆不再有太大负担
 
->同时也支持不带特殊符号的输入形式：如cssellipsis和ellipsis都能带出css下单行省略号的代码段
 <br />
 
 ## 注意事项
-> - markdown等文本输入环境默认是无法开启代码提示和tab自动补全的，如果想要使用代码段则可在setting.json加如下配置
+> - markdown等文本输入环境默认是无法开启代码提示和tab自动补全的，如果想要使用代码段则可在vs code中的setting.json加如下配置
 >  ``` json
 >    "editor.tabCompletion": "on",
 >    "[markdown]": {
@@ -101,3 +103,4 @@
 |  gbtesttxt  |  生成中文占位文本
 |  gbtesttxten  |  生成英文占位文本
 |  gbtestdate  |  生成日期占位文字
+|  gbtestimg  |  生成测试占位图片

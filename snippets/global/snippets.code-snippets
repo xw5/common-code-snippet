@@ -22,4 +22,12 @@
     ],
     "description": "日期占位文字"
   },
+
+  "gbtestimg": {
+    "prefix": ["gbtestimg","testimg"],
+    "body": [
+      "https://dummyimage.com/${1:400}x${2:400}/000000/f0f1fa"
+    ],
+    "description": "生成测试占位图片url"
+  },
 }
