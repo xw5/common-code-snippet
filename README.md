@@ -40,6 +40,8 @@
 |  jsswitch  |  js switch语句
 |  jsfunction  |  js function定义结构
 |  jslog  |  js下console.log语句
+|  jsinfo  |  js下console.info语句
+|  jserror  |  js下console.error语句
 |  jsclass  |  js 类定义结构
 |  jspromise  |  js Promise定义结构
 |  regexcommon  |  常用正则表达式集合(用户名、密码、手机号、邮箱、身份证...)

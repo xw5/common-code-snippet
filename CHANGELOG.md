@@ -1,6 +1,15 @@
 # Change Log
 更新日志记录
 
+## [0.0.6] - 2021-03-18
+### Added
+- js代码段
+    - jsinfo：js下console.info语句
+|   - jserror：js下console.error语句
+
+### Changed
+- 修复部分代码段问题
+
 ## [0.0.4] - 2021-03-10
 ### Added
 - js代码段

@@ -2,8 +2,8 @@
   "jsfor": {
     "prefix": ["for","jsfor"],
     "body": [
-      "for(let ${2:index}=0; i<${1:array}.length; i++) {",
-      "\tlet item = array[i];",
+      "for(let ${2:i}=0; i<${1:array}.length; ${2:i}++) {",
+      "\tlet ${3:item} = ${1:array}[${2:i}];",
       "\t$0",
       "}"
     ],
@@ -109,6 +109,22 @@
       "console.log($1)"
     ],
     "description": "js下console.log语句"
+  },
+
+  "js_info": {
+    "prefix": ["info","jsinfo"],
+    "body": [
+      "console.info($1)"
+    ],
+    "description": "js下console.info语句"
+  },
+
+  "js_error": {
+    "prefix": ["error","jserror"],
+    "body": [
+      "console.error($1)"
+    ],
+    "description": "js下console.error语句"
   },
 
   "js_class": {
