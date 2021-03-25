@@ -30,4 +30,53 @@
     ],
     "description": "生成测试占位图片url"
   },
+
+  
+  "gbbaidu": {
+    "prefix": ["gbbaidu","baidu"],
+    "body": [
+      "https://www.baidu.com/s?wd=${1:vue}"
+    ],
+    "description": "baidu搜索"
+  },
+
+  "gbvue": {
+    "prefix": ["gbvue","vue"],
+    "body": [
+      "https://cn.vuejs.org/"
+    ],
+    "description": "vue官网链接"
+  },
+
+  "gbreact": {
+    "prefix": ["gbreact","react"],
+    "body": [
+      "https://react.docschina.org/"
+    ],
+    "description": "react官网链接"
+  },
+
+  "gbwebpack": {
+    "prefix": ["gbwebpack","webpack"],
+    "body": [
+      "https://webpack.docschina.org/"
+    ],
+    "description": "webpack官网链接"
+  },
+
+  "gbelementui": {
+    "prefix": ["gbelementui","elementui"],
+    "body": [
+      "https://element.eleme.cn/#/zh-CN"
+    ],
+    "description": "elementui官网链接"
+  },
+
+  "gbvux": {
+    "prefix": ["gbvux","vux"],
+    "body": [
+      "https://vux.li/"
+    ],
+    "description": "vuxui组件库官网链接"
+  },
 }

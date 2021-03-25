@@ -54,6 +54,7 @@
 |  ----  |  ----  
 |  cssellipsis  |  单行文本超出省略号
 |  cssellipsismulti  |  多行文本超出省略号
+|  csswrap  |  css强制换行
 |  cssarrowtop  |  css实现朝上箭头
 |  cssarrowbottom  |  css实现朝下箭头
 |  cssarrowleft  |  css实现朝左箭头
@@ -62,6 +63,9 @@
 |  csscenterflex  |  flex方式子元素水平垂直居中
 |  csscentermargin  |  absolute+margin元素水平垂直居中
 |  csscentertransform  |  absolute+transform元素水平垂直居中
+|  cssplaceholder  |  设置input的placeholder的颜色
+|  cssmedia  |  media媒体查询参考段
+|  cssgradient  |  css渐变参考写法
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
 
@@ -69,6 +73,7 @@
 
 |  缩写  |  模板  
 |  ----  |  ----  
+|  htmlviewport  |  mate viewport最佳实践
 |  ifplus  |  html下专为ifplus-loader定义的条件代码段
 <br />
 
@@ -106,3 +111,9 @@
 |  gbtesttxten  |  生成英文占位文本
 |  gbtestdate  |  生成日期占位文字
 |  gbtestimg  |  生成测试占位图片
+|  gbbaidu  |  baidu搜索
+|  gbvue  |  vue官网链接
+|  gbreact  |  react官网链接
+|  gbwebpack  |  webpack官网链接
+|  gbelementui  |  elementui官网链接
+|  gbvux  |  vuxui组件库官网链接

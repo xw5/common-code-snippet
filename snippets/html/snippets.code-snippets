@@ -1,4 +1,12 @@
 {
+  "htmlviewport": {
+    "prefix": ["htmlviewport","viewport"],
+    "body": [
+      "<mate name=\"viewport\" content=\"width=device-width,initial-scale=1,user-scalable=no\">"
+    ],
+    "description": "mate viewport最佳实践"
+  },
+
   "ifplus": {
     "prefix": ["htmlifplus","ifplus"],
     "body": [

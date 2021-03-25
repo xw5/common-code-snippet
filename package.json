@@ -2,7 +2,7 @@
     "name": "common-code-snippet",
     "displayName": "Common-Code-Snippet",
     "description": "开发日常使用代码片段插件",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher":"msxw",
     "engines": {
         "vscode": "^1.46.0"

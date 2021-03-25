@@ -24,6 +24,14 @@
     "description": "css多行超出文本省略号"
   },
 
+  "csswrap": {
+    "prefix": ["csswrap","wrap"],
+    "body": [
+      "word-wrap:break-word;"
+    ],
+    "description": "css强制换行"
+  },
+
   "cssarrowtop": {
     "prefix": ["arrowtop", "cssarrowtop"],
     "body": [
@@ -119,6 +127,82 @@
       "$0"
     ],
     "description": "absolute+transform元素水平垂直居中"
+  },
+
+  "cssplaceholder": {
+    "prefix": ["cssplaceholder", "placeholder"],
+    "body": [
+      "input::-webkit-input-placeholder {",
+      "\tcolor: #ccc;",
+      "}",
+      "input::-moz-input-placeholder {",
+      "\tcolor: #ccc;",
+      "}",
+      "input::-ms-input-placeholder {",
+      "\tcolor: #ccc;",
+      "}"
+    ],
+    "description": "设置input的placeholder的颜色"
+  },
+
+  "cssmedia": {
+    "prefix": ["cssmedia", "media"],
+    "body": [
+      ".example {",
+      "\tbackground-color: black;",
+      "}",
+      "\n",
+      "/* Extra small devices (phones, 600px and down) */",
+      "@media only screen and (max-width: 600px) {",
+      "\t.example {background-color: red;}",
+      "}",
+      "\n",
+      "/* Small devices (portrait tablets and large phones, 600px and up) */",
+      "@media only screen and (min-width: 600px) {",
+      "\t.example {background-color: green;}",
+      "}",
+      "\n",
+      "/* Medium devices (landscape tablets, 768px and up) */",
+      "@media only screen and (min-width: 768px) {",
+      "\t.example {background-color: blue;}",
+      "}", 
+      "\n",
+      "/* Large devices (laptops/desktops, 992px and up) */",
+      "@media only screen and (min-width: 992px) {",
+      "\t.example {background-color: orange;}",
+      "}" ,
+      "\n",
+      "/* Extra large devices (large laptops and desktops, 1200px and up) */",
+      "@media only screen and (min-width: 1200px) {",
+      "\t.example {background-color: pink;}",
+      "}"
+    ],
+    "description": "media媒体查询参考段"
+  },
+
+  
+  "cssgradient": {
+    "prefix": ["cssgradient", "gradient"],
+    "body": [
+      "// 从上到下的渐变",
+      "background: linear-gradient(blue, pink);",
+      "// 指定一个值来改变渐变的方向",
+      "background: linear-gradient(to bottom right, blue, pink);",
+      "// 渐变设置一个具体的角度",
+      "background: linear-gradient(70deg, blue, pink);",
+      "// 指定渐变的颜色的终止位置",
+      "background: linear-gradient(to left, lime 28px, red 77%, cyan);",
+      "// 从中心到四周的径向渐变",
+      "background: radial-gradient(red, blue);",
+      "// 指定颜色终止位置的径向渐变",
+      "background: radial-gradient(red 10px, yellow 30%, #1e90ff 50%);",
+      "// 指定径向渐变起始位置",
+      "background: radial-gradient(at 0% 30%, red 10px, yellow 30%, #1e90ff 50%);",
+      "// 指定径向渐变形状(ellipse/circle)和大小(closest-corner, closest-side, farthest-corner, farthest-side)",
+      "background: radial-gradient(ellipse closest-side, red, yellow 10%, #1e90ff 50%, beige);",
+      "// 参考链接:https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Images/Using_CSS_gradients"
+    ],
+    "description": "css渐变参考写法"
   },
 
   "ifplus": {

@@ -1,6 +1,26 @@
 # Change Log
 更新日志记录
 
+## [0.0.7] - 2021-03-25
+### Added
+- css代码段
+    - cssplaceholder：设置input的placeholder的颜色
+    - csswrap: css强制换行
+    - cssmedia: media媒体查询参考段
+    - cssgradient：css渐变参考写法
+- html代码段
+    - htmlviewport：mate viewport最佳实践
+- 全局代码段
+    - gbbaidu：baidu搜索
+    - gbvue：vue官网链接
+    - gbreact：react官网链接
+    - gbwebpack：webpack官网链接
+    - gbelementui：elementui官网链接
+    - gbvux：vuxui组件库官网链接
+
+### Changed
+- 修复部分代码段问题
+
 ## [0.0.6] - 2021-03-18
 ### Added
 - js代码段
