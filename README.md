@@ -66,6 +66,7 @@
 |  cssplaceholder  |  设置input的placeholder的颜色
 |  cssmedia  |  media媒体查询参考段
 |  cssgradient  |  css渐变参考写法
+|  cssNoSelect  |  css禁止文本选中
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
 

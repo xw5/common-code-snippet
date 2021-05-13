@@ -205,6 +205,18 @@
     "description": "css渐变参考写法"
   },
 
+  "cssNoSelect": {
+    "prefix": ["cssNoSelect", "noSelect"],
+    "body": [
+      "-moz-user-select: none;",
+      "-webkit-user-select: none;",
+      "-ms-user-select: none;",
+      "-khtml-user-select: none;",
+      "user-select: none;"
+    ],
+    "description": "css禁止文本选中"
+  },
+
   "ifplus": {
     "prefix": ["ifplus","cssifplus"],
     "body": [

@@ -1,6 +1,13 @@
 # Change Log
 更新日志记录
 
+## [0.0.8] - 2021-05-13
+### Added
+- css代码段
+    - cssNoSelect：css禁止文本选中
+### Changed
+- 修复部分代码段问题
+
 ## [0.0.7] - 2021-03-25
 ### Added
 - css代码段
