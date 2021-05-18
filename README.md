@@ -77,6 +77,7 @@
 |  缩写  |  模板  
 |  ----  |  ----  
 |  htmlviewport  |  mate viewport最佳实践
+|  htmlvue  |  vue单文件组件模板
 |  ifplus  |  html下专为ifplus-loader定义的条件代码段
 <br />
 

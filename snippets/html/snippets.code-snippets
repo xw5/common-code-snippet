@@ -7,6 +7,42 @@
     "description": "mate viewport最佳实践"
   },
 
+  "htmlvue": {
+    "prefix": ["htmlviewport","viewport"],
+    "body": [
+      "<template>",
+      "\t<div class=\"conatainer\">",
+      "\t</div>",
+      "</template>",
+
+      "<script>",
+     " export default {",
+      "\tdata() {",
+      "\t\treturn {",
+      "\t}",
+      "\t},",
+      "\tbeforeCreate() {",
+      "\t},",
+      "\tcreated() {",
+      "\t},",
+      "\tbeforeMount() {",
+      "\t},",
+      "\tmounted() {",
+      "\t},",
+      "\tbeforeDestroy() {",
+      "\t},",
+      "\tdestroyed() {",
+      "\t},",
+      "\tmethods: {",
+      "\t}",
+      "}",
+      "</script>",
+      "<style scoped lang=\"${1|scss,less,stylus|}\">",
+      "</style>"
+    ],
+    "description": "vue单文件组件模板"
+  },
+
   "ifplus": {
     "prefix": ["htmlifplus","ifplus"],
     "body": [

@@ -186,10 +186,10 @@
     "prefix": ["try","jstry"],
     "body": [
       "try {",
-      "\t$0",
+      "\t$1",
       "}",
       "catch(err){",
-      "\t$1",
+      "\t$2",
       "}"
     ],
     "description": "js下try catch语句"

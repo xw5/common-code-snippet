@@ -8,6 +8,8 @@
     - cssreset: css样式重置
 - js代码段
     - jstry：js下try catch语句
+- html代码段
+    - htmlvue：vue单文件组件模板
 ### Changed
 - 优化一些代码段
 
