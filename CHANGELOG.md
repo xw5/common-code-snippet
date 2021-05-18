@@ -6,6 +6,8 @@
 - css代码段
     - cssNoSelect：css禁止文本选中
     - cssreset: css样式重置
+- js代码段
+    - jstry：js下try catch语句
 ### Changed
 - 优化一些代码段
 

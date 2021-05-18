@@ -37,7 +37,8 @@
 |  jsif  |  if语句
 |  jsifelse  |  if下的else语句
 |  jselseif  |  if下的elseif语句
-|  jsswitch  |  js switch语句
+|  jsswitch  |  js下switch语句
+|  jstry  |  js下try catch语句
 |  jsfunction  |  js function定义结构
 |  jslog  |  js下console.log语句
 |  jsinfo  |  js下console.info语句
