@@ -53,6 +53,7 @@
 |  缩写  |  模板  
 |  ----  |  ----  
 |  cssellipsis  |  单行文本超出省略号
+|  cssreset  |  css样式重置
 |  cssellipsismulti  |  多行文本超出省略号
 |  csswrap  |  css强制换行
 |  cssarrowtop  |  css实现朝上箭头
