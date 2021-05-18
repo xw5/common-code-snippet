@@ -14,9 +14,17 @@
       "\t<div class=\"conatainer\">",
       "\t</div>",
       "</template>",
-
+      "props: {",
+      "\ttest: {",
+      "\t\ttype: String,",
+      "\t\tdefault: \"天天向上\"",
+      "\t}",
+      "},",
+      "components: {",
+      "},",
       "<script>",
      " export default {",
+
       "\tdata() {",
       "\t\treturn {",
       "\t}",
