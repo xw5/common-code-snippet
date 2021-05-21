@@ -51,6 +51,14 @@
     "description": "vue单文件组件模板"
   },
 
+  "htmlvfor": {
+    "prefix": ["htmlvfor","vfor"],
+    "body": [
+      "v-for=\"(${2:item}, ${3:index}) in ${1:list}\""
+    ],
+    "description": "vue框架的v-for语句段"
+  },
+
   "ifplus": {
     "prefix": ["htmlifplus","ifplus"],
     "body": [

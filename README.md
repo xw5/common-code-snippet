@@ -46,6 +46,8 @@
 |  jsclass  |  js 类定义结构
 |  jspromise  |  js Promise定义结构
 |  regexcommon  |  常用正则表达式集合(用户名、密码、手机号、邮箱、身份证...)
+|  jsthrottle  |  js下节流代码段
+|  jsdebounce  |  js下防抖代码段
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段
 <br />
 
@@ -78,6 +80,7 @@
 |  ----  |  ----  
 |  htmlviewport  |  mate viewport最佳实践
 |  htmlvue  |  vue单文件组件模板
+|  htmlvfor  |  vue框架的v-for语句段
 |  ifplus  |  html下专为ifplus-loader定义的条件代码段
 <br />
 

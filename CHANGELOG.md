@@ -8,8 +8,11 @@
     - cssreset: css样式重置
 - js代码段
     - jstry：js下try catch语句
+    - jsdebounce：js下防抖代码段
+    - jsthrottle：js下节流代码段
 - html代码段
     - htmlvue：vue单文件组件模板
+    - htmlvfor：vue框架的v-for语句段
 ### Changed
 - 优化一些代码段
 
