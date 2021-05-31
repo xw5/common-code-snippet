@@ -48,6 +48,8 @@
 |  regexcommon  |  常用正则表达式集合(用户名、密码、手机号、邮箱、身份证...)
 |  jsthrottle  |  js下节流代码段
 |  jsdebounce  |  js下防抖代码段
+|  jsstore  |  vue状态管理主文件模板代码段
+|  jsstoremodule  |  vue状态管理module模板代码段
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段
 <br />
 

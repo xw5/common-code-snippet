@@ -265,6 +265,48 @@
     "description": "js下防抖代码段"
   },
 
+  "jsstore": {
+    "prefix": ["jsstore","store"],
+    "body": [
+      "import Vue from 'vue'",
+      "import Vuex from 'vuex'",
+      "",
+      "Vue.use(Vuex);",
+      "",
+      "export default new Vuex.Store({",
+        "\tstate: {",
+        "\t},",
+        "\tmutations: {",
+        "\t},",
+        "\tactions: {",
+        "\t},",
+        "\tgetters: {",
+        "\t},",
+        "\tmodules: {",
+        "\t}",
+      "})"
+    ],
+    "description": "vue状态管理主文件模板代码段"
+  },
+
+  "jsstoremodule": {
+    "prefix": ["jsstoremodule","storemodule"],
+    "body": [
+      "const ${1:storeModule} = {",
+        "namespaced: true,",
+        "state: {",
+        "},",
+        "mutations: {",
+        "},",
+        "actions: {",
+        "},",
+        "getters: {",
+        "}",
+      "}",
+      "export default ${1:storeModule};"
+    ],
+    "description": "vue状态管理module模板代码段"
+  },
 
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],

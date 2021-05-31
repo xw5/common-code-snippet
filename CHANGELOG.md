@@ -10,6 +10,8 @@
     - jstry：js下try catch语句
     - jsdebounce：js下防抖代码段
     - jsthrottle：js下节流代码段
+    - jsstore：vue状态管理主文件模板代码段
+    - jsstoremodule：vue状态管理module模板代码段
 - html代码段
     - htmlvue：vue单文件组件模板
     - htmlvfor：vue框架的v-for语句段
