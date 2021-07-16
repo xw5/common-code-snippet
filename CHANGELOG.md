@@ -1,6 +1,14 @@
 # Change Log
 更新日志记录
 
+
+## [0.0.10] - 2021-07-16
+### Added
+- js代码段
+    - jsdialogdrag：el弹窗拖拽指令
+### Changed
+- 优化一些代码段
+
 ## [0.0.8] - 2021-05-13
 ### Added
 - css代码段

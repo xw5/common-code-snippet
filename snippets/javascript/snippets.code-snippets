@@ -308,6 +308,63 @@
     "description": "vue状态管理module模板代码段"
   },
 
+  "jsdialogdrag": {
+    "prefix": ["jsdialogdrag","dialogdrag"],
+    "body": [
+      "import Vue from 'vue'",
+
+      "// v-dialogDrag: 弹窗拖拽",
+      "Vue.directive('dialogDrag', {",
+        "\tbind(el, binding, vnode, oldVnode) {",
+          "\t\tconst dialogHeaderEl = el.querySelector('.el-dialog__header');",
+          "\t\tconst dragDom = el.querySelector('.el-dialog');",
+          "\t\tdialogHeaderEl.style.cursor = 'move';",
+
+          "\t\t// 获取原有属性 ie dom元素.currentStyle 火狐谷歌 window.getComputedStyle(dom元素, null);",
+          "\t\tconst sty = dragDom.currentStyle || window.getComputedStyle(dragDom, null);",
+
+          "\t\tdialogHeaderEl.onmousedown = (e) => {",
+            "\t\t\t// 鼠标按下，计算当前元素距离可视区的距离",
+            "\t\t\tconst disX = e.clientX - dialogHeaderEl.offsetLeft;",
+            "\t\t\tconst disY = e.clientY - dialogHeaderEl.offsetTop;",
+
+            "\t\t\t// 获取到的值带px 正则匹配替换",
+            "\t\t\tlet styL, styT",
+
+            "\t\t\t// 注意在ie中 第一次获取到的值为组件自带50% 移动之后赋值为px",
+            "\t\t\tif (sty.left.includes('%')) {",
+              "\t\t\t\tstyL = +document.body.clientWidth * (+sty.left.replace(/\\%/g, '') / 100);",
+              "\t\t\t\tstyT = +document.body.clientHeight * (+sty.top.replace(/\\%/g, '') / 100);",
+            "\t\t\t} else {",
+              "\t\t\t\tstyL = +sty.left.replace(/\\px/g, '');",
+              "\t\t\t\tstyT = +sty.top.replace(/\\px/g, '');",
+            "\t\t\t}",
+            "\t\t\tconsole.log('--dialogHeaderEl--:0', styL, styT);",
+
+            "\t\t\tdocument.onmousemove = function(e) {",
+              "\t\t\t\t// 通过事件委托，计算移动的距离",
+              "\t\t\t\tconst l = e.clientX - disX;",
+              "\t\t\t\tconst t = e.clientY - disY;",
+
+              "\t\t\t\t// 移动当前元素",
+              "\t\t\t\tdragDom.style.left = `${l + styL}px`;",
+              "\t\t\t\tdragDom.style.top = `${t + styT}px`;",
+
+              "\t\t\t\t// 将此时的位置传出去",
+              "\t\t\t\t// binding.value({x:e.pageX,y:e.pageY})",
+            "\t\t\t}",
+
+            "\t\t\tdocument.onmouseup = function(e) {",
+              "\t\t\t\tdocument.onmousemove = null",
+              "\t\t\t\tdocument.onmouseup = null",
+            "\t\t\t}",
+          "\t\t}",
+        "\t}",
+      "});"
+    ],
+    "description": "el弹窗拖拽指令"
+  },
+
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],
     "body": [

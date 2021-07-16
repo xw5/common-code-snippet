@@ -50,6 +50,7 @@
 |  jsdebounce  |  js下防抖代码段
 |  jsstore  |  vue状态管理主文件模板代码段
 |  jsstoremodule  |  vue状态管理module模板代码段
+|  jsdialogdrag  |  el弹窗拖拽指令
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段
 <br />
 

@@ -8,7 +8,7 @@
   },
 
   "htmlvue": {
-    "prefix": ["htmlviewport","viewport"],
+    "prefix": ["htmlvue","vue"],
     "body": [
       "<template>",
       "\t<div class=\"conatainer\">",
