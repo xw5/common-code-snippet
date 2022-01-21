@@ -52,6 +52,7 @@
 |  jsstoremodule  |  vue状态管理module模板代码段
 |  jsdialogdrag  |  el弹窗拖拽指令
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段
+|  jsrem   |  移动端rem计算代码段 
 <br />
 
 ### CSS代码段
@@ -85,6 +86,11 @@
 |  htmlvue  |  vue单文件组件模板
 |  htmlvfor  |  vue框架的v-for语句段
 |  ifplus  |  html下专为ifplus-loader定义的条件代码段
+|  htmlmetatelephone | mate 关闭自动识别数字为手机号
+|  htmlmetaemail | mate 关闭自动识别邮箱地址
+|  htmlatelphone | a标签拨打电话
+|  htmlaemail | a标签打开邮箱
+|  htmlasms | a标签发短信
 <br />
 
 ### JSON代码段

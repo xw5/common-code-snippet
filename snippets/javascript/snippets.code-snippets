@@ -111,6 +111,14 @@
     "description": "js下console.log语句"
   },
 
+  "js_log-": {
+    "prefix": ["log-","jslog-"],
+    "body": [
+      "console.log('----$1----:'$2);"
+    ],
+    "description": "js下console.log语句"
+  },
+
   "js_info": {
     "prefix": ["info","jsinfo"],
     "body": [
@@ -364,6 +372,32 @@
     ],
     "description": "el弹窗拖拽指令"
   },
+  
+  "js_rem": {
+    "prefix": ["rem", "jsrem"],
+    "body":[
+      "(function(doc, win) {",
+        "var docEl = doc.documentElement,",
+          "resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',",
+          "recalc = function() {",
+            "var clentWidth = docEl.clientWidth;",
+            "var container = doc.getElementById('app');",
+            "if (clentWidth > 828) {",
+              "docEl.style.fontSize = '100px';",
+              "container.style.width = '828px';",
+            "} else {",
+              "var remFontSize = clentWidth / 8.28;",
+              "docEl.style.fontSize = remFontSize + 'px';",
+              "container.style.width = 'auto';",
+            "}",
+          "};",
+        "if (!doc.addEventListener) return;",
+        "win.addEventListener(resizeEvt, recalc, false);",
+        "doc.addEventListener('DOMContentLoaded', recalc, false);",
+      "})(document, window);"
+    ],
+    "description": "移动端rem计算代码段"
+  },
 
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],
@@ -373,5 +407,5 @@
       "// #endif"
     ],
     "description": "ifplus-loader专用条件编译语句"
-  },
+  }
 }

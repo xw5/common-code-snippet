@@ -229,6 +229,14 @@
       "/* Extra large devices (large laptops and desktops, 1200px and up) */",
       "@media only screen and (min-width: 1200px) {",
       "\t.example {background-color: pink;}",
+      "}",
+      "// 竖屏时使用的样式",
+      "@media all and (orientation:portrait) {",
+        "\t.example {background-color: Cyan;}",
+      "}",
+      "// 横屏时使用的样式",
+      "@media all and (orientation:landscape) {",
+        "\t.example {background-color: purple;}",
       "}"
     ],
     "description": "media媒体查询参考段"

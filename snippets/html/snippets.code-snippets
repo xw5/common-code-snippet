@@ -59,6 +59,46 @@
     "description": "vue框架的v-for语句段"
   },
 
+  "htmlmetatelephone": {
+    "prefix": ["htmltelephone","metatelephone"],
+    "body": [
+      "<meta name=\"format-detection\" content=\"telephone=no\" />"
+    ],
+    "description": "mate 关闭自动识别数字为手机号"
+  },
+
+  "htmlmetaemail": {
+    "prefix": ["htmlmetaemail","metaemail"],
+    "body": [
+      "<meta content=\"email=no\" name=\"format-detection\" />"
+    ],
+    "description": "mate 关闭自动识别邮箱地址"
+  },
+
+  "htmlatelphone": {
+    "prefix": ["htmlatelphone","atelphone"],
+    "body": [
+      "<a href=\"tel:$1\">$1</a>"
+    ],
+    "description": "a标签拨打电话"
+  },
+
+  "htmlaemail": {
+    "prefix": ["htmlaemail","aemail"],
+    "body": [
+      "<a href=\"mailto:$1\" target=\"_blank\">$1</a>"
+    ],
+    "description": "a标签打开邮箱"
+  },
+
+  "htmlasms": {
+    "prefix": ["htmlasms","asms"],
+    "body": [
+      "<a href=\"sms:$1\">发短信给: $1</a>"
+    ],
+    "description": "a标签发短信"
+  },
+
   "ifplus": {
     "prefix": ["htmlifplus","ifplus"],
     "body": [

@@ -1,6 +1,19 @@
 # Change Log
 更新日志记录
 
+## [0.0.11] - 2022-01-21
+### Added
+- js代码段
+    - jsrem：移动端rem计算代码段
+- html代码段
+    - htmlmetatelephone：mate 关闭自动识别数字为手机号
+    - htmlmetaemail：mate 关闭自动识别邮箱地址
+    - htmlatelphone： a标签拨打电话
+    - htmlaemail：a标签打开邮箱
+    - htmlasms：mate 关闭自动识别数字为手机号
+    - htmlmetatelephone：a标签发短信
+### Changed
+- 优化一些代码段
 
 ## [0.0.10] - 2021-07-16
 ### Added
