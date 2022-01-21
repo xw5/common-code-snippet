@@ -44,5 +44,9 @@
                 "path": "./snippets/global/snippets.code-snippets"
             }
         ]
+    },
+    "scripts": {
+        "package": "vsce package",
+        "publish": "vsce publish"
     }
 }
