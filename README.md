@@ -61,6 +61,15 @@
 |  js?  |  js 三目运算代码段 
 <br />
 
+### jsx代码模板
+> Javascript代码模板一样可以使用
+
+|  缩写  |  模板  
+|  ----  |  ----  
+|  taronavigate  |  taro的路由跳转api代码段
+
+<br />
+
 ### CSS代码段
 
 |  缩写  |  模板  
@@ -89,6 +98,7 @@
 |  csslink  |  a链接伪类设置顺序
 |  css::border  |  css伪类实现边框
 |  cssboxshadow  |  css boxshadow盒子阴影
+|  csstransition  |  css transition过渡
 |  csskeyframes  |  css keyframes动画定义
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
@@ -146,6 +156,11 @@
 |  gbbaidu  |  baidu搜索
 |  gbvue  |  vue官网链接
 |  gbreact  |  react官网链接
+|  gbreact  |  react官网链接
+|  gbnextjs  |  nextjs官网链接
+|  gbtaro  |  taro官网链接
 |  gbwebpack  |  webpack官网链接
+|  gbvite  |  vite官网链接
+|  gbantdesign  |  ant design官网链接
 |  gbelementui  |  elementui官网链接
-|  gbvux  |  vuxui组件库官网链接
+|  gbgsap  |  gsap官网链接

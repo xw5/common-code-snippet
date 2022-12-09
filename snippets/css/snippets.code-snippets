@@ -367,6 +367,14 @@
     "description": "css boxshadow盒子阴影"
   },
 
+  "csstransition": {
+    "prefix": ["csstransition","transition"],
+    "body": [
+      "transition: ${1:属性} ${2:过渡时间}s ${3:缓动函数} ${4:延时时间}s;"
+    ],
+    "description": "css transition过渡"
+  },
+
   "csskeyframes": {
     "prefix": ["csskeyframes","keyframes"],
     "body": [

@@ -25,6 +25,9 @@
                 "language": "javascriptreact",
                 "path": "./snippets/javascript/snippets.code-snippets"
             },{
+                "language": "javascriptreact",
+                "path": "./snippets/javascript/taro.code-snippets"
+            },{
                 "language": "css",
                 "path": "./snippets/css/snippets.code-snippets"
             },{

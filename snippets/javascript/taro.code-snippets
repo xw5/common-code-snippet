@@ -1,0 +1,36 @@
+{
+  "taronavigate": {
+    "prefix": ["taronavigate", "navigate"],
+    "body": [
+      "Taro.${1|navigateTo,navigateBack,switchTab,reLaunch,redirectTo|}({",
+      "  // navigationBack不需要",
+      "  url: '${2:/pages/index/index}'",
+      "  // navigateBack特有",
+      "  delta: 1,  // 返回的页面数，如果 delta 大于现有页面数，则返回到首页。",
+      "  // navigateTo特有",
+      "  events: {",
+      "    // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据",
+      "    acceptDataFromOpenedPage: function(data) {",
+      "      console.log(data)",
+      "    },",
+      "    someEvent: function(data) {",
+      "      console.log(data)",
+      "    }",
+      "  },",
+      "  success(res) {",
+      "    // 接口调用成功的回调函数",
+      "    // navigateTo特有，配合上面events使用",
+      "    res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' });",
+      "  },",
+      "  fail() {",
+      "    // 接口调用失败的回调函数",
+      "  },",
+      "  complete() {",
+      "    // 接口调用结束的回调函数（调用成功、失败都会执行）",
+      "  }",
+      "})"
+    ],
+    "description": "taro的路由跳转api代码段"
+  },
+  
+}

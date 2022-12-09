@@ -10,7 +10,7 @@
   "gbtesttxten": {
     "prefix": ["gbtesttxten","testtxten"],
     "body": [
-      "As long as everyone gives a little love, the world will become a beautiful world!"
+      "${0|As long as everyone gives a little love, the world will become a beautiful world!,Good good study，day day up,The greatest test of courage on earth is to bear defeat without losing heart.,The shortest way to do many things is to only one thing at a time.,Life would be too smooth if it had no rubs in it.,Wasting time is robbing oneself.|}"
     ],
     "description": "英文占位文字"
   },
@@ -26,16 +26,15 @@
   "gbtestimg": {
     "prefix": ["gbtestimg","testimg"],
     "body": [
-      "https://dummyimage.com/${1:400}x${2:400}/000000/f0f1fa"
+      "https://dummyimage.com/${1:400}x${2:400}/000000/f0f1fa?text=${3:test img}"
     ],
     "description": "生成测试占位图片url"
   },
 
-  
   "gbbaidu": {
     "prefix": ["gbbaidu","baidu"],
     "body": [
-      "https://www.baidu.com/s?wd=${1:vue}"
+      "https://www.baidu.com/s?wd=${1|vue,react,nextjs,vite,webpack|}"
     ],
     "description": "baidu搜索"
   },
@@ -56,12 +55,44 @@
     "description": "react官网链接"
   },
 
+  "gbnextjs": {
+    "prefix": ["gbnextjs","nextjs"],
+    "body": [
+      "https://www.nextjs.cn/"
+    ],
+    "description": "nextjs官网链接"
+  },
+
+  "gbtaro": {
+    "prefix": ["gbtaro","taro"],
+    "body": [
+      "https://taro.jd.com/"
+    ],
+    "description": "taro官网链接"
+  },
+
   "gbwebpack": {
     "prefix": ["gbwebpack","webpack"],
     "body": [
       "https://webpack.docschina.org/"
     ],
     "description": "webpack官网链接"
+  },
+
+  "gbvite": {
+    "prefix": ["gbvite","vite"],
+    "body": [
+      "https://vitejs.cn/"
+    ],
+    "description": "vite官网链接"
+  },
+
+  "gbantdesign": {
+    "prefix": ["antdesign","gbantdesign"],
+    "body": [
+      "https://ant.design/index-cn"
+    ],
+    "description": "ant design官网链接"
   },
 
   "gbelementui": {
@@ -72,11 +103,11 @@
     "description": "elementui官网链接"
   },
 
-  "gbvux": {
-    "prefix": ["gbvux","vux"],
+  "gbgsap": {
+    "prefix": ["gbgsap","gsap"],
     "body": [
-      "https://vux.li/"
+      "https://greensock.com/docs/v3"
     ],
-    "description": "vuxui组件库官网链接"
-  },
+    "description": "gsap官网链接"
+  }
 }
