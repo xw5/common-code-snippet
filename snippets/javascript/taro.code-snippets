@@ -32,5 +32,116 @@
     ],
     "description": "taro的路由跳转api代码段"
   },
+
+  "tarocliboard": {
+    "prefix": ["tarocliboard", "cliboard"],
+    "body": [
+      "Taro.${1|setClipboardData,getClipboardData|}({",
+      "  // setClipboardData特有",
+      "  data: '${2:data}',",
+      "  success(res) { ",
+      "  },",
+      "  fail(res) {",
+      "  },",
+      "  complete(res) {",
+      "  }",
+      "})"
+    ],
+    "description": "剪贴板操作api"
+  },
+
+  "tarosetstorage": {
+    "prefix": ["tarosetstorage", "setstorage"],
+    "body": [
+      "Taro.setStorage({",
+      "  key:\"${1:key}\",",
+      "  data:\"${2:data}\",",
+      "  success(res) {",
+      "",
+      "  },",
+      "  fail() {",
+      "    ",
+      "  },",
+      "  complete() {",
+      "",
+      "  }",
+      "})"
+    ],
+    "description": "设置key:data本地缓存"
+  },
+
+  "tarogetstorage": {
+    "prefix": ["tarogetstorage", "getstorage"],
+    "body": [
+      "Taro.getStorage({",
+      "  key:\"${1:key}\",",
+      "  success(res) {",
+      "    console.log('--getStorage ${1:key}--', res.data)",
+      "  },",
+      "  fail() {",
+      "    ",
+      "  },",
+      "  complete() {",
+      "",
+      "  }",
+      "})"
+    ],
+    "description": "获取指定key的本地缓存"
+  },
   
+  "tarosetstoragesync": {
+    "prefix": ["tarosetstoragesync", "setstoragesync"],
+    "body": [
+      "try {",
+      "  Taro.setStorageSync('${1:key}', '${2:value}')",
+      "} catch (e) { }"
+    ],
+    "description": "同步方式设置key:data本地缓存"
+  },
+
+  "tarogetstoragesync": {
+    "prefix": ["tarogetstoragesync", "getstoragesync"],
+    "body": [
+      "try {",
+      "  var value = Taro.getStorageSync('${1:key}')",
+      "  if (value) {",
+      "    console.log('--getStorage ${1:key}--:ok', value)",
+      "  }",
+      "} catch (e) {",
+      "  console.log('--getStorage ${1:key}--:err', err)",
+      "}"
+    ],
+    "description": "同步方式获取指定key的本地缓存"
+  },
+
+  "taroremovestoragesync": {
+    "prefix": ["taroremovestoragesync", "removestoragesync"],
+    "body": [
+      "try {",
+      "  Taro.removeStorageSync('${1:key}')",
+      "} catch (err) {",
+      "  console.log('--removeStorageSync ${1:key}--:err', err)",
+      "}"
+    ],
+    "description": "同步方式删除指定key的本地缓存"
+  },
+
+  "taroremovestorage": {
+    "prefix": ["taroremovestorage", "removestorage"],
+    "body": [
+      "Taro.removeStorage({",
+      "  key:\"${1:key}\",",
+      "  success(res) {",
+      "    console.log('--removeStorage ${1:key}--', res.data)",
+      "  },",
+      "  fail() {",
+      "    ",
+      "  },",
+      "  complete() {",
+      "",
+      "  }",
+      "})"
+    ],
+    "description": "异常方式删除指定key的本地缓存"
+  },
 }

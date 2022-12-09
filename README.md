@@ -67,6 +67,13 @@
 |  缩写  |  模板  
 |  ----  |  ----  
 |  taronavigate  |  taro的路由跳转api代码段
+|  tarocliboard  |  剪贴板操作api
+|  tarosetstorage  |  设置key:data本地缓存
+|  tarogetstorage  |  获取指定key的本地缓存
+|  tarosetstoragesync  |  同步方式设置key:data本地缓存
+|  tarogetstoragesync  |  同步方式获取指定key的本地缓存
+|  taroremovestoragesync  |  同步方式删除指定key的本地缓存
+|  taroremovestorage  |  异常方式删除指定key的本地缓存
 
 <br />
 
