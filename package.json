@@ -2,7 +2,7 @@
     "name": "common-code-snippet",
     "displayName": "Common-Code-Snippet",
     "description": "开发日常使用代码片段插件",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "publisher":"msxw",
     "engines": {
         "vscode": "^1.46.0"
@@ -20,6 +20,9 @@
         "snippets": [
             {
                 "language": "javascript",
+                "path": "./snippets/javascript/snippets.code-snippets"
+            },{
+                "language": "javascriptreact",
                 "path": "./snippets/javascript/snippets.code-snippets"
             },{
                 "language": "css",

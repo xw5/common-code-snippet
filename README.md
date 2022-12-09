@@ -31,6 +31,7 @@
 
 |  缩写  |  模板  
 |  ----  |  ----  
+|  jsvar  |  js 定义变量代码段
 |  jsfor  |  js for基本用法
 |  jsforof  |  for-of循环
 |  jsforin  |  for-in循环
@@ -53,6 +54,11 @@
 |  jsdialogdrag  |  el弹窗拖拽指令
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段
 |  jsrem   |  移动端rem计算代码段 
+|  jsushk   |  useState Hooks生成代码段 
+|  jsimport   |  import{}语句代码段 
+|  jsimportdefault   |  importdefalt语句代码段 
+|  jscsfn  |  js const定义箭头函数代码段 
+|  js?  |  js 三目运算代码段 
 <br />
 
 ### CSS代码段
@@ -68,6 +74,7 @@
 |  cssarrowleft  |  css实现朝左箭头
 |  cssarrowright  |  css实现朝右箭头
 |  cssgray  |  置灰滤镜
+|  cssblur  |  模糊滤镜
 |  csscenterflex  |  flex方式子元素水平垂直居中
 |  csscentermargin  |  absolute+margin元素水平垂直居中
 |  csscentertransform  |  absolute+transform元素水平垂直居中
@@ -75,6 +82,14 @@
 |  cssmedia  |  media媒体查询参考段
 |  cssgradient  |  css渐变参考写法
 |  cssNoSelect  |  css禁止文本选中
+|  cssslectioncolor  |  设置选区背景颜色
+|  cssflex  |  display:flex
+|  cssflexcolumn  |  flex column
+|  cssflexcenter  |  flex水平垂直居中
+|  csslink  |  a链接伪类设置顺序
+|  css::border  |  css伪类实现边框
+|  cssboxshadow  |  css boxshadow盒子阴影
+|  csskeyframes  |  css keyframes动画定义
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
 
@@ -83,6 +98,7 @@
 |  缩写  |  模板  
 |  ----  |  ----  
 |  htmlviewport  |  mate viewport最佳实践
+|  htmlseo  |  html添加描述和关键字mate
 |  htmlvue  |  vue单文件组件模板
 |  htmlvfor  |  vue框架的v-for语句段
 |  ifplus  |  html下专为ifplus-loader定义的条件代码段

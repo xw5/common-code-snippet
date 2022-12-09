@@ -1,4 +1,11 @@
 {
+  "jsvar": {
+    "prefix": ["var", "jsvar"],
+    "body": [
+      "${1|const,let,var|} ${2:example} = ${3};"
+    ],
+    "description": "定义变量"
+  },
   "jsfor": {
     "prefix": ["for","jsfor"],
     "body": [
@@ -397,6 +404,46 @@
       "})(document, window);"
     ],
     "description": "移动端rem计算代码段"
+  },
+
+  "useState Hooks": {
+    "prefix": ["ushk", "jsushk"],
+    "body": [
+      "const [${1:example}, set${1:example}] = useState($(2));"
+    ],
+    "description": "useState Hooks生成"
+  },
+
+  "import{}": {
+    "prefix": ["import", "jsimport"],
+    "body": [
+      "import { ${1:example}} from '${2}';"
+    ],
+    "description": "import语句"
+  },
+  "importdefault": {
+    "prefix": ["importdefault", "jsimportdefault"],
+    "body": [
+      "import ${1:example} from '${2}';"
+    ],
+    "description": "importdefault"
+  },
+  "jscsfn": {
+    "prefix": ["csfn", "jscsfn"],
+    "body": [
+      "const ${1:example} = (${2}) => {",
+      "  ${3}",
+      "}"
+    ],
+    "description": "js const定义箭头函数"
+  },
+
+  "js?": {
+    "prefix": ["js?", "3m"],
+    "body": [
+      "${1:example} ? ${2:example} : ${3:example}"
+    ],
+    "description": "js 三目运算代码段"
   },
 
   "ifplus": {

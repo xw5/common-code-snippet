@@ -128,11 +128,11 @@
   "cssarrowright": {
     "prefix": ["arrowright","cssarrowright"],
     "body": [
-      "width:0;",
-      "height:0;",
-      "border-width:${1:10}px 0 ${1:10}px ${1:10}px;",
-      "border-color:transparent transparent transparent ${2:red};",
-     "border-style: solid;",
+      "width: 0;",
+      "height: 0;",
+      "border-width: ${1:10}px 0 ${1:10}px ${1:10}px;",
+      "border-color: transparent transparent transparent ${2:red};",
+      "border-style: solid;",
      "$0"
     ],
     "description": "css实现朝右箭头"
@@ -141,11 +141,21 @@
   "cssgray":{
     "prefix": ["gray", "cssgray"],
     "body": [
-      "filter:gray;",
-      "-webkit-filter:grayscale(1);",
+      "filter: gray;",
+      "-webkit-filter: grayscale(100%);",
+      "filter: grayscale(100%);",
       "$0"
     ],
     "description": "置灰滤镜"
+  },
+
+  "cssblur": {
+    "prefix": ["cssblur", "blur"],
+    "body": [
+      "filter: blur(${0:1px});",
+      "${1}"
+    ],
+    "description": "模糊滤镜"
   },
 
   "csscenterflex":{
@@ -277,6 +287,100 @@
       "user-select: none;"
     ],
     "description": "css禁止文本选中"
+  },
+
+  "cssslectioncolor": {
+    "prefix": ["cssslectioncolor", "slectioncolor"],
+    "body": [
+      "::selection { background-color: ${0:#e2eae2}; }",
+      "::-moz-selection { background-color: ${0:#e2eae2}; }",
+      "::-webkit-selection { background-color: ${0:#e2eae2}; }",
+      "${1}"
+    ],
+    "description": "设置选区背景颜色"
+  },
+
+  "cssflex": {
+    "prefix": ["cssflex", "flex"],
+    "body": [
+      "display: flex;",
+      "${0}"
+    ],
+    "description": "display:flex"
+  },
+
+  "cssflexcolumn": {
+    "prefix": ["cssflexcolumn", "flexcolumn"],
+    "body": [
+      "display: flex;",
+      "flex-direction: column;",
+      "${0}"
+    ],
+    "description": "flex column"
+  },
+
+  "cssflexcenter": {
+    "prefix": ["cssflexcenter", "flexcenter"],
+    "body": [
+      "align-items:center;",
+      "justify-content:center;",
+      "${0}"
+    ],
+    "description": "flex水平垂直居中"
+  },
+
+  "csslink": {
+    "prefix": ["csslink", "link"],
+    "body": [
+      "${0:a}:link { color: ${1:#00f}; }",
+      "${0:a}:visited { color: ${2:#ccc}; }",
+      "${0:a}:hover { color: ${3:#f00}; }",
+      "${0:a}:active { color: ${4:#0f0}; }",
+      "${5}"
+    ],
+    "description": "a链接伪类设置顺序"
+  },
+
+  "css::border": {
+    "prefix": ["css::border", "::border"],
+    "body": [
+      "${0:example}::${1|after, before|}{",
+      "    content: ' ';",
+      "    position: absolute;",
+      "    right: 0;",
+      "    bottom: 0;",
+      "    left: 15px;",
+      "    height: 1px;",
+      "    background-color: ${2:#0f0};",
+      "  }",
+      ""
+    ],
+    "description": "css伪类实现边框"
+  },
+
+  "cssboxshadow": {
+    "prefix": ["cssboxshadow", "boxshadow"],
+    "body": [
+      "box-shadow: ${1:x偏移} ${2:y偏移} ${3:模糊} ${4:扩展} ${5:rgba(0, 0, 255, .2)};",
+      "${6}"
+    ],
+    "description": "css boxshadow盒子阴影"
+  },
+
+  "csskeyframes": {
+    "prefix": ["csskeyframes","keyframes"],
+    "body": [
+      "@keyframes ${1:example}{",
+      "    0%{",
+      "        opacity: 0;",
+      "    }",
+      "    100%{",
+      "        opacity: 1;",
+      "    }",
+      "}",
+      ""
+    ],
+    "description": "css keyframes动画定义"
   },
 
   "ifplus": {
