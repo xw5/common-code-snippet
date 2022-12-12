@@ -4,7 +4,7 @@
 
 ## 使用建议
 >考虑到用户的记忆成本，用户无需记忆所有代码段的缩写，输入特殊开头字符则会带出当前类别下的代码段，优化使用体验，定义如下使用规则：
->- 在js下输入js则会带出所有属于js的代码段
+>- 在js/jsx下输入js则会带出所有属于js的代码段,输入taro就带出taro特有的代码段（注：有些taro代码段只有jsx下才会有）
 >- css下输入css则会带出所有属于css的代码段
 >- html下输入html会带出所有属于html的代码段
 >- mardown下输入md会带出所有属于markdown的代码段
@@ -52,20 +52,26 @@
 |  jsstore  |  vue状态管理主文件模板代码段
 |  jsstoremodule  |  vue状态管理module模板代码段
 |  jsdialogdrag  |  el弹窗拖拽指令
-|  ifplus  |  js代码下专为ifplus-loader定义的条件代码段
 |  jsrem   |  移动端rem计算代码段 
-|  jsushk   |  useState Hooks生成代码段 
+|  jsuseState   |  useState片段 
+|  jsusestatefunction   |  usestate函数形式片段 
+|  jsuseeffect   |  useeffect片段 
+|  jsusereducer   |  useReducer代码段 
+|  jsuseCallback   |  useCallback代码段 
+|  jsuseRef   |  useRef代码段 
+|  jsuseContext   |  useContext代码段 
 |  jsimport   |  import{}语句代码段 
 |  jsimportdefault   |  importdefalt语句代码段 
 |  jscsfn  |  js const定义箭头函数代码段 
-|  js?  |  js 三目运算代码段 
-<br />
-
-### jsx代码模板
-> Javascript代码模板一样可以使用
-
-|  缩写  |  模板  
-|  ----  |  ----  
+|  js?  |  js 三目运算代码段
+|  jsArraymethod  |  Array常用方法列表
+|  jsStringMethod  |  String常用方法列表
+|  jsMathMethod  |  Math对象常用方法
+|  jsDateMethod  |  Date常用方法
+|  jsLocation  |  Location对象属性和方法
+|  jsHistory  |  History对象方法
+|  jsDom  |  Dom元素对象
+|  tarohide  |  taro toaset loading隐藏
 |  taronavigate  |  taro的路由跳转api代码段
 |  tarocliboard  |  剪贴板操作api
 |  tarosetstorage  |  设置key:data本地缓存
@@ -74,6 +80,21 @@
 |  tarogetstoragesync  |  同步方式获取指定key的本地缓存
 |  taroremovestoragesync  |  同步方式删除指定key的本地缓存
 |  taroremovestorage  |  异常方式删除指定key的本地缓存
+|  taroshowtoast  |  taro showToast显示消息提示框
+|  taroshowmodel  |  taro showModel显示模态对话框
+|  taroshowloading  |  taro showLoading显示消息提示框
+|  ifplus  |  js代码下专为ifplus-loader定义的条件代码段 
+<br />
+
+### jsx代码模板
+> Javascript代码模板一样可以使用
+
+|  缩写  |  模板  
+|  ----  |  ----  
+|  taropage  |  taro page组件模板
+|  tarocomponent  |  taro component模板
+|  taropageconfig  |  taro page配置模板
+|  tarousehook  |  taro 特有hooks
 
 <br />
 
@@ -166,6 +187,7 @@
 |  gbreact  |  react官网链接
 |  gbnextjs  |  nextjs官网链接
 |  gbtaro  |  taro官网链接
+|  gbweixin  |  weixin官方文挡
 |  gbwebpack  |  webpack官网链接
 |  gbvite  |  vite官网链接
 |  gbantdesign  |  ant design官网链接

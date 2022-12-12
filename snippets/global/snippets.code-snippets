@@ -71,6 +71,14 @@
     "description": "taro官网链接"
   },
 
+  "gbweixin": {
+    "prefix": ["gbweixin","weixin"],
+    "body": [
+      "https://developers.weixin.qq.com/doc/"
+    ],
+    "description": "weixin官方文挡"
+  },
+
   "gbwebpack": {
     "prefix": ["gbwebpack","webpack"],
     "body": [
