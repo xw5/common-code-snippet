@@ -42,8 +42,7 @@
 |  jstry  |  js下try catch语句
 |  jsfunction  |  js function定义结构
 |  jslog  |  js下console.log语句
-|  jsinfo  |  js下console.info语句
-|  jserror  |  js下console.error语句
+|  jslog-  |  js下console.log语句,console.log('----test----:', test);
 |  jsclass  |  js 类定义结构
 |  jspromise  |  js Promise定义结构
 |  regexcommon  |  常用正则表达式集合(用户名、密码、手机号、邮箱、身份证...)
@@ -71,31 +70,7 @@
 |  jsLocation  |  Location对象属性和方法
 |  jsHistory  |  History对象方法
 |  jsDom  |  Dom元素对象
-|  tarohide  |  taro toaset loading隐藏
-|  taronavigate  |  taro的路由跳转api代码段
-|  tarocliboard  |  剪贴板操作api
-|  tarosetstorage  |  设置key:data本地缓存
-|  tarogetstorage  |  获取指定key的本地缓存
-|  tarosetstoragesync  |  同步方式设置key:data本地缓存
-|  tarogetstoragesync  |  同步方式获取指定key的本地缓存
-|  taroremovestoragesync  |  同步方式删除指定key的本地缓存
-|  taroremovestorage  |  异常方式删除指定key的本地缓存
-|  taroshowtoast  |  taro showToast显示消息提示框
-|  taroshowmodel  |  taro showModel显示模态对话框
-|  taroshowloading  |  taro showLoading显示消息提示框
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段 
-<br />
-
-### jsx代码模板
-> Javascript代码模板一样可以使用
-
-|  缩写  |  模板  
-|  ----  |  ----  
-|  taropage  |  taro page组件模板
-|  tarocomponent  |  taro component模板
-|  taropageconfig  |  taro page配置模板
-|  tarousehook  |  taro 特有hooks
-
 <br />
 
 ### CSS代码段

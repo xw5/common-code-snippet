@@ -2,7 +2,7 @@
     "name": "common-code-snippet",
     "displayName": "Common-Code-Snippet",
     "description": "开发日常使用代码片段插件",
-    "version": "0.0.13",
+    "version": "0.0.14",
     "publisher":"msxw",
     "engines": {
         "vscode": "^1.46.0"
@@ -10,6 +10,7 @@
     "categories": [
         "Snippets"
     ],
+    "icon": "./snippets/assets/icon.png",
     "keywords": ["common", "code-snippet", "snippet", "common-code-snippet"],
     "homepage": "https://gitee.com/github-9819409/common-code-snippet",
     "repository": {
@@ -24,9 +25,6 @@
             },{
                 "language": "javascriptreact",
                 "path": "./snippets/javascript/snippets.code-snippets"
-            },{
-                "language": "javascriptreact",
-                "path": "./snippets/javascript/taro.code-snippets"
             },{
                 "language": "css",
                 "path": "./snippets/css/snippets.code-snippets"
