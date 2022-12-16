@@ -21,6 +21,126 @@
     "description": "reac函数组件模板代码段"
   },
 
+  "rinitclass": {
+    "prefix": ["rinitclass", "initclass"],
+    "body": [
+      "import React from 'react';",
+      "import './${1:Index}.css';",
+      "",
+      "class ${1:Index} extends React.Component {",
+      "  constructor(props) {",
+      "    super(props);",
+      "    this.state = {",
+      "      title: 'Hello, world!',",
+      "      date: new Date()",
+      "    };",
+      "    ",
+      "  }",
+      "",
+      "  componentDidMount() {",
+      "    this.timerID = setInterval(",
+      "      () => this.tick(),",
+      "      1000",
+      "    );",
+      "  }",
+      "",
+      "  componentWillUnmount() {",
+      "    clearInterval(this.timerID);",
+      "  }",
+      "",
+      "  tick() {",
+      "    this.setState({",
+      "      date: new Date()",
+      "    });",
+      "  }",
+      "",
+      "  toggleTitle= () => {",
+      "    this.setState({",
+      "      title: 'Hello React!'",
+      "    });",
+      "  }",
+      "",
+      "  render() {",
+      "    return (",
+      "      <div>",
+      "        <h1 onClick={this.toggleTitle}>{title}</h1>",
+      "        <h2>It is {this.props.date.toLocaleTimeString()}.</h2>",
+      "      </div>",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "export default ${1:Index};"
+    ],
+    "description": "react类组件模板代码段"
+  },
+
+  "rdiv": {
+    "prefix": ["rdiv" , "div"],
+    "body": [
+      "<${1:div} className='${2:example}'>{${3:example}}</${1:div}>"
+    ],
+    "description": "带className的元素代码段"
+  },
+
+  "r&&": {
+    "prefix": ["r&&", "&&"],
+    "body": [
+      "{ ${1:isShow} && (",
+      "    <div className='example'>",
+      "      <h2>Hello HeHe!</h2>",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "&&条件渲染"
+  },
+
+  "r?": {
+    "prefix": ["r?", "r3m"],
+    "body": [
+      "{ ${1:isLoggedIn}",
+      "  ? ${2:<LogoutButton />}",
+      "  : ${3:<LoginButton />}",
+      "}"
+    ],
+    "description": "react三目运算条件渲染"
+  },
+
+  "ron": {
+    "prefix": ["ron", "on"],
+    "body": [
+      "${1|onClick,onDoubleClick,onMouseDown,onMouseEnter,onMouseLeave,onMouseMove,onMouseOut,onMouseOver,onMouseUp,onChange,onInput,onTouchCancel,onTouchEnd,onTouchMove,onTouchStart,onFocus,onBlur,onLoad,onError,onKeyDown,onKeyPress,onKeyUp,onDrag,onDragEnd,onDragEnter,onDragExit,onDragLeave,onDragOver,onDragStart,onDrop|}={${2:fn}}"
+    ],
+    "description": "react常用Dom事件"
+  },
+
+  "rhtml": {
+    "prefix": ["rhtml", "html"],
+    "body": [
+      "dangerouslySetInnerHTML={${1:html}}"
+    ],
+    "description": "react html渲染"
+  },
+
+  "rstyle": {
+    "prefix": ["rstyle", "style"],
+    "body": [
+      "style={{ height: width}}"
+    ],
+    "description": "react行间样式写法"
+  },
+
+  "rroot": {
+    "prefix": ["rroot","root"],
+    "body": [
+      "<${1:React.Fragment}>",
+      "  $2",
+      "</${1:React.Fragment}>"
+    ],
+    "description": "react生成React.Fragment <>根节点"
+  },
+
   "ruseState": {
     "prefix": ["usestate", "rusestate"],
     "body": [

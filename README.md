@@ -36,7 +36,7 @@
 |  jsforof  |  for-of循环
 |  jsforin  |  for-in循环
 |  jsif  |  if语句
-|  jsifelse  |  if下的else语句
+|  jselse  |  if下的else语句
 |  jselseif  |  if下的elseif语句
 |  jsswitch  |  js下switch语句
 |  jstry  |  js下try catch语句
@@ -55,7 +55,7 @@
 |  jsimport   |  import{}语句代码段 
 |  jsimportdefault   |  importdefalt语句代码段 
 |  jscsfn  |  js const定义箭头函数代码段 
-|  js?  |  js 三目运算代码段
+|  js?/js3m  |  js 三目运算代码段
 |  jsArraymethod  |  Array常用方法列表
 |  jsStringMethod  |  String常用方法列表
 |  jsMathMethod  |  Math对象常用方法
@@ -107,7 +107,14 @@
 |  缩写  |  模板  
 |  ----  |  ----  
 |  rinit  |  reac函数组件模板代码段
-|  rtag  |  带className的标签模板
+|  rinitclass  |  react类组件模板代码段
+|  rdiv  |  带className的标签模板
+|  r&&  |  &&条件渲染
+|  r?/r3m  |  react三目运算条件渲染
+|  ron  |  react常用Dom事件
+|  rstyle  |  react行间样式写法
+|  rroot  |  react生成React.Fragment <>根节点
+|  rhtml  |  react html渲染
 |  ruseState   |  useState片段 
 |  rusestatefunction   |  usestate函数形式片段 
 |  ruseeffect   |  useeffect片段 

@@ -41,21 +41,19 @@
   "jsif": {
     "prefix": ["if", "jsif"],
     "body": [
-      "if (${1:condition})",
-      "\t{",
-      "\t\t$0",
-      "\t}"
+      "if (${1:condition}) {",
+      "  $2",
+      "}"
     ],
     "description": "js下if语句"
   },
 
-  "jsifelse": {
+  "jselse": {
     "prefix": ["else", "jselse"],
     "body": [
-      "\telse",
-      "\t{",
-      "\t\t$1",
-      "\t}",
+      "else {",
+      "  $1",
+      "}"
     ],
     "description": "js下的else语句"
   },
@@ -63,10 +61,9 @@
   "jselseif": {
     "prefix": ["elseif", "jselseif"],
     "body": [
-      "\telse if (${1:condition})",
-      "\t{",
-      "\t\t$0",
-      "\t}"
+      "else if (${1:条件}) {",
+      "  $2",
+      "}"
     ],
     "description": "js下的elseif语句"
   },
@@ -419,7 +416,7 @@
   },
 
   "js?": {
-    "prefix": ["js?", "3m"],
+    "prefix": ["js?", "js3m"],
     "body": [
       "${1:example} ? ${2:example} : ${3:example}"
     ],
