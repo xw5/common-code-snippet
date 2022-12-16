@@ -1,0 +1,126 @@
+{
+  "rinit": {
+    "prefix": ["rinit", "init"],
+    "body": [
+      "import { useState } from 'react'",
+      "import './${1:Index}.css'",
+      "",
+      "function ${1:Index}() {",
+      "  const [count, setCount] = useState(0)",
+      "",
+      "  return (",
+      "    <div className=\"warp\">",
+      "      <div>app:{count}</div>",
+      "      <button onClick={() => setCount(count + 1)}>setCount</button>",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:Index}"
+    ],
+    "description": "reac函数组件模板代码段"
+  },
+
+  "ruseState": {
+    "prefix": ["usestate", "rusestate"],
+    "body": [
+      "const [${1:example}, set${1:example}] = useState($2);"
+    ],
+    "description": "useState片段"
+  },
+
+  "ruseeffect": {
+    "prefix": ["ruseeffect", "useeffect"],
+    "body": [
+      "useEffect(",
+      "  () => {",
+      "    const subscription = props.source.subscribe();",
+      "    return () => {",
+      "      subscription.unsubscribe();",
+      "    };",
+      "  },",
+      "  [${1:state}],",
+      ");"
+    ],
+    "description": "useeffect片段"
+  },
+
+  "rusereducer": {
+    "prefix": ["rusereducer", "usereducer"],
+    "body": [
+      "const initialState = {count: 0};",
+      "function reducer(state, action) {",
+      "  switch (action.type) {",
+      "    case 'increment':",
+      "      return {count: state.count + 1};",
+      "    case 'decrement':",
+      "      return {count: state.count - 1};",
+      "    default:",
+      "      throw new Error();",
+      "  }",
+      "}",
+      "const [${1:state}, ${2:dispatch}] = useReducer(reducer, initialState);"
+    ],
+    "description": "useReducer代码段"
+  },
+
+  "ruseCallback": {
+    "prefix": ["rusecallback", "usecallback"],
+    "body": [
+      "const ${1:memoizedCallback }= useCallback(",
+      "  () => {",
+      "    doSomething(a, b);",
+      "  },",
+      "  [a, b],",
+      ");"
+    ],
+    "description": "useCallback代码段"
+  },
+
+  "ruseRef": {
+    "prefix": ["ruseref", "useref"],
+    "body": [
+      "// <Input ref={inputEl} type=\"text\" /> ",
+      "// inputEl.current获取节点对象",
+      "const ${1:inputEl }= useRef(null);"
+    ],
+    "description": "useRef代码段"
+  },
+
+  "ruseContext": {
+    "prefix": ["rusecontext", "usecontext"],
+    "body": [
+      "// 使用示例 https://zh-hans.reactjs.org/docs/hooks-reference.html#usecontext",
+      "// const themes = {",
+      "//  light: {",
+      "//    foreground: \"#000000\",",
+      "//    background: \"#eeeeee\"",
+      "//  },",
+      "//  dark: {",
+      "//    foreground: \"#ffffff\",",
+      "//    background: \"#222222\"",
+      "//  }",
+      "//};",
+      "// const MyContext= React.createContext(themes.light);",
+      "// 包裹上级注入 <MyContext.Provider value={themes.dark}></MyContext.Provider>",
+      "// {theme.foreground}",
+      "const ${1:theme} = useContext(${2:MyContext});"
+    ],
+    "description": "useContext代码段"
+  },
+
+  "rmap": {
+    "prefix": ["rmap","map"],
+    "body": [
+      "{${1:list}.map((${2:item}, index) => {",
+      "  return (",
+      "    <div className='example-item' key={${2:item}.id}>",
+      "      <p>{${2:item}.title}</p>",
+      "    </div>",
+      "  )",
+      "})}"
+    ],
+    "description": "react map批量渲染"
+  },
+
+}

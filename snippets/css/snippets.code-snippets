@@ -391,6 +391,69 @@
     "description": "css keyframes动画定义"
   },
 
+  "cssrem": {
+    "prefix": ["cssrem", "rem"],
+    "body": [
+      "html{",
+      "  font-size: 9.259259259259259vw;",
+      "  background-color: #040404;",
+      "}",
+      "",
+      "@media only screen and (max-width: 320px) {",
+      "  html{",
+      "    font-size: 29px;",
+      "  }",
+      "  body{",
+      "    width:320px;",
+      "    margin:0 auto;",
+      "  }",
+      "}",
+      "",
+      "@media only screen and (min-width: 540px) {",
+      "  html{",
+      "    font-size: 50px;",
+      "  }",
+      "  body{",
+      "    width:540px;",
+      "    margin:0 auto;",
+      "  }",
+      "}"
+    ],
+    "description": "css vw+rem适配方案"
+  },
+
+  "csshidetext": {
+    "prefix": ["csshidetext", "hidetext"],
+    "body": [
+      ".hide-text{",
+      "  text-indent: -9999px;",
+      "  font-size: 0;",
+      "  color: rgba(0,0,0,0);",
+      "  overflow: hidden;",
+      "}"
+    ],
+    "description": "css 得于seo的隐藏文本"
+  },
+
+  "cssbackgroundimagefix": {
+    "prefix": ["cssbackgroundimagefix", "backgroundimagefix"],
+    "body": [
+      "width: ${1:8rem};",
+      "height: ${2:8rem};",
+      "background:url(${3:../images/test.img}) no-repeat ${4:#060606} top center;",
+      "background-size: ${1:8rem}rem ${2:8rem};"
+    ],
+    "description": "background-image-size适配样式"
+  },
+
+  "rdiv": {
+    "prefix": ["rdiv", "div"],
+    "body": [
+      "<${1:div} className='${2:example}'>{${3:example}}</${1:div}>"
+    ],
+    "description": "react带className的标签模板"
+  },
+
   "ifplus": {
     "prefix": ["ifplus","cssifplus"],
     "body": [

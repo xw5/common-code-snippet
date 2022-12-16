@@ -2,9 +2,9 @@
   "htmlviewport": {
     "prefix": ["htmlviewport","viewport"],
     "body": [
-      "<mate name=\"viewport\" content=\"width=device-width,initial-scale=1,user-scalable=no\">"
+      "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,user-scalable=no\">"
     ],
-    "description": "mate viewport最佳实践"
+    "description": "meta viewport最佳实践"
   },
   "htmlseo": {
     "prefix": ["htmlseo", "seo"],
@@ -12,7 +12,7 @@
       "<meta name=\"keyword\" content=\"魅族,魅族官网,魅族商城,魅族社区,魅族服务,meizu,魅族手机官网,魅族官方商城,魅族官网首页,魅族官方网站,魅族手机,魅蓝手机,魅族 18X,魅族 18s,魅族 18s Pro,魅族 18 Pro,魅族 18,魅族 17 Pro,魅族 17,魅族 16T,魅族 16s Pro,魅族 16Xs,魅族 16s,魅族 Note9,魅族 Note8,魅族 16 X,魅族 V8,魅族 X8,魅族 16th,魅族 16th Plus,魅蓝 6T,魅族 15,魅族 M15,魅族 15 Plus,魅蓝 E3\">",
       "<meta name=\"description\" content=\"魅族官网是魅族官方提供的电子商务平台，提供包括魅族手机/魅蓝手机/数码配件/生活周边等产品在线购物、产品资讯、售前售后服务、在线社区交流一站式服务.\">"
     ],
-    "description": "html添加描述和关键字mate"
+    "description": "html添加描述和关键字meta"
   },
 
   "htmlvue": {

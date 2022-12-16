@@ -358,7 +358,7 @@
     "description": "el弹窗拖拽指令"
   },
   
-  "js_rem": {
+  "jsrem": {
     "prefix": ["rem", "jsrem"],
     "body":[
       "(function(doc, win) {",
@@ -384,14 +384,6 @@
     "description": "移动端rem计算代码段"
   },
 
-  "jsuseState": {
-    "prefix": ["usestate", "jsusestate"],
-    "body": [
-      "const [${1:example}, set${1:example}] = useState($(2));"
-    ],
-    "description": "useState片段"
-  },
-
   "jsusestatefunction": {
     "prefix": ["jsusestatefunction", "usestatefunction"],
     "body": [
@@ -400,86 +392,6 @@
       "});"
     ],
     "description": "usestate函数形式片段"
-  },
-
-  "jsuseeffect": {
-    "prefix": ["jsuseeffect", "useeffect"],
-    "body": [
-      "useEffect(",
-      "  () => {",
-      "    const subscription = props.source.subscribe();",
-      "    return () => {",
-      "      subscription.unsubscribe();",
-      "    };",
-      "  },",
-      "  [${1:state}],",
-      ");"
-    ],
-    "description": "useeffect片段"
-  },
-
-  "jsusereducer": {
-    "prefix": ["jsusereducer", "usereducer"],
-    "body": [
-      "const initialState = {count: 0};",
-      "function reducer(state, action) {",
-      "  switch (action.type) {",
-      "    case 'increment':",
-      "      return {count: state.count + 1};",
-      "    case 'decrement':",
-      "      return {count: state.count - 1};",
-      "    default:",
-      "      throw new Error();",
-      "  }",
-      "}",
-      "const [${1:state}, ${2:dispatch}] = useReducer(reducer, initialState);"
-    ],
-    "description": "useReducer代码段"
-  },
-
-  "jsuseCallback": {
-    "prefix": ["jsusecallback", "usecallback"],
-    "body": [
-      "const ${1:memoizedCallback }= useCallback(",
-      "  () => {",
-      "    doSomething(a, b);",
-      "  },",
-      "  [a, b],",
-      ");"
-    ],
-    "description": "useCallback代码段"
-  },
-
-  "jsuseRef": {
-    "prefix": ["jsuseref", "useref"],
-    "body": [
-      "// <Input ref={inputEl} type=\"text\" /> ",
-      "// inputEl.current获取节点对象",
-      "const ${1:inputEl }= useRef(null);"
-    ],
-    "description": "useRef代码段"
-  },
-
-  "jsuseContext": {
-    "prefix": ["jsusecontext", "usecontext"],
-    "body": [
-      "// 使用示例 https://zh-hans.reactjs.org/docs/hooks-reference.html#usecontext",
-      "// const themes = {",
-      "//  light: {",
-      "//    foreground: \"#000000\",",
-      "//    background: \"#eeeeee\"",
-      "//  },",
-      "//  dark: {",
-      "//    foreground: \"#ffffff\",",
-      "//    background: \"#222222\"",
-      "//  }",
-      "//};",
-      "// const MyContext= React.createContext(themes.light);",
-      "// 包裹上级注入 <MyContext.Provider value={themes.dark}></MyContext.Provider>",
-      "// {theme.foreground}",
-      "const ${1:theme} = useContext(${2:MyContext});"
-    ],
-    "description": "useContext代码段"
   },
 
   "import{}": {

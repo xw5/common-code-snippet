@@ -51,14 +51,7 @@
 |  jsstore  |  vue状态管理主文件模板代码段
 |  jsstoremodule  |  vue状态管理module模板代码段
 |  jsdialogdrag  |  el弹窗拖拽指令
-|  jsrem   |  移动端rem计算代码段 
-|  jsuseState   |  useState片段 
-|  jsusestatefunction   |  usestate函数形式片段 
-|  jsuseeffect   |  useeffect片段 
-|  jsusereducer   |  useReducer代码段 
-|  jsuseCallback   |  useCallback代码段 
-|  jsuseRef   |  useRef代码段 
-|  jsuseContext   |  useContext代码段 
+|  jsrem   |  移动端rem计算代码段  
 |  jsimport   |  import{}语句代码段 
 |  jsimportdefault   |  importdefalt语句代码段 
 |  jscsfn  |  js const定义箭头函数代码段 
@@ -103,7 +96,27 @@
 |  cssboxshadow  |  css boxshadow盒子阴影
 |  csstransition  |  css transition过渡
 |  csskeyframes  |  css keyframes动画定义
+|  cssrem  |  css vw+rem适配方案
+|  csshidetext  |  css 得于seo的隐藏文本
+|  cssbackgroundimagefix  |  background-image-size适配样式
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
+<br />
+
+### React代码段
+
+|  缩写  |  模板  
+|  ----  |  ----  
+|  rinit  |  reac函数组件模板代码段
+|  rtag  |  带className的标签模板
+|  ruseState   |  useState片段 
+|  rusestatefunction   |  usestate函数形式片段 
+|  ruseeffect   |  useeffect片段 
+|  rusereducer   |  useReducer代码段 
+|  ruseCallback   |  useCallback代码段 
+|  ruseRef   |  useRef代码段 
+|  ruseContext   |  useContext代码段
+|  rmap   |  react map批量渲染
+
 <br />
 
 ### HTML代码段
