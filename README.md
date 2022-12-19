@@ -1,10 +1,11 @@
-# 开发常用代码段插件
+# 前端开发常用代码段插件
 >根据缩写快速提供代码模板，提高开发速度，代码段持续更新中......
 <br />
 
 ## 使用建议
 >考虑到用户的记忆成本，用户无需记忆所有代码段的缩写，输入特殊开头字符则会带出当前类别下的代码段，优化使用体验，定义如下使用规则：
->- 在js/jsx下输入js则会带出所有属于js的代码段,输入taro就带出taro特有的代码段（注：有些taro代码段只有jsx下才会有）
+>- 在js/jsx下输入js则会带出所有属于js的代码段
+>- 在jsx下输入r则会带出所有属于react的代码段
 >- css下输入css则会带出所有属于css的代码段
 >- html下输入html会带出所有属于html的代码段
 >- mardown下输入md会带出所有属于markdown的代码段
@@ -63,6 +64,10 @@
 |  jsLocation  |  Location对象属性和方法
 |  jsHistory  |  History对象方法
 |  jsDom  |  Dom元素对象
+|  jsmobile  |  js判断当前是否在移动端下
+|  jsrandom  |  js生成随机范围内的整数
+|  jstype  |  检查JavaScript中任何变量或值的类型
+|  jsquery  |  获取url中的query参数
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段 
 <br />
 

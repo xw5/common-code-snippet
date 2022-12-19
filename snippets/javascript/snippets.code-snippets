@@ -693,5 +693,77 @@
       "// nodelist.length 返回节点列表的节点数目。"
     ],
     "description": "Dom元素对象"
+  },
+
+  "jsmobile": {
+    "prefix": ["jsmobile","mobile"],
+    "body": [
+      "// 当前设备是移动设备",
+      "if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {",
+      "  ",
+      "};",
+      "",
+      "// 手机浏览器的 DOM 元素可以通过ontouchstart属性，为touch事件指定监听函数。桌面设备没有这个属性",
+      "function isMobile() { ",
+      "  return ('ontouchstart' in document.documentElement); ",
+      "};",
+      "// 也可以使用别人写好的工具包。这里推荐 react-device-detect，它支持多种粒度的设备侦测",
+      "",
+      "// 根据屏幕大小判断",
+      "if (window.screen.width < 500) {",
+      "   ",
+      "};",
+      "// 适合指定网页在不同宽度下的样式",
+      "const getBrowserWidth = function() {",
+      "  if (window.innerWidth < 768) {",
+      "    return \"xs\";",
+      "  } else if (window.innerWidth < 991) {",
+      "    return \"sm\";",
+      "  } else if (window.innerWidth < 1199) {",
+      "    return \"md\";",
+      "  } else {",
+      "    return \"lg\";",
+      "  }",
+      "};"
+    ],
+    "description": "js判断当前是否在移动端下"
+  },
+
+  "jsrandom": {
+    "prefix": ["jsrandom", "random"],
+    "body": [
+      "const randomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;"
+    ],
+    "description": "js生成随机范围内的整数"
+  },
+
+  "jstype": {
+    "prefix": ["jstype", "type"],
+    "body": [
+      "const getType = v => v === undefined ? 'undefined' : v === null ? 'null' : v.constructor.name.toLowerCase();"
+    ],
+    "description": "检查JavaScript中任何变量或值的类型"
+  },
+
+  "jsquery": {
+    "prefix": "jsquery",
+    "body": [
+      "/**",
+      " * 获取url中query参数",
+      " * @param {String} sUrl ",
+      " * @param {String} sKey ",
+      " * @returns ",
+      " */",
+      "function getUrlParam2(sUrl, sKey) {",
+      "  var result, Oparam = {};",
+      "  sUrl.replace(/[\\?&]?(\\w+)=(\\w+)/g, function (\\$0, \\$1, \\$2) {",
+      "    console.log('\\$0:' + \\$0 + \"     \\$1:\" + \\$1 + \"     \\$2:\" + \\$2);",
+      "    Oparam[\\$1] === void 0 ? Oparam[\\$1] = \\$2 : Oparam[\\$1] = [].concat(Oparam[\\$1], \\$2);",
+      "  });",
+      "  sKey === void 0 || sKey === '' ? result = Oparam : result = Oparam[sKey] || '';",
+      "  return result;",
+      "}"
+    ],
+    "description": "获取url中的query参数"
   }
 }
