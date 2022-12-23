@@ -31,6 +31,59 @@
     "description": "生成测试占位图片url"
   },
 
+  "gbgitignore": {
+    "prefix": ["gbgitignore","gitignore"],
+    "body": [
+      "# Logs",
+      "logs",
+      "*.log",
+      "npm-debug.log*",
+      "yarn-debug.log*",
+      "yarn-error.log*",
+      "pnpm-debug.log*",
+      "lerna-debug.log*",
+      "",
+      "node_modules",
+      "dist",
+      "dist-ssr",
+      "*.local",
+      "",
+      "# Editor directories and files",
+      ".vscode/*",
+      "!.vscode/extensions.json",
+      ".idea",
+      ".DS_Store",
+      "*.suo",
+      "*.ntvs*",
+      "*.njsproj",
+      "*.sln",
+      "*.sw?",
+      ""
+    ],
+    "description": "git忽略常用配置"
+  },
+
+  "gbnpmregistry": {
+    "prefix": ["gbnpmregistry","npmregistry"],
+    "body": [
+      "/* 淘宝npm镜像",
+      "搜索地址：http://npm.taobao.org/",
+      "registry地址：http://registry.npm.taobao.org/ cnpmjs镜像",
+      "搜索地址：http://cnpmjs.org/",
+      "registry地址：http://r.cnpmjs.org/",
+      "1.临时使用",
+      "npm --registry https://registry.npm.taobao.org install express",
+      "2.持久使用",
+      "npm config set registry https://registry.npm.taobao.org",
+      "配置后可通过下面方式来验证是否成功",
+      "npm config get registry",
+      "3.通过cnpm使用",
+      "npm install -g cnpm --registry=https://registry.npm.taobao.org",
+      "或者可以使用nrm来管理你的npm源 */"
+    ],
+    "description": "npm常用国内源"
+  },
+
   "gbbaidu": {
     "prefix": ["gbbaidu","baidu"],
     "body": [

@@ -67,7 +67,7 @@
 |  jsmobile  |  js判断当前是否在移动端下
 |  jsrandom  |  js生成随机范围内的整数
 |  jstype  |  检查JavaScript中任何变量或值的类型
-|  jsquery  |  获取url中的query参数
+|  jsurlquery  |  获取url中的query参数
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段 
 <br />
 
@@ -181,6 +181,7 @@
 |  gbtesttxten  |  生成英文占位文本
 |  gbtestdate  |  生成日期占位文字
 |  gbtestimg  |  生成测试占位图片
+|  gbgitignore  |  git忽略常用配置
 |  gbbaidu  |  baidu搜索
 |  gbvue  |  vue官网链接
 |  gbreact  |  react官网链接

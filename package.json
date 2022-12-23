@@ -1,8 +1,8 @@
 {
     "name": "common-code-snippet",
     "displayName": "Common-Code-Snippet",
-    "description": "开发日常使用代码片段插件",
-    "version": "0.0.19",
+    "description": "前端开发日常使用代码片段插件",
+    "version": "0.0.20",
     "publisher":"msxw",
     "engines": {
         "vscode": "^1.46.0"
@@ -27,6 +27,15 @@
                 "path": "./snippets/javascript/snippets.code-snippets"
             },{
                 "language": "javascriptreact",
+                "path": "./snippets/javascript/react.code-snippets"
+            },{
+                "language": "typescript",
+                "path": "./snippets/javascript/snippets.code-snippets"
+            },{
+                "language": "typescriptreact",
+                "path": "./snippets/javascript/snippets.code-snippets"
+            },{
+                "language": "typescriptreact",
                 "path": "./snippets/javascript/react.code-snippets"
             },{
                 "language": "css",

@@ -745,8 +745,8 @@
     "description": "检查JavaScript中任何变量或值的类型"
   },
 
-  "jsquery": {
-    "prefix": "jsquery",
+  "jsurlquery": {
+    "prefix": ["jsurlquery", "urlquery"],
     "body": [
       "/**",
       " * 获取url中query参数",
