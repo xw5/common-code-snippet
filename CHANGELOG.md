@@ -4,6 +4,11 @@
 ### Added
 - js代码段
     - jsquerystringfromobj：对象转化为querystring
+- html代码段
+    - htmltable：table标签
+    - htmlul：ul标签
+    - htmldl：dl标签
+    - htmlscript：script标签
 - css代码段
     - cssevent：css实现事件禁止实现元素穿透
     - cssfiletype：根据文件格式显示不同的链接样式

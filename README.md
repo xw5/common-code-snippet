@@ -168,6 +168,10 @@
 |  htmlatelphone | a标签拨打电话
 |  htmlaemail | a标签打开邮箱
 |  htmlasms | a标签发短信
+|  htmltable | table标签
+|  htmlul | ul标签
+|  htmldl | dl标签
+|  htmlscript | script标签
 <br />
 
 ### JSON代码段
