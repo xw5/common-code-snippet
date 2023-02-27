@@ -1,5 +1,28 @@
 # Change Log
 更新日志记录
+## [0.0.21] - 2023-02-27
+### Added
+- js代码段
+    - jsadd：加法精确计算，避免数据相加小数点后产生多位数和计算精度损失
+    - jssub：减法精确计算，避免数据相减小数点后产生多位数和计算精度损失
+    - jsmulti：乘法精确计算，避免数据相乘小数点后产生多位数和计算精度损失
+    - jsdiv：除法精确计算，避免数据相除小数点后产生多位数和计算精度损失
+    - jstimeformat：时间戳转日期
+    - jsurlqueryo：url参数转对象
+    - jscountdown：获取到某一个时间的倒计时对象
+    - jsyear：是否闰年
+    - jsrandomcolor：随机生成颜色
+    - jsdatatype：数据类型判断
+    - jsremoverepeatarray：数组去重
+    - jsrandomsortarray：数组顺序随机打乱
+    - jsweixin：是否微信内置浏览器
+    - jsdaysinmonth：获取某个月的天数
+    - jssystemType：获取操作系统类型
+- css代码段
+    - csswh：元素宽高设置
+    - cssmouse：css设置鼠标样式
+### Changed
+- 优化一些代码段
 
 ## [0.0.11] - 2022-01-21
 ### Added

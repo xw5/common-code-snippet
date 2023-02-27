@@ -68,6 +68,21 @@
 |  jsrandom  |  js生成随机范围内的整数
 |  jstype  |  检查JavaScript中任何变量或值的类型
 |  jsurlquery  |  获取url中的query参数
+|  jsadd  |  加法精确计算，避免数据相加小数点后产生多位数和计算精度损失，关键字：jsadd, add, jsnum+
+|  jssub  |  减法精确计算，避免数据相减小数点后产生多位数和计算精度损失,关键字：jssub, sub, jsnum-
+|  jsmulti  |  乘法精确计算，避免数据相乘小数点后产生多位数和计算精度损失,  关键字：jsmulti,jsmulti,jsnum*
+|  jsdiv  |  除法精确计算，避免数据相除小数点后产生多位数和计算精度损失,  关键字：jsdiv, div, jsnum/
+|  jstimeformat  |  除法精确计算，避免数据相除小数点后产生多位数和计算精度损失,  关键字：jsdiv, div, jsnum/
+|  jsurlqueryo  |  url参数转对象
+|  jscountdown  |  获取到某一个时间的倒计时对象
+|  jsyear  |  是否闰年
+|  jsrandomcolor  |  随机生成颜色
+|  jsdatatype  |  数据类型判断
+|  jsremoverepeatarray  |  数组去重
+|  jsrandomsortarray  |  数组顺序随机打乱
+|  jsweixin  |  是否微信内置浏览器，关键字：jsweixin, weixin, jswx, wx
+|  jsdaysinmonth  |  获取某个月的天数
+|  jssystemType  |  获取操作系统类型
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段 
 <br />
 
@@ -104,6 +119,8 @@
 |  cssrem  |  css vw+rem适配方案
 |  csshidetext  |  css 得于seo的隐藏文本
 |  cssbackgroundimagefix  |  background-image-size适配样式
+|  csswh  |  元素宽高设置
+|  cssmouse  |  css设置鼠标样式
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
 
