@@ -10,7 +10,41 @@
       width: 100px;
       height: 100px;
       cursor: pointer;
+      clip-path: polygon(50% 0px, 100% 25%, 75% 100%, 25% 100%, 0px 25%);
     }
+a[href^="http://"]{ 
+  padding-right: 20px; 
+  background: url(external.gif) no-repeat center right; 
+}
+a[href^="mailto:"]{ 
+  padding-right: 20px; 
+  background: url(email.png) no-repeat center right; 
+}
+a[href$=".pdf"]{ 
+  padding-right: 20px; 
+  background: url(pdf.png) no-repeat center right; 
+}
+.test0{
+  width:960px; 
+  margin:0 auto;
+}
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+.bg{ 
+  background: url(image_1.png) top left no-repeat, 
+  url(image_2.png) bottom left no-repeat, 
+  url(image_3.png) bottom right no-repeat;
+/* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+color: transparent; 
+text-shadow: 0 0 5px rgba(0,0,0,0.5); 
+}
   </style>
 </head>
 <body>
@@ -287,6 +321,21 @@ function getSystemType() {
   if (/iphone/i.test(userAgent) || /ipad/i.test(userAgent) || /ipod/i.test(userAgent)) 'ios';
   if (/android/i.test(userAgent)) return 'android';
   if (/win/i.test(appVersion) && /phone/i.test(userAgent)) return 'windowsPhone';
+}
+
+/**
+ * @description 设置url参数
+ * @param { Object } obj 设置参数的对象
+ * @return { String } 参数的字符串
+ */
+ function getQueryStringFromObj(obj) {
+  var _rs = [];
+  for (var p in obj) {
+    if (obj[p] != null && obj[p] != '') {
+      _rs.push(p + '=' + obj[p]);
+    }
+  }
+  return _rs.join('&');
 }
   </script>
 </body>

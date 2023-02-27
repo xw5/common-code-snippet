@@ -914,8 +914,8 @@
     "description": "时间戳转日期,  关键字：jstimeformat, timeformat"
   },
   
-  "jsurlqueryo": {
-    "prefix": ["jsurlqueryo", "urlqueryo"],
+  "jsurlquerytoobj": {
+    "prefix": ["jsurlquerytoobj", "urlquerytoobj"],
     "body": [
       "/**",
       " * @description url参数转对象",
@@ -932,6 +932,27 @@
       "}"
     ],
     "description": "url参数转对象"
+  },
+
+  "jsquerystringfromobj": {
+    "prefix": ["jsquerystringfromobj", "querystringfromobj"],
+    "body": [
+      "/**",
+      " * @description 对象转化为querystring",
+      " * @param { Object } obj 设置参数的对象",
+      " * @return { String } 参数的字符串",
+      " */",
+      " function getQueryStringFromObj(obj) {",
+      "  var _rs = [];",
+      "  for (var p in obj) {",
+      "    if (obj[p] != null && obj[p] != '') {",
+      "      _rs.push(p + '=' + obj[p]);",
+      "    }",
+      "  }",
+      "  return _rs.join('&');",
+      "}"
+    ],
+    "description": "对象转化为querystring"
   },
   
   "jscountdown": {

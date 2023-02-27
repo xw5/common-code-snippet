@@ -1,5 +1,18 @@
 # Change Log
 更新日志记录
+## [0.0.22] - 2023-02-27
+### Added
+- js代码段
+    - jsquerystringfromobj：对象转化为querystring
+- css代码段
+    - cssevent：css实现事件禁止实现元素穿透
+    - cssfiletype：根据文件格式显示不同的链接样式
+    - cssmarginauto：固定宽度且居中
+    - cssmask：css实现遮罩效果
+    - cssbackground：cssbackground完整写法
+### Changed
+- 优化一些代码段
+
 ## [0.0.21] - 2023-02-27
 ### Added
 - js代码段

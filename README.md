@@ -73,7 +73,8 @@
 |  jsmulti  |  乘法精确计算，避免数据相乘小数点后产生多位数和计算精度损失,  关键字：jsmulti,jsmulti,jsnum*
 |  jsdiv  |  除法精确计算，避免数据相除小数点后产生多位数和计算精度损失,  关键字：jsdiv, div, jsnum/
 |  jstimeformat  |  除法精确计算，避免数据相除小数点后产生多位数和计算精度损失,  关键字：jsdiv, div, jsnum/
-|  jsurlqueryo  |  url参数转对象
+|  jsurlquerytoobj  |  url参数转对象
+|  jsquerystringfromobj  |  对象转化为querystring
 |  jscountdown  |  获取到某一个时间的倒计时对象
 |  jsyear  |  是否闰年
 |  jsrandomcolor  |  随机生成颜色
@@ -121,6 +122,11 @@
 |  cssbackgroundimagefix  |  background-image-size适配样式
 |  csswh  |  元素宽高设置
 |  cssmouse  |  css设置鼠标样式
+|  cssevent  |  css实现事件禁止实现元素穿透
+|  cssfiletype  |  根据文件格式显示不同的链接样式
+|  cssmarginauto  |  固定宽度且居中
+|  cssmask  |  css实现遮罩效果
+|  cssbackground  |  cssbackground完整写法
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
 

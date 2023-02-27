@@ -343,14 +343,6 @@
     "description": "css伪类实现边框"
   },
 
-  "cssboxshadow": {
-    "prefix": ["cssboxshadow", "boxshadow"],
-    "body": [
-      "box-shadow: ${1:x偏移} ${2:y偏移} ${3:模糊} ${4:扩展} ${5:rgba(0, 0, 255, .2)};"
-    ],
-    "description": "css boxshadow盒子阴影"
-  },
-
   "csstransition": {
     "prefix": ["csstransition","transition"],
     "body": [
@@ -454,7 +446,80 @@
     "description": "css设置鼠标样式"
   },
   
+  "cssevent": {
+    "prefix": ["cssevent", "event"],
+    "body": [
+      "pointer-events:${1|none,auto,|};"
+    ],
+    "description": "css实现事件禁止实现元素穿透"
+  },
 
+  "cssfiletype": {
+    "prefix": ["cssfiletype", "filetype"],
+    "body": [
+      "a[href^=\"http://\"]{ ",
+      "  padding-right: 20px; ",
+      "  background: url(external.gif) no-repeat center right; ",
+      "}",
+      "a[href^=\"mailto:\"]{ ",
+      "  padding-right: 20px; ",
+      "  background: url(email.png) no-repeat center right; ",
+      "}",
+      "a[href$=\".pdf\"]{ ",
+      "  padding-right: 20px; ",
+      "  background: url(pdf.png) no-repeat center right; ",
+      "}"
+    ],
+    "description": "根据文件格式显示不同的链接样式"
+  },
+  
+  "cssmarginauto": {
+    "prefix": ["cssmarginauto", "marginauto"],
+    "body": [
+      "width: ${1:1024px}; ",
+      "margin: 0 auto;"
+    ],
+    "description": "固定宽度且居中"
+  },
+  
+  "cssmask": {
+    "prefix": ["cssmask", "mask"],
+    "body": [
+      "position: fixed;",
+      "top: 0;",
+      "left: 0;",
+      "bottom: 0;",
+      "right: 0;",
+      "background-color: rgba(0,0,0,0.6);"
+    ],
+    "description": "css实现遮罩效果"
+  },
+  
+  "cssbackground": {
+    "prefix": ["cssbackground", "background"],
+    "body": [
+      "background:${1:#000} url(${2:image_1.png}) ${3:top left} ${4:fixed} no-repeat;"
+    ],
+    "description": "cssbackground完整写法"
+  },
+
+  "cssbgimages": {
+    "prefix": ["cssbgimages", "bgimages"],
+    "body": [
+      "background: url(image_1.png) top left no-repeat, ",
+      "url(image_2.png) bottom left no-repeat, ",
+      "url(image_3.png) bottom right no-repeat;"
+    ],
+    "description": "css实现多背景"
+  },
+  "cssboxshadow": {
+    "prefix": "cssboxshadow",
+    "body": [
+      "box-shadow: ${1:2px} ${2:2px} ${3:2px} ${4:1px} rgba(0, 0, 0, 0.2);"
+    ],
+    "description": "cssboxshadow"
+  },
+  
   "ifplus": {
     "prefix": ["ifplus","cssifplus"],
     "body": [
