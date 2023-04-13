@@ -15,6 +15,7 @@
     - cssmarginauto：固定宽度且居中
     - cssmask：css实现遮罩效果
     - cssbackground：cssbackground完整写法
+    - cssbackgroundimages：css实现多背景
 ### Changed
 - 优化一些代码段
 

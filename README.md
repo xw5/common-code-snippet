@@ -127,6 +127,7 @@
 |  cssmarginauto  |  固定宽度且居中
 |  cssmask  |  css实现遮罩效果
 |  cssbackground  |  cssbackground完整写法
+|  cssbackgroundimages  |  css实现多背景
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段
 <br />
 

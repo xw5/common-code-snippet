@@ -503,7 +503,7 @@
     "description": "cssbackground完整写法"
   },
 
-  "cssbgimages": {
+  "cssbackgroundimages": {
     "prefix": ["cssbgimages", "bgimages"],
     "body": [
       "background: url(image_1.png) top left no-repeat, ",
