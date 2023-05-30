@@ -1,5 +1,10 @@
 # Change Log
 更新日志记录
+## [0.0.23] - 2023-05-30
+### Added
+- js代码段
+    - 修复parseQueryString对于没有参数的url报错的问题
+
 ## [0.0.22] - 2023-02-27
 ### Added
 - js代码段
