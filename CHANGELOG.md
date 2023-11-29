@@ -1,6 +1,6 @@
 # Change Log
 更新日志记录
-## [0.0.24] - 2023-11-29
+## [0.0.25] - 2023-11-29
 ### Added
 - js代码段
     - jswxapiauthorization: 微信api授权封装，关键字：jswxapiauthorization, jswx, wx
