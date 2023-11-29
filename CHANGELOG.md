@@ -5,6 +5,14 @@
 - js代码段
     - jswxapiauthorization: 微信api授权封装，关键字：jswxapiauthorization, jswx, wx
     - jsaxios: 简易axios封装，支持重复请求取消
+- css代码段
+   - cssscrollbarhidden: css不显示滚动条 关键字: cssscrollbarhidden, crollbarhidden, scrollbar
+   - pcfont: pc网页推荐设置字体 关键字: pcfont, font
+   - mobilefont: 移动端网页推荐设置字体 关键字: mobilefont, font
+   - csslandscape: 提示用户竖屏浏览 关键字: csslandscape, landscape, csssb, sb
+   - cssportrait: 提示用户横屏浏览 关键字: cssportrait,portrait,csshp, hp
+   - cssfont: web自定义字体 关键字: cssfont, font
+
 ### Changed
     - 优化一些代码段(rem,htmlseo,cssevent)
 
