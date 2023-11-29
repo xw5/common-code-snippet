@@ -1,5 +1,13 @@
 # Change Log
 更新日志记录
+## [0.0.24] - 2023-11-29
+### Added
+- js代码段
+    - jswxapiauthorization: 微信api授权封装，关键字：jswxapiauthorization, jswx, wx
+    - jsaxios: 简易axios封装，支持重复请求取消
+### Changed
+    - 优化一些代码段(rem,htmlseo,cssevent)
+
 ## [0.0.23] - 2023-05-30
 ### Added
 - js代码段

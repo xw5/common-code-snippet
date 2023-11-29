@@ -242,7 +242,6 @@
     "description": "media媒体查询参考段"
   },
 
-  
   "cssgradient": {
     "prefix": ["cssgradient", "gradient"],
     "body": [
@@ -449,7 +448,7 @@
   "cssevent": {
     "prefix": ["cssevent", "event"],
     "body": [
-      "pointer-events:${1|none,auto,|};"
+      "pointer-events:${1|none,auto|};"
     ],
     "description": "css实现事件禁止实现元素穿透"
   },

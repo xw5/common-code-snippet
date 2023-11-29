@@ -84,6 +84,8 @@
 |  jsweixin  |  是否微信内置浏览器，关键字：jsweixin, weixin, jswx, wx
 |  jsdaysinmonth  |  获取某个月的天数
 |  jssystemType  |  获取操作系统类型
+|  jswxapiauthorization  |  微信api授权封装，关键字：jswxapiauthorization, jswx, wx
+|  jsaxios  |  简易axios封装，支持重复请求取消
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段 
 <br />
 
