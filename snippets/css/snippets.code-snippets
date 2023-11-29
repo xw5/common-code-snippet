@@ -585,5 +585,22 @@
       "}"
     ],
     "description": "提示用户横屏浏览"
+  },
+
+  "cssfont": {
+    "prefix": ["cssfont", "font"],
+    "body": [
+      "@font-face {",
+      "  font-family: \"WebFontName\";",
+      "  src: url(\"WebFontName.ttf\") format(\"truetype\");",
+      "  font-weight: normal;",
+      "  font-style: normal;",
+      "}",
+      "",
+      ".WebFontName {",
+      "  font-family: \"WebFontName\";",
+      "}"
+    ],
+    "description": "web自定义字体"
   }
 }

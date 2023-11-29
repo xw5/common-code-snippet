@@ -1,5 +1,10 @@
 # Change Log
 更新日志记录
+## [0.0.26] - 2023-11-29
+### Added
+- css代码段
+   - cssfont: web自定义字体 关键字: cssfont, font
+
 ## [0.0.25] - 2023-11-29
 ### Added
 - js代码段
