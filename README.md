@@ -119,7 +119,7 @@
 |  cssboxshadow  |  css boxshadow盒子阴影
 |  csstransition  |  css transition过渡
 |  csskeyframes  |  css keyframes动画定义
-|  cssrem  |  css vw+rem适配方案
+|  cssrem  |  css vw+rem适配方案y
 |  csshidetext  |  css 得于seo的隐藏文本
 |  cssbackgroundimagefix  |  background-image-size适配样式
 |  csswh  |  元素宽高设置
