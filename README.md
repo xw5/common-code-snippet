@@ -86,6 +86,9 @@
 |  jssystemType  |  获取操作系统类型
 |  jswxapiauthorization  |  微信api授权封装，关键字：jswxapiauthorization, jswx, wx
 |  jsaxios  |  简易axios封装，支持重复请求取消
+|  jsnumToMillennials  |  数字转千分位
+|  jsgetDateType  |  获取数据类型
+|  jsfullscreen  |  指定元素全屏实现代码
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段 
 <br />
 

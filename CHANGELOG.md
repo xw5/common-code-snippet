@@ -1,5 +1,15 @@
 # Change Log
 更新日志记录
+## [0.0.27] - 2023-12-04
+### Added
+- js代码段
+   - jsnumToMillennials: 数字转千分位 关键字: "jsnumToMillennials","numToMillennials","jsnum"
+   - jsgetDateType: 获取数据类型 关键字: "jsgetDataType","getDataType","jsdataType","dataType"
+   - jsfullscreen: 指定元素全屏实现代码 关键字: "jsfullscreen","fullscreen"
+### Changed
+    - 优化一些代码段(gbtestimg, jstimeformat)
+
+更新日志记录
 ## [0.0.26] - 2023-11-29
 ### Added
 - css代码段
