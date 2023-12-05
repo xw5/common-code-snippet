@@ -1,11 +1,13 @@
 # Change Log
 更新日志记录
-## [0.0.29] - 2023-12-05
+## [0.0.29] - 2023-12-06
 ### Added
 - js代码段
-   - jsdeepcopy: 对象深拷贝 关键字: "jsdeepcopy", "deepcopy"
-   - jsstoppropagation: 阻止事件冒泡，兼容ie 关键字: "jsstoppropagation", "stoppropagation", "jsstop", "stop"
-   - jsgetboundingclientrect: 阻获取元素位置大小 关键字: "jsgetboundingclientrect", "getboundingclientrect", "jsgetdomrect", "getdomrect"
+   - jsdeepcopy: 对象深拷贝 关键字: "jsdeepcopy", "deepcopy", "深拷贝"
+   - jsstoppropagation: 阻止事件冒泡，兼容ie 关键字: "jsstoppropagation", "stoppropagation", "jsstop", "stop", "阻止冒泡"
+   - jspreventdefault: 阻止事件默认行为，兼容ie 关键字: "jspreventdefault", "preventdefault", "jsstop", "stop", "阻止事件默认行为"
+   - jsgetboundingclientrect: 阻获取元素位置大小 关键字: "jsgetboundingclientrect", "getboundingclientrect", "jsgetdomrect", "getdomrect", "元素位置大小"
+   - jseventdelegation: 事件委托 关键字: "jseventdelegation","eventdelegation", "事件委托"
 ### Changed
     - 优化一些代码段
 

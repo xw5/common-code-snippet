@@ -1833,7 +1833,7 @@
   },
 
   "jsdeepcopy": {
-    "prefix": ["jsdeepcopy", "deepcopy", "skb"],
+    "prefix": ["jsdeepcopy", "deepcopy", "skb", "深拷贝"],
     "body": [
       "/**",
       " * 深拷贝",
@@ -1879,7 +1879,7 @@
   }
 
   "jsstoppropagation": {
-    "prefix": ["jsstoppropagation", "stoppropagation", "jsstop", "stop"],
+    "prefix": ["jsstoppropagation", "stoppropagation", "jsstop", "stop", "阻止冒泡"],
     "body": [
       "e = e || window.event;",
       "if (e.stopPropagation) {// W3C阻止冒泡方法 ",
@@ -1892,7 +1892,7 @@
   },
 
   "jspreventdefault": {
-    "prefix": ["jspreventdefault", "preventdefault", "jsstop", "stop"],
+    "prefix": ["jspreventdefault", "preventdefault", "jsstop", "stop", "阻止事件默认行为"],
     "body": [
       "if(e.preventDefault){",
       "  e.preventDefault()",
@@ -1904,7 +1904,7 @@
   },
 
   "jsgetboundingclientrect": {
-    "prefix": ["jsgetboundingclientrect", "getboundingclientrect", "jsgetdomrect", "getdomrect"],
+    "prefix": ["jsgetboundingclientrect", "getboundingclientrect", "jsgetdomrect", "getdomrect", "元素位置大小"],
     "body": [
       "/**",
       " *  返回一个DOMRect对象，包含top,left,right,bottom,width,height",
@@ -1930,6 +1930,23 @@
     ],
     "description": "获取元素位置大小"
   },
+
+  "jseventdelegation": {
+    "prefix": ["jseventdelegation","eventdelegation", "事件委托"],
+    "body": [
+      "// 事件委托  ",
+      "${1:element}.addEventListener('click', function(event) {",
+      "  // event对象  ",
+      "  const event = window.event||event;    ",
+      "  // 事件的目标节点  ",
+      "  const target = event.target || event.srcElement;   ",
+      "  if (target.tagName.toLowerCase() === '${2:tagname}') {   ",
+      "    console.log(target.innerHTML)   ",
+      "  } ",
+      "}); "
+    ],
+    "description": "事件委托"
+  }
 
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],
