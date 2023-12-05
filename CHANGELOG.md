@@ -1,5 +1,14 @@
 # Change Log
 更新日志记录
+## [0.0.29] - 2023-12-05
+### Added
+- js代码段
+   - jsdeepcopy: 对象深拷贝 关键字: "jsdeepcopy", "deepcopy"
+   - jsstoppropagation: 阻止事件冒泡，兼容ie 关键字: "jsstoppropagation", "stoppropagation", "jsstop", "stop"
+   - jsgetboundingclientrect: 阻获取元素位置大小 关键字: "jsgetboundingclientrect", "getboundingclientrect", "jsgetdomrect", "getdomrect"
+### Changed
+    - 优化一些代码段
+
 ## [0.0.28] - 2023-12-05
 ### Changed
     - 紧急修复发现的BUG

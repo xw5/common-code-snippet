@@ -439,16 +439,6 @@
     ],
     "description": "js 三目运算代码段"
   },
-
-  "ifplus": {
-    "prefix": ["ifplus","jsifplus"],
-    "body": [
-      "// #ifdef ${1:WEB}",
-      "\t$0",
-      "// #endif"
-    ],
-    "description": "ifplus-loader专用条件编译语句"
-  },
  
   "jsArraymethod": {
     "prefix": ["jsarraymethod","arraymethod","jsarray","array"],
@@ -1840,5 +1830,114 @@
       "}"
     ],
     "description": "localstorage封装,支持设置过期时间"
+  },
+
+  "jsdeepcopy": {
+    "prefix": ["jsdeepcopy", "deepcopy", "skb"],
+    "body": [
+      "/**",
+      " * 深拷贝",
+      " * @param obj ",
+      " * @returns 新拷贝的对象",
+      " */",
+      "function DeepCopy(obj) {",
+      "  // Hash表 记录所有的对象引用关系",
+      "  let map = new WeakMap();",
+      "  function dp(obj) {",
+      "    let result = null;",
+      "    let keys = null,",
+      "      key = null,",
+      "      temp = null,",
+      "      existObj = null;",
+      "",
+      "    existObj = map.get(obj);",
+      "    // 如果这个对象已被记录则直接返回",
+      "    if (existObj) {",
+      "      return existObj;",
+      "    }",
+      "    keys = Object.keys(obj);",
+      "    result = {};",
+      "    // 记录当前对象",
+      "    map.set(obj, result);",
+      "    for (let i = 0; i < keys.length; i++) {",
+      "      key = keys[i];",
+      "      temp = obj[key];",
+      "      // 如果字段的值也是一个对象则递归复制",
+      "      if (temp && typeof temp === 'object') {",
+      "        result[key] = dp(temp);",
+      "      } else {",
+      "        // 否则直接赋值给新对象",
+      "        result[key] = temp;",
+      "      }",
+      "    }",
+      "    return result;",
+      "  }",
+      "  return dp(obj);",
+      "}"
+    ],
+    "description": "对象深拷贝"
+  }
+
+  "jsstoppropagation": {
+    "prefix": ["jsstoppropagation", "stoppropagation", "jsstop", "stop"],
+    "body": [
+      "e = e || window.event;",
+      "if (e.stopPropagation) {// W3C阻止冒泡方法 ",
+      "  e.stopPropagation();",
+      "} else {",
+      "  e.cancelBubble = true; // IE阻止冒泡方法 ",
+      "}"
+    ],
+    "description": "阻止事件冒泡，兼容ie"
+  },
+
+  "jspreventdefault": {
+    "prefix": ["jspreventdefault", "preventdefault", "jsstop", "stop"],
+    "body": [
+      "if(e.preventDefault){",
+      "  e.preventDefault()",
+      "}else{",
+      "  e.returnValue = false;",
+      "}"
+    ],
+    "description": "阻止事件默认行为，兼容ie"
+  },
+
+  "jsgetboundingclientrect": {
+    "prefix": ["jsgetboundingclientrect", "getboundingclientrect", "jsgetdomrect", "getdomrect"],
+    "body": [
+      "/**",
+      " *  返回一个DOMRect对象，包含top,left,right,bottom,width,height",
+      " *  top 元素上外边界距窗口最上面的距离",
+      " *  right 元素右外边界距窗口最上面的距离",
+      " *  bottom 元素下外边界距窗口最上面的距离",
+      " *  left 元素左外边界距窗口最上面的距离",
+      " *  width 元素自身宽(包含border,padding) ",
+      " *  height 元素自身高(包含border,padding) ",
+      " * @param select 元素选择器",
+      " * @returns ",
+      " */",
+      "const getDomRect = (select) => {",
+      "  if (!select) {",
+      "    return null;",
+      "  }",
+      "  const element = document.querySelector(select);",
+      "  if (!element) {",
+      "    return null;",
+      "  }",
+      "  return element.getBoundingClientRect();  ",
+      "}"
+    ],
+    "description": "获取元素位置大小"
+  },
+
+  "ifplus": {
+    "prefix": ["ifplus","jsifplus"],
+    "body": [
+      "// #ifdef ${1:WEB}",
+      "\t$0",
+      "// #endif"
+    ],
+    "description": "ifplus-loader专用条件编译语句"
   }
 }

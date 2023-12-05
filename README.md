@@ -91,6 +91,10 @@
 |  jsfullscreen  |  指定元素全屏实现代码 关键字: "jsfullscreen","fullscreen"
 |  jscookie  |  cookie封装(mdn) 关键字: "jscookie","cookie"
 |  jslocalstorage  |  localstorage封装,支持设置过期时间 关键字: "jslocalstorage","localstorage","jsstorage","storage"
+|  jsdeepcopy  |  对象深拷贝 关键字: "jsdeepcopy", "deepcopy", "skb"
+|  jsstoppropagation  |  阻止事件冒泡，兼容ie 关键字: "jsstoppropagation", "stoppropagation", "jsstop", "stop"
+|  jspreventdefault  |  阻止事件默认行为，兼容ie 关键字: "jspreventdefault", "preventdefault", "jsstop", "stop"
+|  jsgetboundingclientrect  |  阻获取元素位置大小 关键字: "jsgetboundingclientrect", "getboundingclientrect", "jsgetdomrect", "getdomrect"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
