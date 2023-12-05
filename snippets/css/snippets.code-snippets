@@ -110,7 +110,7 @@
   },
 
   "cssarrowleft": {
-    "prefix": [ "arrowleft","cssarrowleft"],
+    "prefix": ["arrowleft","cssarrowleft"],
     "body": [
       "width:0;",
       "height:0;",
@@ -266,8 +266,8 @@
     "description": "css渐变参考写法"
   },
 
-  "cssNoSelect": {
-    "prefix": ["cssNoSelect", "noSelect"],
+  "cssnoselect": {
+    "prefix": ["cssnoselect", "noselect"],
     "body": [
       "-moz-user-select: none;",
       "-webkit-user-select: none;",
@@ -292,7 +292,7 @@
     "prefix": ["cssflex", "flex"],
     "body": [
       "display: flex;",
-      "flex-direction: row;"
+      "flex-direction: ${1|row,column|};"
     ],
     "description": "display:flex"
   },
@@ -418,14 +418,6 @@
       "background-size: ${1:8rem}rem ${2:8rem};"
     ],
     "description": "background-image-size适配样式"
-  },
-
-  "rdiv": {
-    "prefix": ["rdiv", "div"],
-    "body": [
-      "<${1:div} className='${2:example}'>{${3:example}}</${1:div}>"
-    ],
-    "description": "react带className的标签模板"
   },
 
   "csswh": {

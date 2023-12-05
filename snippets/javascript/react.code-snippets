@@ -149,6 +149,25 @@
     "description": "useState片段"
   },
 
+  "rusestatefunction": {
+    "prefix": ["rusestatefunction", "usestatefunction"],
+    "body": [
+      "const [date, setDate] = useState(() => {",
+      "  const dateObj = new Date();",
+      "  console.log('-- useState init --');",
+      "  return {",
+      "    Y: dateObj.getFullYear(),",
+      "    M: dateObj.getMonth() + 1,",
+      "    D: dateObj.getDate(),",
+      "    h: dateObj.getHours(),",
+      "    m: dateObj.getMinutes(),",
+      "    s: dateObj.getSeconds(),",
+      "  }",
+      "});"
+    ],
+    "description": "usestate函数形式片段"
+  }
+
   "ruseeffect": {
     "prefix": ["ruseeffect", "useeffect"],
     "body": [
