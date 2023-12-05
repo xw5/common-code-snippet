@@ -195,7 +195,7 @@
 |  ifplus  |  json下专为ifplus-loader定义的条件代码段
 <br />
 
-### Maekdown代码段
+### Markdown代码段
 
 |  缩写  |  模板  
 |  ----  |  ----  
