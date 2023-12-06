@@ -13,6 +13,8 @@
    - jsjsonp: jsonp请求 关键字: "jsjsonp","jsjsonp"
    - jscopy: 复制文本 关键字: "jscopy","copy","复制"
    - jsgetscrolldistance: 获取滚动像素 关键字: "jsgetscrolldistance","getscrolldistance","获取滚动像素","滚动像素"
+   - jsscrolltotop: 滚动到顶部 关键字: "jsscrolltotop","scrolltotop","滚动到顶部"
+   - jsconvertchineseamount: 数字转中文大写金额 关键字: "jsconvertchineseamount","convertchineseamount","中文大写金额"
 ### Changed
     - 优化一些代码段，增加一些中文关键字
 

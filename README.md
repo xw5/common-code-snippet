@@ -101,6 +101,8 @@
 |  jsajax  |  简易ajax封装 关键字: "jsajax","ajax"
 |  jscopy  |  复制文本 关键字: "jscopy","copy","复制"
 |  jsgetscrolldistance  |  获取滚动像素 关键字: "jsgetscrolldistance","getscrolldistance","获取滚动像素","滚动像素"
+|  jsscrolltotop  |  滚动到顶部 关键字: "jsscrolltotop","scrolltotop","滚动到顶部"
+|  jsconvertchineseamount  |  数字转中文大写金额 关键字: "jsconvertchineseamount","convertchineseamount","中文大写金额"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
