@@ -1,6 +1,6 @@
 {
   "gbtesttxt": {
-    "prefix": ["gbtesttxt","testtxt"],
+    "prefix": ["gbtesttxt","testtxt","中文占位文字","占位文字"],
     "body": [
       "${1|只要人人都献出一点爱，世界将变成美好的人间!,不要因為长期埋头科学，而失去对生活、对美、对诗意的感受能力.,天生我材必有用，千金散尽还复来!,读书足以恬情，足以博采，足以长才!,水激石则鸣，人激志则宏,好好学习，天天向上|}"
     ],
@@ -8,7 +8,7 @@
   },
   
   "gbtesttxten": {
-    "prefix": ["gbtesttxten","testtxten"],
+    "prefix": ["gbtesttxten","testtxten","英文占位文字","占位文字"],
     "body": [
       "${0|As long as everyone gives a little love, the world will become a beautiful world!,Good good study，day day up,The greatest test of courage on earth is to bear defeat without losing heart.,The shortest way to do many things is to only one thing at a time.,Life would be too smooth if it had no rubs in it.,Wasting time is robbing oneself.|}"
     ],
@@ -16,7 +16,7 @@
   },
 
   "gbtestdate": {
-    "prefix": ["gbtestdate","testdate"],
+    "prefix": ["gbtestdate","testdate","日期占位文字","占位文字"],
     "body": [
       "$CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME"
     ],
@@ -24,7 +24,7 @@
   },
 
   "gbtestimg": {
-    "prefix": ["gbtestimg","testimg"],
+    "prefix": ["gbtestimg","testimg","占位图片"],
     "body": [
       "https://dummyimage.com/${1:400}x${2:400}/000000/f0f1fa?text=${3:test_img}"
     ],
@@ -32,7 +32,7 @@
   },
 
   "gbgitignore": {
-    "prefix": ["gbgitignore","gitignore"],
+    "prefix": ["gbgitignore","gitignore","git忽略配置"],
     "body": [
       "# Logs",
       "logs",
@@ -64,7 +64,7 @@
   },
 
   "gbnpmregistry": {
-    "prefix": ["gbnpmregistry","npmregistry"],
+    "prefix": ["gbnpmregistry","npmregistry","npm源"],
     "body": [
       "/* 淘宝npm镜像",
       "搜索地址：http://npm.taobao.org/",

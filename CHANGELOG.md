@@ -8,8 +8,13 @@
    - jspreventdefault: 阻止事件默认行为，兼容ie 关键字: "jspreventdefault", "preventdefault", "jsstop", "stop", "阻止事件默认行为"
    - jsgetboundingclientrect: 阻获取元素位置大小 关键字: "jsgetboundingclientrect", "getboundingclientrect", "jsgetdomrect", "getdomrect", "元素位置大小"
    - jseventdelegation: 事件委托 关键字: "jseventdelegation","eventdelegation", "事件委托"
+   - jsjsonp: jsonp请求 关键字: "jsjsonp","jsjsonp"
+   - jsajax: 简易ajax封装 关键字: "jsajax","ajax"
+   - jsjsonp: jsonp请求 关键字: "jsjsonp","jsjsonp"
+   - jscopy: 复制文本 关键字: "jscopy","copy","复制"
+   - jsgetscrolldistance: 获取滚动像素 关键字: "jsgetscrolldistance","getscrolldistance","获取滚动像素","滚动像素"
 ### Changed
-    - 优化一些代码段
+    - 优化一些代码段，增加一些中文关键字
 
 ## [0.0.28] - 2023-12-05
 ### Changed

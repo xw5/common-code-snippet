@@ -299,7 +299,7 @@
   },
 
   "jsdialogdrag": {
-    "prefix": ["jsdialogdrag","dialogdrag"],
+    "prefix": ["jsdialogdrag","dialogdrag","饿了么弹窗拖拽","弹窗拖拽"],
     "body": [
       "import Vue from 'vue'",
 
@@ -423,7 +423,7 @@
     "description": "importdefault"
   },
   "jscsfn": {
-    "prefix": ["csfn", "jscsfn"],
+    "prefix": ["csfn", "jscsfn","常量函数"],
     "body": [
       "const ${1:example} = (${2}) => {",
       "  ${3}",
@@ -433,7 +433,7 @@
   },
 
   "js?": {
-    "prefix": ["js?", "js3m"],
+    "prefix": ["js?", "js3m","三目运算"],
     "body": [
       "${1:example} ? ${2:example} : ${3:example}"
     ],
@@ -703,7 +703,7 @@
   },
 
   "jsmobile": {
-    "prefix": ["jsmobile","mobile"],
+    "prefix": ["jsmobile","mobile","判断是移动端","移动端"],
     "body": [
       "// 当前设备是移动设备",
       "if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {",
@@ -737,7 +737,7 @@
   },
 
   "jsrandom": {
-    "prefix": ["jsrandom", "random"],
+    "prefix": ["jsrandom", "random","区间内随机整数","随机整数"],
     "body": [
       "const randomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;"
     ],
@@ -745,7 +745,7 @@
   },
 
   "jstype": {
-    "prefix": ["jstype", "type"],
+    "prefix": ["jstype", "type","获取数据类型","数据类型"],
     "body": [
       "const getType = v => v === undefined ? 'undefined' : v === null ? 'null' : v.constructor.name.toLowerCase();"
     ],
@@ -753,7 +753,7 @@
   },
 
   "jsurlquery": {
-    "prefix": ["jsurlquery", "urlquery"],
+    "prefix": ["jsurlquery", "urlquery","url参数获取"],
     "body": [
       "/**",
       " * 获取url中query参数",
@@ -775,7 +775,7 @@
   },
 
   "jsadd": {
-    "prefix": ["jsadd", "add", "jsnum+"],
+    "prefix": ["jsadd", "add", "jsnum+","精确加法","加法"],
     "body": [
       "/**",
       " * @description 加法精确计算，避免数据相加小数点后产生多位数和计算精度损失",
@@ -805,7 +805,7 @@
   },
 
   "jssub": {
-    "prefix": ["jssub", "sub", "jsnum-"],
+    "prefix": ["jssub", "sub", "jsnum-","精确减法","减法"],
     "body": [
       "/**",
       " * @description 减法精确计算，避免数据相减小数点后产生多位数和计算精度损失",
@@ -837,7 +837,7 @@
   },
 
   "jsmulti": {
-    "prefix": ["jsmulti","jsmulti","jsnum*"],
+    "prefix": ["jsmulti","jsmulti","jsnum*","精确乘法","乘法"],
     "body": [
       "/**",
       " * @description 乘法精确计算，避免数据相乘小数点后产生多位数和计算精度损失",
@@ -860,7 +860,7 @@
   },
 
   "jsdiv": {
-    "prefix": ["jsdiv", "div", "jsnum/"],
+    "prefix": ["jsdiv", "div", "jsnum/","精确除法","除法"],
     "body": [
       "/**",
       " * @description 除法精确计算，避免数据相除小数点后产生多位数和计算精度损失",
@@ -888,7 +888,7 @@
   },
   
   "jstimeformat": {
-    "prefix": ["jstimeformat", "timeformat"],
+    "prefix": ["jstimeformat", "timeformat","日期格式化"],
     "body": [
       "/**",
       " * @description 时间戳转日期",
@@ -933,7 +933,7 @@
   },
   
   "jsurlquerytoobj": {
-    "prefix": ["jsurlquerytoobj", "urlquerytoobj"],
+    "prefix": ["jsurlquerytoobj", "urlquerytoobj","url参数转对象"],
     "body": [
       "/**",
       " * @description url参数转对象",
@@ -954,7 +954,7 @@
   },
 
   "jsobjtourlstring": {
-    "prefix": ["jsobjtourlstring", "objtourlstring"],
+    "prefix": ["jsobjtourlstring", "objtourlstring","对象转url参数"],
     "body": [
       "/**",
       " * @description 对象转化为querystring",
@@ -975,7 +975,7 @@
   },
   
   "jscountdown": {
-    "prefix": ["jscountdown", "countdown"],
+    "prefix": ["jscountdown", "countdown", "倒计时"],
     "body": [
       "/**",
       " * @description 获取到某一个时间的倒计时对象",
@@ -1008,7 +1008,7 @@
   },
 
   "jsleapyear": {
-    "prefix": ["jsleapyear", "leapyear", "jsyear", "year"],
+    "prefix": ["jsleapyear", "leapyear", "jsyear", "year","闰年"],
     "body": [
       "/**",
       " * @description 是否闰年",
@@ -1081,7 +1081,7 @@
   },
   
   "jsremoverepeatarray": {
-    "prefix": ["jsremoverepeatarray", "removerepeatarray"],
+    "prefix": ["jsremoverepeatarray", "removerepeatarray","数组去重","去重"],
     "body": [
       "/**",
       " * @description 数组去重",
@@ -1098,7 +1098,7 @@
   },
 
   "jsrandomsortarray": {
-    "prefix": ["jsrandomsortarray", "randomsortarray"],
+    "prefix": ["jsrandomsortarray", "randomsortarray","数组随机打乱"],
     "body": [
       "/**",
       " * @description 数组顺序随机打乱",
@@ -1132,7 +1132,7 @@
   },
 
   "jsdaysinmonth": {
-    "prefix": ["jsdaysinmonth", "daysinmonth"],
+    "prefix": ["jsdaysinmonth", "daysinmonth","获取月天数","月天数"],
     "body": [
       "/**",
       " * @description 获取某个月的天数",
@@ -1149,7 +1149,7 @@
   },
 
   "jssystemType": {
-    "prefix": ["jssystemType", "systemType"],
+    "prefix": ["jssystemType", "systemType","获取系统类型","系统类型"],
     "body": [
       "/**",
       " * @description 获取操作系统类型",
@@ -1426,7 +1426,7 @@
     "description": "axios简易封装"
   },
   "jsnumToMillennials": {
-    "prefix": ["jsnumToMillennials", "numToMillennials", "jsnum"],
+    "prefix": ["jsnumToMillennials", "numToMillennials", "jsnum", "数字转千分位","千分位"],
     "body": [
       "export const numToMillennials = (n) => {",
       "  let num = n.toString();",
@@ -1447,7 +1447,7 @@
     "description": "数字转千分位"
   },
   "jsgetDataType": {
-    "prefix": ["jsgetDataType","getDataType","jsdataType","dataType"],
+    "prefix": ["jsgetDataType","getDataType","jsdataType","dataType","获取数据类型","数据类型"],
     "body": [
       "const getDateType = (value) => {",
       "  if (value === null) {",
@@ -1468,7 +1468,7 @@
     "description": "获取数据类型"
   },
   "jsfullscreen": {
-    "prefix": ["jsfullscreen","fullscreen"],
+    "prefix": ["jsfullscreen","fullscreen","全屏"],
     "body": [
       "const FULL_SCREEN_STATUS = {",
       "  notSupported: 0, // 不支持",
@@ -1947,6 +1947,204 @@
     ],
     "description": "事件委托"
   }
+
+  "jsjsonp": {
+    "prefix": ["jsjsonp","jsjsonp"],
+    "body": [
+      "/**",
+      " * jsonp的原理就是生成一个script,赋值请求url，再带上回调，服务端会返：回调（数据）",
+      " * @param url ",
+      " * @param callbackName ",
+      " * @returns ",
+      " */",
+      "function jsonp(url, callbackName='callback') {",
+      "  return new Promise((resolve, reject) => {",
+      "    let _url = url+ (url.indexOf('?') === -1 ? '?' : '&') + callbackName + '=jsonpCallback'; ",
+      "    let head = document.getElementsByTagName('head')[0];",
+      "    let script = document.createElement('script');",
+      "    head.appendChild(script);",
+      "    //创建jsonp回调函数",
+      "    window.jsonpCallback = res => {",
+      "      resolve(res);",
+      "      head.removeChild(script);",
+      "      window.jsonpCallback = null;",
+      "    }",
+      "    script.onerror = function(err) {",
+      "      reject(err);",
+      "    }",
+      "    //发送请求",
+      "    script.src = _url;",
+      "  })",
+      "}"
+    ],
+    "description": "jsonp请求"
+  },
+
+  "jsajax": {
+    "prefix": ["jsajax","ajax"],
+    "body": [
+      "function transdata(data) {",
+      "  //在转换之前先给data添加属性t 值为时间戳",
+      "  data.t = new Date().getTime();",
+      "  //把{'userName': 'ylf','userPwd': '123456'} 形式转换成 userName=ylf&userPwd=123456形式",
+      "  var arr = [];",
+      "  for (var key in data) {",
+      "    //使用for in遍历数组",
+      "    //将属性值：属性名形式转换为属性值=属性名形式  拼接到数组后面",
+      "    arr.push(encodeURIComponent(key) + '=' + encodeURIComponent(data[key]));",
+      "  }",
+      "  //使用join方法将数组转换为字符串形式 使用&作为分隔符",
+      "  return arr.join('&');",
+      "}",
+      "",
+      "function ajax(option) {",
+      "  //定义异步对象和计时器",
+      "  var xhr, timer;",
+      "  //0 .使用自定义的transdata函数将传递过来的参数由{'userName': 'ylf','userPwd': '123456'} 形式转换成 userName=ylf&userPwd=123456形式",
+      "  var data = transdata(option.data);",
+      "  //1. 创建一个异步对象 兼容低版本ie浏览器",
+      "  if (window.XMLHttpRequest) {",
+      "    xhr = new XMLHttpRequest();",
+      "  } else {",
+      "    xhr = new ActiveXObject(\"Microsoft.XMLHTTP\");",
+      "  }",
+      "  //2. 设置请求方式和请求地址 ",
+      "  if (option.type.toLowerCase() === \"get\") {",
+      "    //3. get设置请求方式 将需要传递的参数拼接到url后面 方便php读取",
+      "    xhr.open(option.type, option.url + \"?\" + data, true);",
+      "    //3. get发送请求",
+      "    xhr.send();",
+      "  } else {",
+      "    //3. 给post请求传参时open内容正常写 使用send方法传递参数",
+      "    xhr.open(option.type, option.url, true);",
+      "    xhr.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");",
+      "    //3. post发送请求",
+      "    xhr.send(data);",
+      "  }",
+      "  //4. 监听异步对象状态变化",
+      "  xhr.onreadystatechange = function () {",
+      "    if (xhr.readyState === 4) {",
+      "      //请求完成之后停止计时器",
+      "      clearInterval(timer);",
+      "      //http状态码在200到300之间或者304时 说明网页正常响应",
+      "      if (xhr.status >= 200 && xhr.status <= 300 || xhr.status === 304) {",
+      "        //处理返回结果",
+      "        option.success(xhr);",
+      "      } else {",
+      "        //处理返回结果",
+      "        option.error(xhr);",
+      "      }",
+      "    }",
+      "  };",
+      "  //为了防止请求时间过长 我们创建一个计时器",
+      "  //判断是否传递了timeout参数",
+      "  if (option.timout) {",
+      "    timer = setInterval(function () {",
+      "      console.log(\"请求超时\");",
+      "      //计时器到达时间之后我们停止请求 并打印请求超时",
+      "      xhr.abort();",
+      "      clearInterval(timer);",
+      "    }, option.timeout);",
+      "  };",
+      "}",
+      "",
+      "// 使用示例",
+      "ajax({",
+      "  type: \"post\",",
+      "  url: \"04-ajax.php\",",
+      "  data: {",
+      "    \"userName\": \"ylf\",",
+      "    \"userPwd\": \"123123\"",
+      "  },",
+      "  timeout: 3000,",
+      "  success: function (xhr) {",
+      "    alert(xhr.responseText);",
+      "  },",
+      "  error: function (xhr) {",
+      "    alert(\"请求失败\");",
+      "  }",
+      "})"
+    ],
+    "description": "简易ajax封装"
+  },
+
+  "jscopy": {
+    "prefix": ["jscopy","copy","复制"],
+    "body": [
+      "/**",
+      " * 复制文本",
+      " * @param text ",
+      " */",
+      "function copyText(text) {",
+      "  return new Promise((resolve) => {",
+      "    console.log('copy', navigator.clipboard)",
+      "    if (!navigator.clipboard) {",
+      "      navigator.clipboard.writeText(text).then(() => {",
+      "        resolve(true);",
+      "      }).catch(() => {",
+      "        resolve(false);",
+      "      });",
+      "    } else {",
+      "      try {",
+      "        var textarea = document.createElement('textarea');",
+      "        document.body.appendChild(textarea);",
+      "        // 隐藏此输入框",
+      "        textarea.style.position = 'fixed';",
+      "        textarea.style.clip = 'rect(0 0 0 0)';",
+      "        textarea.style.top = '10px';",
+      "        // 赋值",
+      "        textarea.value = text;",
+      "        // 选中",
+      "        textarea.select();",
+      "        // 复制",
+      "        document.execCommand('copy', true);",
+      "        // 移除输入框",
+      "        document.body.removeChild(textarea);",
+      "        resolve(true);",
+      "      }",
+      "      catch(err){",
+      "        resolve(false);",
+      "      }",
+      "    }",
+      "  })",
+      "}"
+    ],
+    "description": "复制文本"
+  },
+
+  "jsgetscrolldistance": {
+    "prefix": ["jsgetscrolldistance","getscrolldistance","获取滚动像素","滚动像素"],
+    "body": [
+      "/**",
+      " * 获取滚动的像素值x:水平 y:垂直",
+      " * @param el ",
+      " * @returns ",
+      " */",
+      "const getScrollDistance = (el = window) => ({",
+      "  x: el.pageXOffset !== undefined ? el.pageXOffset : el.scrollLeft,",
+      "  y: el.pageYOffset !== undefined ? el.pageYOffset : el.scrollTop",
+      "});"
+    ],
+    "description": "获取滚动像素"
+  },
+
+  "jsscrollToTop": {
+    "prefix": ["jsscrollToTop","scrollToTop","滚动到顶部"],
+    "body": [
+      "/**",
+      " * 滚动到顶部",
+      " * @param el ",
+      " */",
+      "const scrollToTop = (el) => {",
+      "  const c = el ? el.scrollTop : document.documentElement.scrollTop || document.body.scrollTop;",
+      "  if (c > 0) {",
+      "    window.requestAnimationFrame(() => scrollToTop(el));",
+      "    (el || window).scrollTo(0, Math.floor(c - c / 8));",
+      "  }",
+      "}"
+    ],
+    "description": "滚动到顶部"
+  },
 
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],

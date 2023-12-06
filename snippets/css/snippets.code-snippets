@@ -1,6 +1,6 @@
 {
   "cssellipsis": {
-    "prefix": ["cssellipsis", "ellipsis"],
+    "prefix": ["cssellipsis", "ellipsis","超出单行省略","单行省略"],
     "body": [
       "width: ${1:100px};",
       "overflow:hidden;",
@@ -11,7 +11,7 @@
   },
 
   "cssreset": {
-    "prefix": ["cssreset", "reset"],
+    "prefix": ["cssreset", "reset", "样式重置"],
     "body": [
       "/* http://meyerweb.com/eric/tools/css/reset/ ",
       "\tv2.0 | 20110126",
@@ -65,7 +65,7 @@
   },
 
   "cssellipsismulti": {
-    "prefix": ["cssellipsismulti","ellipsismulti"],
+    "prefix": ["cssellipsismulti","ellipsismulti","超出多行省略","多行省略"],
     "body": [
       "width: ${1:100px};",
       "overflow: hidden;",
@@ -78,7 +78,7 @@
   },
 
   "csswrap": {
-    "prefix": ["csswrap","wrap"],
+    "prefix": ["csswrap","wrap","文本换行","换行"],
     "body": [
       "word-wrap:break-word;"
     ],
@@ -86,7 +86,7 @@
   },
 
   "cssarrowtop": {
-    "prefix": ["arrowtop", "cssarrowtop"],
+    "prefix": ["arrowtop", "cssarrowtop","上箭头","箭头"],
     "body": [
       "width:0;",
       "height:0;",
@@ -98,7 +98,7 @@
   },
 
   "cssarrowbottom": {
-    "prefix": ["arrowbottom", "cssarrowbottom"],
+    "prefix": ["arrowbottom", "cssarrowbottom","下箭头","箭头"],
     "body": [
       "width:0;",
       "height:0;",
@@ -110,7 +110,7 @@
   },
 
   "cssarrowleft": {
-    "prefix": ["arrowleft","cssarrowleft"],
+    "prefix": ["arrowleft","cssarrowleft","左箭头","箭头"],
     "body": [
       "width:0;",
       "height:0;",
@@ -122,7 +122,7 @@
   },
 
   "cssarrowright": {
-    "prefix": ["arrowright","cssarrowright"],
+    "prefix": ["arrowright","cssarrowright","右箭头","箭头"],
     "body": [
       "width: 0;",
       "height: 0;",
@@ -134,7 +134,7 @@
   },
 
   "cssgray":{
-    "prefix": ["gray", "cssgray"],
+    "prefix": ["gray", "cssgray","置灰滤镜","置灰"],
     "body": [
       "filter: gray;",
       "-webkit-filter: grayscale(100%);",
@@ -144,25 +144,15 @@
   },
 
   "cssblur": {
-    "prefix": ["cssblur", "blur"],
+    "prefix": ["cssblur", "blur","模糊滤镜","模糊"],
     "body": [
       "filter: blur(${0:1px});"
     ],
     "description": "模糊滤镜"
   },
 
-  "csscenterflex":{
-    "prefix": ["centerflex","csscenterflex"],
-    "body": [
-      "display:flex;",
-      "align-items:center;",
-      "justify-content:center;"
-    ],
-    "description": "flex方式子元素水平垂直居中"
-  },
-
   "csscentermargin":{
-    "prefix": ["centermargin","csscentermargin"],
+    "prefix": ["centermargin","csscentermargin","margin居中","居中"],
     "body": [
       "position: absolute;",
       "top: 50%;",
@@ -173,7 +163,7 @@
   },
 
   "csscentertransform":{
-    "prefix": ["centertransform", "csscentertransform"],
+    "prefix": ["centertransform", "csscentertransform","transform居中","居中"],
     "body": [
       "position: absolute;",
       "top: 50%;",
@@ -200,7 +190,7 @@
   },
 
   "cssmedia": {
-    "prefix": ["cssmedia", "media"],
+    "prefix": ["cssmedia", "media","媒体查询"],
     "body": [
       ".example {",
       "\tbackground-color: black;",
@@ -243,7 +233,7 @@
   },
 
   "cssgradient": {
-    "prefix": ["cssgradient", "gradient"],
+    "prefix": ["cssgradient", "gradient","渐变"],
     "body": [
       "// 从上到下的渐变",
       "background: linear-gradient(blue, pink);",
@@ -267,7 +257,7 @@
   },
 
   "cssnoselect": {
-    "prefix": ["cssnoselect", "noselect"],
+    "prefix": ["cssnoselect", "noselect","禁止选中"],
     "body": [
       "-moz-user-select: none;",
       "-webkit-user-select: none;",
@@ -279,7 +269,7 @@
   },
 
   "cssslectioncolor": {
-    "prefix": ["cssslectioncolor", "slectioncolor"],
+    "prefix": ["cssslectioncolor", "slectioncolor","选区颜色"],
     "body": [
       "::selection { background-color: ${0:#e2eae2}; }",
       "::-moz-selection { background-color: ${0:#e2eae2}; }",
@@ -307,7 +297,7 @@
   },
 
   "cssflexcenter": {
-    "prefix": ["cssflexcenter", "flexcenter"],
+    "prefix": ["cssflexcenter", "flexcenter","flex居中","居中"],
     "body": [
       "align-items:center;",
       "justify-content:center;"
@@ -327,7 +317,7 @@
   },
 
   "css::border": {
-    "prefix": ["css::border", "::border"],
+    "prefix": ["css::border", "::border", "伪类border"],
     "body": [
       "${0:example}::${1|after, before|}{",
       "    content: ' ';",
@@ -343,7 +333,7 @@
   },
 
   "csstransition": {
-    "prefix": ["csstransition","transition"],
+    "prefix": ["csstransition","transition","缓动动画","动画"],
     "body": [
       "transition: ${1:属性} ${2:过渡时间}s ${3:缓动函数} ${4:延时时间}s;"
     ],
@@ -351,7 +341,7 @@
   },
 
   "csskeyframes": {
-    "prefix": ["csskeyframes","keyframes"],
+    "prefix": ["csskeyframes","keyframes","帧动画","动画"],
     "body": [
       "@keyframes ${1:example}{",
       "    0%{",
@@ -397,7 +387,7 @@
   },
 
   "csshidetext": {
-    "prefix": ["csshidetext", "hidetext"],
+    "prefix": ["csshidetext", "hidetext","隐藏文本","seo隐藏文本"],
     "body": [
       ".hide-text{",
       "  text-indent: -9999px;",
@@ -410,7 +400,7 @@
   },
 
   "cssbackgroundimagefix": {
-    "prefix": ["cssbackgroundimagefix", "backgroundimagefix"],
+    "prefix": ["cssbackgroundimagefix", "backgroundimagefix","背景图片适配"],
     "body": [
       "width: ${1:8rem};",
       "height: ${2:8rem};",
@@ -430,7 +420,7 @@
   },
 
   "cssmouse": {
-    "prefix": ["cssmouse", "mouse"],
+    "prefix": ["cssmouse", "mouse","鼠标"],
     "body": [
       "cursor: ${1|default,pointer,move,text,wait,progress,help,not-allowed,col-resize,row-resize,zoom-in,zoom-out,none|};"
     ],
@@ -438,7 +428,7 @@
   },
   
   "cssevent": {
-    "prefix": ["cssevent", "event"],
+    "prefix": ["cssevent", "event","事件穿透","事件"],
     "body": [
       "pointer-events:${1|none,auto|};"
     ],
@@ -446,7 +436,7 @@
   },
 
   "cssfiletype": {
-    "prefix": ["cssfiletype", "filetype"],
+    "prefix": ["cssfiletype", "filetype","链接图标"],
     "body": [
       "a[href^=\"http://\"]{ ",
       "  padding-right: 20px; ",
@@ -474,7 +464,7 @@
   },
   
   "cssmask": {
-    "prefix": ["cssmask", "mask"],
+    "prefix": ["cssmask", "mask","遮罩"],
     "body": [
       "position: fixed;",
       "top: 0;",
@@ -495,7 +485,7 @@
   },
 
   "cssbackgroundimages": {
-    "prefix": ["cssbgimages", "bgimages"],
+    "prefix": ["cssbgimages", "bgimages","多图片背景"],
     "body": [
       "background: url(image_1.png) top left no-repeat, ",
       "url(image_2.png) bottom left no-repeat, ",
@@ -510,19 +500,9 @@
     ],
     "description": "cssboxshadow"
   },
-  
-  "ifplus": {
-    "prefix": ["ifplus","cssifplus"],
-    "body": [
-      "/* #ifdef ${1:web} */",
-      "\t$0",
-      "/* #endif */"
-    ],
-    "description": "ifplus-loader专用条件编译语句"
-  },
 
   "cssscrollbarhidden": {
-    "prefix": ["cssscrollbarhidden", "crollbarhidden", "scrollbar"],
+    "prefix": ["cssscrollbarhidden", "crollbarhidden", "scrollbar","隐藏滚动条"],
     "body": [
       ".demo::-webkit-scrollbar {",
       "  display: none; /* Chrome Safari */",
@@ -538,7 +518,7 @@
   },
 
   "pcfont": {
-    "prefix": ["pcfont", "font"],
+    "prefix": ["pcfont", "font","pc推荐字体","字体"],
     "body": [
       "font-family: \"Helvetica Neue\", Helvetica, Arial, \"PingFang SC\", \"Hiragino Sans GB\", \"Heiti SC\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", sans-serif;"
     ],
@@ -546,7 +526,7 @@
   },
 
   "mobilefont": {
-    "prefix": ["mobilefont", "font"],
+    "prefix": ["mobilefont", "font","移动推荐字体","字体"],
     "body": [
       "font-family: -apple-system, BlinkMacSystemFont, \"PingFang SC\",\"Helvetica Neue\",STHeiti,\"Microsoft Yahei\",Tahoma,Simsun,sans-serif;"
     ],
@@ -554,7 +534,7 @@
   },
 
   "csslandscape": {
-    "prefix": ["csslandscape", "landscape", "csssb", "sb"],
+    "prefix": ["csslandscape", "landscape", "csssb", "sb","竖屏提示"],
     "body": [
       "@media all and (orientation:landscape){",
       "  html,body{position:relative;overflow:hidden;width:100%;height:100%;padding:0;margin:0;}",
@@ -567,7 +547,7 @@
   },
 
   "cssportrait": {
-    "prefix": ["cssportrait","portrait","csshp", "hp"],
+    "prefix": ["cssportrait","portrait","csshp", "hp","横屏提示"],
     "body": [
       "@media all and (orientation:portrait){",
       "  html,body{position:relative;overflow:hidden;width:100%;height:100%;padding:0;margin:0;}",
@@ -580,7 +560,7 @@
   },
 
   "cssfont": {
-    "prefix": ["cssfont", "font"],
+    "prefix": ["cssfont", "font","字体引入","字体"],
     "body": [
       "@font-face {",
       "  font-family: \"WebFontName\";",
@@ -594,5 +574,15 @@
       "}"
     ],
     "description": "web自定义字体"
-  }
+  },
+  
+  "ifplus": {
+    "prefix": ["ifplus","cssifplus"],
+    "body": [
+      "/* #ifdef ${1:web} */",
+      "\t$0",
+      "/* #endif */"
+    ],
+    "description": "ifplus-loader专用条件编译语句"
+  },
 }

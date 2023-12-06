@@ -68,7 +68,7 @@
   },
 
   "htmlmetatelephone": {
-    "prefix": ["htmltelephone","metatelephone"],
+    "prefix": ["htmltelephone","metatelephone","关掉电话识别"],
     "body": [
       "<meta name=\"format-detection\" content=\"telephone=no\" />"
     ],
@@ -76,7 +76,7 @@
   },
 
   "htmlmetaemail": {
-    "prefix": ["htmlmetaemail","metaemail"],
+    "prefix": ["htmlmetaemail","metaemail","关掉邮件识别"],
     "body": [
       "<meta content=\"email=no\" name=\"format-detection\" />"
     ],
@@ -84,7 +84,7 @@
   },
 
   "htmlatelphone": {
-    "prefix": ["htmlatelphone","atelphone"],
+    "prefix": ["htmlatelphone","atelphone","打电话"],
     "body": [
       "<a href=\"tel:$1\">$1</a>"
     ],
@@ -92,7 +92,7 @@
   },
 
   "htmlaemail": {
-    "prefix": ["htmlaemail","aemail"],
+    "prefix": ["htmlaemail","aemail","发邮件"],
     "body": [
       "<a href=\"mailto:$1\" target=\"_blank\">$1</a>"
     ],
@@ -100,7 +100,7 @@
   },
 
   "htmlasms": {
-    "prefix": ["htmlasms","asms"],
+    "prefix": ["htmlasms","asms","发短信"],
     "body": [
       "<a href=\"sms:$1\">发短信给: $1</a>"
     ],
