@@ -1,5 +1,15 @@
 # Change Log
 更新日志记录
+## [0.0.30] - 2023-12-07
+### Added
+- js代码段
+   - jsisinviewport: 判断元素是否完全在可视区内 关键字: "jsisinviewport","isinviewport","元素在可视区内","可视区内"
+   - jsisintoviewport: 判断元素是否进入可视区内 关键字: "jsisintoviewport","isintoviewport",,"元素进入可视区内","可视区内"
+   - jsintoviewportlistener: 监听元素进入or离开可视区 关键字: "jsintoviewportlistener","intoviewportlistener","元素进入可视区监听"
+   - jsquerySelector: "jsqueryselect","queryselect","jsselect","select","元素选择"
+### Changed
+    - 优化一些代码段
+
 ## [0.0.29] - 2023-12-06
 ### Added
 - js代码段

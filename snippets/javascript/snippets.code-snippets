@@ -2245,7 +2245,82 @@
       "}"
     ],
     "description": "数字转中文大写金额"
-  }
+  },
+
+  "jsisinviewport": {
+    "prefix": ["jsisinviewport","isinviewport","元素在可视区内","可视区内"],
+    "body": [
+      "/**",
+      " * 判断元素是否完全在可视区内",
+      " * @param element ",
+      " * @returns ",
+      " */",
+      "function isInViewPort(element) {",
+      "  const viewWidth = window.innerWidth || document.documentElement.clientWidth;",
+      "  const viewHeight =",
+      "    window.innerHeight || document.documentElement.clientHeight;",
+      "  const { top, right, bottom, left } = element.getBoundingClientRect();",
+      "",
+      "  return top >= 0 && left >= 0 && right <= viewWidth && bottom <= viewHeight;",
+      "}"
+    ],
+    "description": "判断元素是否完全在可视区内"
+  },
+
+  "jsisintoviewport": {
+    "prefix": ["jsisintoviewport","isintoviewport",,"元素进入可视区内","可视区内"],
+    "body": [
+      "/**",
+      " * 判断元素是否进入可视区内",
+      " * @param element ",
+      " * @returns ",
+      " */",
+      "function isInToViewPort(element) {",
+      "  const viewWidth = window.innerWidth || document.documentElement.clientWidth;",
+      "  const viewHeight =",
+      "    window.innerHeight || document.documentElement.clientHeight;",
+      "  const elW = element.offsetWidth;",
+      "  const elh = element.offsetHeight;",
+      "  const { top, right, bottom, left } = element.getBoundingClientRect();",
+      "  return top > -elh && top < viewHeight && left > -elW && left < viewWidth;",
+      "}"
+    ],
+    "description": "判断元素是否进入可视区内"
+  },
+
+  "jsintoviewportlistener": {
+    "prefix": ["jsintoviewportlistener","intoviewportlistener","元素进入可视区监听"],
+    "body": [
+      "/**",
+      " * 监听元素进入or离开可视区",
+      " * @param element ",
+      " * @param cb ",
+      " */",
+      "function inToViewPortListener(element, cb) {",
+      "  const intersectionObserver = new IntersectionObserver((entries) => {",
+      "    entries.forEach((item) => {",
+      "      if (item.isIntersecting) {",
+      "        cb(true);",
+      "        console.log('进入可视区域');",
+      "      } else {",
+      "        cb(false);",
+      "        console.log('退出可视区域');",
+      "      }",
+      "    })",
+      "  });",
+      "  intersectionObserver.observe(element);",
+      "}"
+    ],
+    "description": "监听元素进入or离开可视区"
+  },
+
+  "jsquerySelector": {
+    "prefix": ["jsqueryselect","queryselect","jsselect","select","元素选择"],
+    "body": [
+      "document.${1|querySelector,querySelectorAll|}(\"${2|.class,#id,inpput[attr='test']|}\");"
+    ],
+    "description": "querySelector选择元素"
+  },
 
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],
