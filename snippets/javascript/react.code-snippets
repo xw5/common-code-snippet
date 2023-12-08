@@ -5,8 +5,8 @@
       "import { useState } from 'react'",
       "import './${1:Index}.css'",
       "",
-      "function ${1:Index}() {",
-      "  const [count, setCount] = useState(0)",
+      "function ${1:Index}({initialValue}) {",
+      "  const [count, setCount] = useState(initialValue)",
       "",
       "  return (",
       "    <div className=\"warp\">",
@@ -20,6 +20,7 @@
     ],
     "description": "reac函数组件模板代码段"
   },
+
 
   "rinitclass": {
     "prefix": ["rinitclass", "initclass"],

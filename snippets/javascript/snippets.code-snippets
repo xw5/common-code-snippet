@@ -2147,7 +2147,7 @@
   },
 
   "jsconvertchineseamount": {
-    "prefix": ["jsconvertchineseamount","convertchineseamount","中文大写金额"],
+    "prefix": ["jsconvertchineseamount","convertchineseamount","数字转中文大写金额","中文大写金额"],
     "body": [
       "/**",
       " * 数字转中文大写金额",
@@ -2320,6 +2320,178 @@
       "document.${1|querySelector,querySelectorAll|}(\"${2|.class,#id,inpput[attr='test']|}\");"
     ],
     "description": "querySelector选择元素"
+  },
+
+  "快速排序": {
+    "prefix": ["jsquicksort","quicksort","jssort","sort","快速排序","排序"],
+    "body": [
+      "/**",
+      " * 快速排序",
+      " * @param arr ",
+      " * @returns ",
+      " */",
+      "const quickSort = (arr) => {",
+      "  const a = [...arr];",
+      "  if (a.length < 2) return a;",
+      "  const pivotIndex = Math.floor(arr.length / 2);",
+      "  const pivot = a[pivotIndex];",
+      "  const [lo, hi] = a.reduce(",
+      "    (acc, val, i) => {",
+      "      if (val < pivot || (val === pivot && i != pivotIndex)) {",
+      "        acc[0].push(val);",
+      "      } else if (val > pivot) {",
+      "        acc[1].push(val);",
+      "      }",
+      "      return acc;",
+      "    },",
+      "    [[], []]",
+      "  );",
+      "  return [...quickSort(lo), pivot, ...quickSort(hi)];",
+      "};"
+    ],
+    "description": "快速排序"
+  },
+
+  "选择排序": {
+    "prefix": ["jsselectsort","selectsort","jssort","sort","选择排序","排序"],
+    "body": [
+      "/**",
+      " * 选择排序",
+      " * @param arr ",
+      " * @returns ",
+      " */",
+      "const selectSort = (arr) => {",
+      "  const a = [...arr];",
+      "  for (let i = 0; i < a.length; i++) {",
+      "    const min = a",
+      "      .slice(i + 1)",
+      "      .reduce((acc, val, j) => (val < a[acc] ? j + i + 1 : acc), i);",
+      "    if (min !== i) [a[i], a[min]] = [a[min], a[i]];",
+      "  }",
+      "  return a;",
+      "};"
+    ],
+    "description": "选择排序"
+  },
+
+  "插入排序": {
+    "prefix": ["jsinsertSort","insertSort","jssort","sort","插入排序","排序"],
+    "body": [
+      "/**",
+      " * 插入排序",
+      " * @param arr ",
+      " * @returns ",
+      " */",
+      "const insertSort = (arr) =>",
+      "  arr.reduce((acc, x) => {",
+      "    if (!acc.length) return [x];",
+      "    acc.some((y, j) => {",
+      "      if (x <= y) {",
+      "        acc.splice(j, 0, x);",
+      "        return true;",
+      "      }",
+      "      if (x > y && j === acc.length - 1) {",
+      "        acc.splice(j + 1, 0, x);",
+      "        return true;",
+      "      }",
+      "      return false;",
+      "    });",
+      "    return acc;",
+      "  }, []);"
+    ],
+    "description": "插入排序"
+  },
+
+  "冒泡排序": {
+    "prefix": ["jsbubblesort","bubblesort","jssort","sort","冒泡排序","排序"],
+    "body": [
+      "/**",
+      " * 冒泡排序",
+      " * @param arr ",
+      " * @returns ",
+      " */",
+      "const bubbleSort = (arr) => {",
+      "  let swapped = false;",
+      "  const a = [...arr];",
+      "  for (let i = 1; i < a.length; i++) {",
+      "    swapped = false;",
+      "    for (let j = 0; j < a.length - i; j++) {",
+      "      if (a[j + 1] < a[j]) {",
+      "        [a[j], a[j + 1]] = [a[j + 1], a[j]];",
+      "        swapped = true;",
+      "      }",
+      "    }",
+      "    if (!swapped) return a;",
+      "  }",
+      "  return a;",
+      "};"
+    ],
+    "description": "冒泡排序"
+  },
+
+  "归并排序": {
+    "prefix": ["jsmergesort","mergesort","jssort","sort","归并排序","排序"],
+    "body": [
+      "/**",
+      " * 归并排序",
+      " * @param arr ",
+      " * @returns ",
+      " */",
+      "const mergeSort = (arr) => {",
+      "  if (arr.length < 2) return arr;",
+      "  const mid = Math.floor(arr.length / 2);",
+      "  const l = mergeSort(arr.slice(0, mid));",
+      "  const r = mergeSort(arr.slice(mid, arr.length));",
+      "  return Array.from({ length: l.length + r.length }, () => {",
+      "    if (!l.length) return r.shift();",
+      "    else if (!r.length) return l.shift();",
+      "    else return l[0] > r[0] ? r.shift() : l.shift();",
+      "  });",
+      "};"
+    ],
+    "description": "归并排序"
+  },
+
+  "桶排序": {
+    "prefix": ["jsbucketsort","bucketsort","jssort","sort","桶排序","排序"],
+    "body": [
+      "/**",
+      " * 桶排序",
+      " * @param arr ",
+      " * @returns ",
+      " */",
+      "const bucketSort = (arr, size = 5) => {",
+      "  const min = Math.min(...arr);",
+      "  const max = Math.max(...arr);",
+      "  const buckets = Array.from(",
+      "    { length: Math.floor((max - min) / size) + 1 },",
+      "    () => []",
+      "  );",
+      "  arr.forEach((val) => {",
+      "    buckets[Math.floor((val - min) / size)].push(val);",
+      "  });",
+      "  return buckets.reduce((acc, b) => [...acc, ...b.sort((a, b) => a - b)], []);",
+      "};"
+    ],
+    "description": "桶排序"
+  },
+
+  "js实现暂停睡眼": {
+    "prefix": ["jssleepsync","sleepsync","jssleep","sleep","暂停","睡眠"],
+    "body": [
+      "/**",
+      " * js实现暂停睡眼",
+      " * @param ms ",
+      " */",
+      "const sleepSync = (ms) => {",
+      "  const end = new Date().getTime() + ms;",
+      "  while (new Date().getTime() < end) {",
+      "    /* do nothing */",
+      "    console.log('---- sleeping ----');",
+      "  }",
+      "};"
+    ],
+    "description": "js实现暂停睡眼"
   },
 
   "ifplus": {

@@ -102,11 +102,18 @@
 |  jscopy  |  复制文本 关键字: "jscopy","copy","复制"
 |  jsgetscrolldistance  |  获取滚动像素 关键字: "jsgetscrolldistance","getscrolldistance","获取滚动像素","滚动像素"
 |  jsscrolltotop  |  滚动到顶部 关键字: "jsscrolltotop","scrolltotop","滚动到顶部"
-|  jsconvertchineseamount  |  数字转中文大写金额 关键字: "jsconvertchineseamount","convertchineseamount","中文大写金额"
+|  jsconvertchineseamount  |  数字转中文大写金额 关键字: "jsconvertchineseamount","convertchineseamount","数字转中文大写金额","中文大写金额"
 |  jsisinviewport  |  判断元素是否完全在可视区内 关键字: "jsisinviewport","isinviewport","元素在可视区内","可视区内"
 |  jsisintoviewport  |  判断元素是否进入可视区内 关键字: "jsisintoviewport","isintoviewport",,"元素进入可视区内","可视区内"
 |  jsintoviewportlistener  |  监听元素进入or离开可视区 关键字: "jsintoviewportlistener","intoviewportlistener","元素进入可视区监听"
-|  jsquerySelector  |  "jsqueryselect","queryselect","jsselect","select","元素选择"
+|  jsquerySelector  | querySelector选择元素 关键字: "jsqueryselect","queryselect","jsselect","select","元素选择"
+|  快速排序  | 快速排序 关键字: "jsquicksort","quicksort","jssort","sort","快速排序","排序"
+|  选择排序  | 选择排序 关键字: "jsselectsort","selectsort","jssort","sort","选择排序","排序"
+|  插入排序  | 插入排序 关键字: "jsinsertSort","insertSort","jssort","sort","插入排序","排序"
+|  冒泡排序  | 冒泡排序 关键字: "jsbubblesort","bubblesort","jssort","sort","冒泡排序","排序"
+|  归并排序  | 归并排序 关键字: "jsmergesort","mergesort","jssort","sort","归并排序","排序"
+|  桶排序  | 桶排序 关键字: "jsbucketsort","bucketsort","jssort","sort","桶排序","排序"
+|  js实现暂停睡眼  | js实现暂停睡眼 关键字: "jssleepsync","sleepsync","jssleep","sleep","暂停","睡眠"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
@@ -156,6 +163,10 @@
 |  csslandscape  |  提示用户竖屏浏览 关键字: csslandscape, landscape, csssb, sb,"竖屏提示"
 |  cssportrait  |  提示用户横屏浏览 关键字: cssportrait,portrait,csshp, hp,"横屏提示"
 |  cssfont  |  web自定义字体 关键字: cssfont, font,"字体引入","字体"
+|  csscdbg  |  噪点背景 关键字: "csscdbg","cdbg","cssbg","bg"
+|  csscoderainbg  |  代码雨背景 关键字: "csscoderainbg","coderainbg","cssbg","bg"
+|  csscirclebg  |  圆点背景 关键字: "csscirclebg","circlebg",,"cssbg","bg"
+|  cssrectbg  |  方格背景 关键字: "cssrectbg","rectbg","cssbg","bg"
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段 关键字: "ifplus","cssifplus"
 <br />
 
@@ -200,6 +211,8 @@
 |  htmlul | ul标签 关键字："htmlul", "ul"
 |  htmldl | dl标签 关键字："htmldl", "dl"
 |  htmlscript | script标签 关键字："htmlscript", "script"
+|  htmlico | 网页图标 关键字："htmlico","ico","网站图标"
+|  htmllinkcss | 外链css 关键字："htmllinkcss","linkcss","外链css"
 |  ifplus  |  html下专为ifplus-loader定义的条件代码段 关键字："htmlifplus","ifplus"
 <br />
 
@@ -236,7 +249,8 @@
 |  gbtesttxt  |  生成中文占位文本 关键字："gbtesttxt","testtxt","中文占位文字","占位文字"
 |  gbtesttxten  |  生成英文占位文本 关键字："gbtesttxten","testtxten","英文占位文字","占位文字"
 |  gbtestdate  |  生成日期占位文字 关键字："gbtestdate","testdate","日期占位文字","占位文字"
-|  gbtestimg  |  生成测试占位图片 关键字："gbtestimg","testimg","占位图片"
+|  gbtestimg  |  生成测试占位图片dummyimage.com 关键字："gbtestimg","testimg","占位图片"
+|  gbtestimg0  |  生成测试占位图片fakeimg.pl 关键字："gbtestimg","testimg","占位图片"
 |  gbgitignore  |  git忽略常用配置 关键字："gbgitignore","gitignore","git忽略配置"
 |  gbnpmregistry  |  npm常用国内源 关键字："gbnpmregistry","npmregistry","npm源"
 |  gbbaidu  |  baidu搜索 关键字："gbbaidu","baidu"

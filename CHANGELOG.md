@@ -1,5 +1,30 @@
 # Change Log
 更新日志记录
+## [0.0.31] - 2023-12-08
+### Added
+- 全局代码段
+   - gbtestimg0: 生成测试占位图片fakeimg.pl 关键字："gbtestimg","testimg","占位图片"
+   - csscdbg: 噪点背景 关键字: "csscdbg","cdbg","cssbg","bg"
+   - csscoderainbg: 代码雨背景 关键字: "csscoderainbg","coderainbg","cssbg","bg"
+   - csscirclebg: 圆点背景 关键字: "csscirclebg","circlebg",,"cssbg","bg"
+   - cssrectbg: 方格背景 关键字: "cssrectbg","rectbg","cssbg","bg"
+
+- html代码段
+   - htmlico: 网页图标 关键字："htmlico","ico","网站图标"
+   - htmllinkcss: 外链css 关键字："htmllinkcss","linkcss","外链css"
+
+- js代码段
+   - 快速排序: 关键字: "jsquicksort","quicksort","jssort","sort","快速排序","排序"
+   - 选择排序: 关键字: "jsselectsort","selectsort","jssort","sort","选择排序","排序"
+   - 插入排序: 关键字: "jsinsertSort","insertSort","jssort","sort","插入排序","排序"
+   - 冒泡排序: 关键字: "jsbubblesort","bubblesort","jssort","sort","冒泡排序","排序"
+   - 归并排序: 关键字: "jsmergesort","mergesort","jssort","sort","归并排序","排序"
+   - 桶排序: 关键字: "jsbucketsort","bucketsort","jssort","sort","桶排序","排序"
+   - js实现暂停睡眼: 关键字: "jssleepsync","sleepsync","jssleep","sleep","暂停","睡眠"
+
+### Changed
+    - 优化一些代码段
+
 ## [0.0.30] - 2023-12-07
 ### Added
 - js代码段

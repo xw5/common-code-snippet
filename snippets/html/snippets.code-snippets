@@ -166,6 +166,22 @@
     "description": "script标签"
   },
 
+  "htmlico": {
+    "prefix": ["htmlico","ico","网站图标"],
+    "body": [
+      "<link rel=\"shortcut icon\" href=\"${1:/favicon.ico}\" type=\"image/x-icon\"/>"
+    ],
+    "description": "网页图标"
+  },
+
+  "htmllinkcss": {
+    "prefix": ["htmllinkcss","linkcss","外链css"],
+    "body": [
+      "<link href=\"${1:style.css}\" rel=\"stylesheet\" />"
+    ],
+    "description": "外链css"
+  },
+
   "ifplus": {
     "prefix": ["htmlifplus","ifplus"],
     "body": [

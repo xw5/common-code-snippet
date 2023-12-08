@@ -26,7 +26,14 @@
   "gbtestimg": {
     "prefix": ["gbtestimg","testimg","占位图片"],
     "body": [
-      "https://dummyimage.com/${1:400}x${2:400}/000000/f0f1fa?text=${3:test_img}"
+      "https://dummyimage.com/${1:400}x${2:400}/${3:000}/${4:fff}.${5|png,gif,jpg|}&text=${6:test_img}"
+    ],
+    "description": "生成测试占位图片url"
+  },
+  "gbtestimg0": {
+    "prefix": ["gbtestimg","testimg","占位图片"],
+    "body": [
+      "https://fakeimg.pl/${1:400}x${2:400}/${3:ff0000}/${4:fff}?text=${5:test_img}"
     ],
     "description": "生成测试占位图片url"
   },
