@@ -2494,6 +2494,46 @@
     "description": "js实现暂停睡眼"
   },
 
+  "获取地理位置": {
+    "prefix": ["jsgetlocation","getlocation","地理位置"],
+    "body": [
+      "/**",
+      " * 获取地理位置，经纬度",
+      " * @param options",
+      " * @returns ",
+      " */",
+      "function getLocation(options) {",
+      "  const optionsTemp = Object.assign({},options, {",
+      "    maximumAge: 0, // 位置缓存时间，0则是一直取最新的",
+      "    timeout: Infinity, // 获取位置超时间，默认一直获取",
+      "    enableHighAccuracy: false // 是否获取高精度位置，默认false",
+      "  })",
+      "  return new Promise((resolve, reject) => {",
+      "    if (navigator.geolocation) {",
+      "      navigator.geolocation.getCurrentPosition((position) => {",
+      "        const {latitude, longitude, accuracy} = position.coords",
+      "        resolve({",
+      "          latitude,",
+      "          longitude,",
+      "          accuracy ",
+      "        })",
+      "      }, (error) => {",
+      "        console.log(\"---- Error occurred. Error code: ----\" + error.code);",
+      "        // code : 1 用户拒绝",
+      "        // code : 2 无法获取",
+      "        // code : 3 请求超时",
+      "        reject(error);",
+      "      }, optionsTemp);",
+      "    } else {",
+      "      resolve(null);",
+      "    }",
+      "  })",
+      "}",
+      "// 此免费接口可以经纬度转城市信息 :https://apia.yikeapi.com/geocode/?appid=43656176&appsecret=I42og6Lm&output=json&location=113.563482,22.375719"
+    ],
+    "description": "获取地理位置"
+  },
+
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],
     "body": [

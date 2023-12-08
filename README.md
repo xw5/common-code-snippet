@@ -114,6 +114,7 @@
 |  归并排序  | 归并排序 关键字: "jsmergesort","mergesort","jssort","sort","归并排序","排序"
 |  桶排序  | 桶排序 关键字: "jsbucketsort","bucketsort","jssort","sort","桶排序","排序"
 |  js实现暂停睡眼  | js实现暂停睡眼 关键字: "jssleepsync","sleepsync","jssleep","sleep","暂停","睡眠"
+|  获取地理位置  | 获取地理位置 关键字: "jsgetlocation","getlocation","地理位置"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
