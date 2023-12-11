@@ -1,5 +1,13 @@
 # Change Log
 更新日志记录
+## [0.0.32] - 2023-12-10
+### Added
+- js代码段
+   - H5摇一摇实现: 关键字: "jsdevicemotion","devicemotion","jsshake","shake","摇一摇"
+
+### Changed
+    - 优化一些代码段
+
 ## [0.0.31] - 2023-12-08
 ### Added
 - 全局代码段
