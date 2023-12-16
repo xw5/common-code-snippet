@@ -1,9 +1,24 @@
 # Change Log
 更新日志记录
-## [0.0.32] - 2023-12-10
+## [0.0.33] - 2023-12-16
+### Added
+- js代码段
+   - dom保存为图片: 关键字: "jsdomtoimage","domtoimage" 
+   - 链接生成二维码: 关键字: "jsurltoqrcode","urltoqrcode","js2wm","2wm","二维码" 
+- css代码段
+   - 毛玻璃效果: 关键字："cssmbl", "mbl", "毛玻璃"
+
+### Changed
+    - 优化一些代码段
+## [0.0.32] - 2023-12-13
 ### Added
 - js代码段
    - H5摇一摇实现: 关键字: "jsdevicemotion","devicemotion","jsshake","shake","摇一摇"
+   - 页面控制台vconsole: 关键字: 关键字: "jsconsole","console","控制台"
+   - 页面控制台eruda: 关键字: 关键字: "jsconsole","console","控制台"
+- html代码段
+   - 页面控制台vconsole: 关键字："htmlconsole","console","控制台"
+   - 页面控制台eruda: 关键字："htmlconsole","console","控制台"
 
 ### Changed
     - 优化一些代码段

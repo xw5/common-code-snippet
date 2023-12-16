@@ -622,7 +622,17 @@
       "caret-color: ${1:#0ff};"
     ],
     "description": "光标颜色"
-  }
+  },
+
+  "毛玻璃效果": {
+    "prefix": ["cssmbl", "mbl", "毛玻璃"],
+    "body": [
+      "background: rgba(${1:255, 255, 255, 0.2});",
+      "-webkit-backdrop-filter: blur(${2:8px});",
+      "backdrop-filter: blur(${2:8px});"
+    ],
+    "description": "毛玻璃效果"
+  },
   
   "ifplus": {
     "prefix": ["ifplus","cssifplus"],

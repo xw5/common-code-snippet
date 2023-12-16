@@ -2736,6 +2736,64 @@
     "description": "H5摇一摇实现"
   },
 
+  "页面控制台vconsole": {
+    "prefix": ["jsconsole","console","控制台"],
+    "body": [
+      "(function () {",
+      "  var src = '//cdn.bootcdn.net/ajax/libs/vConsole/3.15.1/vconsole.min.js';",
+      "  if (!/console=true/.test(window.location)) return;",
+      "  document.write('<script src=\"' + src + '\"></script>');",
+      "  document.write('<script>new VConsole();</script>');",
+      "})();"
+    ],
+    "description": "页面控制台vconsole"
+  },
+
+  "页面控制台eruda": {
+    "prefix": ["jsconsole","console","控制台"],
+    "body": [
+      "(function () {",
+      "  var src = '//cdn.bootcdn.net/ajax/libs/eruda/3.0.1/eruda.min.js';",
+      "  if (!/console=true/.test(window.location)) return;",
+      "  document.write('<script src=\"' + src + '\"></script>');",
+      "  document.write('<script>eruda.init();</script>');",
+      "})();"
+    ],
+    "description": "页面控制台eruda"
+  },
+
+  "dom保存为图片": {
+    "prefix": ["jsdomtoimage","domtoimage"],
+    "body": [
+      "import { domToPng } from 'modern-screenshot'",
+      "domToPng(document.querySelector('#app')).then(dataUrl => {",
+      "  const link = document.createElement('a')",
+      "  link.download = 'screenshot.png'",
+      "  link.href = dataUrl",
+      "  link.click()",
+      "});"
+    ],
+    "description": "dom保存为图片"
+  },
+
+  "链接生成二维码": {
+    "prefix": ["jsurltoqrcode","urltoqrcode","js2wm","2wm","二维码"],
+    "body": [
+      "import QRCode from 'qrcode';",
+      "QRCode.toDataURL(location.href.split('#')[0])",
+      "  .then(dataUrl => {",
+      "    const link = document.createElement('a')",
+      "    link.download = 'screenshot.png'",
+      "    link.href = dataUrl",
+      "    link.click()",
+      "  })",
+      "  .catch(err => {",
+      "    console.error('---- QRCode.toDataURL ----:', err);",
+      "  });"
+    ],
+    "description": "链接生成二维码"
+  },
+
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],
     "body": [

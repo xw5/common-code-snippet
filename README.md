@@ -116,6 +116,11 @@
 |  js实现暂停睡眼  | js实现暂停睡眼 关键字: "jssleepsync","sleepsync","jssleep","sleep","暂停","睡眠"
 |  获取地理位置  | 获取地理位置 关键字: "jsgetlocation","getlocation","地理位置"
 |  H5摇一摇实现  | H5摇一摇实现 关键字: "jsdevicemotion","devicemotion","jsshake","shake","摇一摇"
+|  H5摇一摇实现  | H5摇一摇实现 关键字: "jsdevicemotion","devicemotion","jsshake","shake","摇一摇"
+|  页面控制台vconsole  | 页面控制台vconsole 关键字: "jsconsole","console","控制台"
+|  页面控制台eruda  | 页面控制台eruda 关键字: "jsconsole","console","控制台"
+|  dom保存为图片  | dom保存为图片 关键字: "jsdomtoimage","domtoimage"
+|  链接生成二维码  | 链接生成二维码 关键字: "jsurltoqrcode","urltoqrcode","js2wm","2wm","二维码"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
@@ -169,6 +174,7 @@
 |  csscoderainbg  |  代码雨背景 关键字: "csscoderainbg","coderainbg","cssbg","bg"
 |  csscirclebg  |  圆点背景 关键字: "csscirclebg","circlebg",,"cssbg","bg"
 |  cssrectbg  |  方格背景 关键字: "cssrectbg","rectbg","cssbg","bg"
+|  毛玻璃效果  |  毛玻璃效果 关键字: "cssmbl", "mbl", "毛玻璃"
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段 关键字: "ifplus","cssifplus"
 <br />
 
@@ -215,6 +221,8 @@
 |  htmlscript | script标签 关键字："htmlscript", "script"
 |  htmlico | 网页图标 关键字："htmlico","ico","网站图标"
 |  htmllinkcss | 外链css 关键字："htmllinkcss","linkcss","外链css"
+|  页面控制台vconsole | 页面控制台vconsole 关键字："htmlconsole","console","控制台"
+|  页面控制台eruda | 页面控制台eruda 关键字："htmlconsole","console","控制台"
 |  ifplus  |  html下专为ifplus-loader定义的条件代码段 关键字："htmlifplus","ifplus"
 <br />
 
