@@ -5,6 +5,7 @@
 - js代码段
    - dom保存为图片: 关键字: "jsdomtoimage","domtoimage" 
    - 链接生成二维码: 关键字: "jsurltoqrcode","urltoqrcode","js2wm","2wm","二维码" 
+   - 元素滚动到可视范围之内: 关键字: "jsscrollintoview","scrollintoview"
 - css代码段
    - 毛玻璃效果: 关键字："cssmbl", "mbl", "毛玻璃"
 

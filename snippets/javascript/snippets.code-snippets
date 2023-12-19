@@ -2794,6 +2794,30 @@
     "description": "链接生成二维码"
   },
 
+  "元素滚动到可视范围之内": {
+    "prefix": ["jsscrollintoview","scrollintoview"],
+    "body": [
+      "// 元素滚动到可视区内",
+      "${1:dom}.scrollIntoView({",
+      "  // smooth 平滑滚动",
+      "  // instant 无动画，直接跳转 如果有css样式scroll-behavior: smooth;,以scroll-behavior为准",
+      "  // auto 默认值，滚动行为由 scroll-behavior 的计算值决定",
+      "  behavior: \"${2|smooth,instant,auto|}\",",
+      "  // start 元素顶部和滚动容器顶部对齐 ",
+      "  // center 元素和滚动容器居中对齐 ",
+      "  // end 元素底部和滚动容器底部对齐 ",
+      "  // nearest 如果已经在视野范围内，就不滚动，否则就滚动到顶部或者底部（哪个更靠近就滚到哪里）",
+      "  block: '${3|start,center,end,nearest|}\"', ",
+      "  // start 元素左侧和滚动容器左侧对齐 ",
+      "  // center 元素和滚动容器居中对齐 ",
+      "  // end 元素右侧和滚动容器右侧对齐 ",
+      "  // nearest 如果已经在视野范围内，就不滚动，否则就滚动到左边或者右边（哪个更靠近就滚到哪里）",
+      "  inline: '${4|start,center,end,nearest|}\"',",
+      "})"
+    ],
+    "description": "元素滚动到可视范围之内"
+  },
+
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],
     "body": [

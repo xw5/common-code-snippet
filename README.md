@@ -121,6 +121,7 @@
 |  页面控制台eruda  | 页面控制台eruda 关键字: "jsconsole","console","控制台"
 |  dom保存为图片  | dom保存为图片 关键字: "jsdomtoimage","domtoimage"
 |  链接生成二维码  | 链接生成二维码 关键字: "jsurltoqrcode","urltoqrcode","js2wm","2wm","二维码"
+|  元素滚动到可视范围之内  | 元素滚动到可视范围之内 关键字: "jsscrollintoview","scrollintoview"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
