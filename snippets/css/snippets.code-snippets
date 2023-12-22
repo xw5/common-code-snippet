@@ -633,6 +633,17 @@
     ],
     "description": "毛玻璃效果"
   },
+
+  "渐变文字": {
+    "prefix": ["cssjbtext","jbtext","渐变文字"],
+    "body": [
+      "background: linear-gradient(180deg, #FFE3BE 0%, #FDB16C 100%);",
+      "background-clip: text;",
+      "-webkit-background-clip: text;",
+      "-webkit-text-fill-color: transparent;"
+    ],
+    "description": "渐变文字"
+  },
   
   "ifplus": {
     "prefix": ["ifplus","cssifplus"],

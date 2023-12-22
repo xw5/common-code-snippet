@@ -6,11 +6,17 @@
    - dom保存为图片: 关键字: "jsdomtoimage","domtoimage" 
    - 链接生成二维码: 关键字: "jsurltoqrcode","urltoqrcode","js2wm","2wm","二维码" 
    - 元素滚动到可视范围之内: 关键字: "jsscrollintoview","scrollintoview"
+   - 获取元素样式: 关键字: "jsgetstyle","getstyle"
+   - vite sever配置: 关键字: "jsviteserver","viteserver","jsserver","server"
 - css代码段
    - 毛玻璃效果: 关键字："cssmbl", "mbl", "毛玻璃"
+   - 渐变文字: 关键字："cssjbtext","jbtext","渐变文字"
+- 全局代码段
+   - vue loading提示组件: 关键字：vue loading提示组件
 
 ### Changed
     - 优化一些代码段
+
 ## [0.0.32] - 2023-12-13
 ### Added
 - js代码段

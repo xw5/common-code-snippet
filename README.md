@@ -122,6 +122,8 @@
 |  dom保存为图片  | dom保存为图片 关键字: "jsdomtoimage","domtoimage"
 |  链接生成二维码  | 链接生成二维码 关键字: "jsurltoqrcode","urltoqrcode","js2wm","2wm","二维码"
 |  元素滚动到可视范围之内  | 元素滚动到可视范围之内 关键字: "jsscrollintoview","scrollintoview"
+|  获取元素样式  | 获取元素样式 关键字: "jsgetstyle","getstyle"
+|  vite sever配置  | vite sever配置 关键字: "jsviteserver","viteserver","jsserver","server"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
@@ -176,6 +178,7 @@
 |  csscirclebg  |  圆点背景 关键字: "csscirclebg","circlebg",,"cssbg","bg"
 |  cssrectbg  |  方格背景 关键字: "cssrectbg","rectbg","cssbg","bg"
 |  毛玻璃效果  |  毛玻璃效果 关键字: "cssmbl", "mbl", "毛玻璃"
+|  渐变文字  |  渐变文字 关键字: "cssjbtext","jbtext","渐变文字"
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段 关键字: "ifplus","cssifplus"
 <br />
 
@@ -275,3 +278,4 @@
 |  gbantdesign  |  ant design官网链接 关键字："antdesign","gbantdesign"
 |  gbelementui  |  elementui官网链接 关键字："gbelementui","elementui"
 |  gbgsap  |  gsap官网链接 关键字："gbgsap","gsap"
+|  vue loading提示组件  |  vue loading提示组件 关键字："gbvueloading","vueloading","gbloading",,"loading"
