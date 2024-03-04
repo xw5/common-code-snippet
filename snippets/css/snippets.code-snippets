@@ -625,7 +625,7 @@
   },
 
   "毛玻璃效果": {
-    "prefix": ["cssmbl", "mbl", "毛玻璃"],
+    "prefix": ["cssmbl", "mbl", "filterbackdrop", "毛玻璃"],
     "body": [
       "background: rgba(${1:255, 255, 255, 0.2});",
       "-webkit-backdrop-filter: blur(${2:8px});",
@@ -643,6 +643,14 @@
       "-webkit-text-fill-color: transparent;"
     ],
     "description": "渐变文字"
+  },
+
+  "阴影滤镜": {
+    "prefix": ["cssfiltershadow","filtershadow","阴影滤镜"],
+    "body": [
+      "filter: drop-shadow(0px 2px 20px #ecf6ff);",
+    ],
+    "description": "阴影滤镜"
   },
   
   "ifplus": {

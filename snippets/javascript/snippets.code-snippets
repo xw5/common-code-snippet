@@ -757,13 +757,14 @@
     "body": [
       "/**",
       " * 获取url中query参数",
-      " * @param {String} sUrl ",
       " * @param {String} sKey ",
+      " * @param {String} sUrl ",
       " * @returns ",
       " */",
-      "function getUrlParam2(sUrl, sKey) {",
-      "  var result, Oparam = {};",
-      "  sUrl.replace(/[\\?&]?(\\w+)=(\\w+)/g, function (\\$0, \\$1, \\$2) {",
+      "function getUrlParam2(sKey, sUrl) {",
+      "  var result, Oparam = {}, tempurl;",
+      "  tempurl = sUrl ? sUrl : window.location.href",
+      "  tempurl.replace(/[\\?&]?(\\w+)=(\\w+)/g, function (\\$0, \\$1, \\$2) {",
       "    console.log('\\$0:' + \\$0 + \"     \\$1:\" + \\$1 + \"     \\$2:\" + \\$2);",
       "    Oparam[\\$1] === void 0 ? Oparam[\\$1] = \\$2 : Oparam[\\$1] = [].concat(Oparam[\\$1], \\$2);",
       "  });",
@@ -2856,6 +2857,113 @@
       "}"
     ],
     "description": "vite sever配置"
+  },
+
+  "vueref": {
+    "prefix": ["vref", "ref"],
+    "body": [
+      "const ${1:count} = ref(${2:0})"
+    ],
+    "description": "vueref"
+  },
+  "vuereactive": {
+    "prefix": ["vreactive", "reactive"],
+    "body": [
+      "const ${1:state} = reactive({",
+      "  msg: 'hello world!'",
+      "});"
+    ],
+    "description": "vuereactive"
+  },
+  "vue3计算属性写法": {
+    "prefix": ["vcomputed","computed"],
+    "body": [
+      "const countDouble = computed(() => {",
+      "  return count.value * 2",
+      "});"
+    ],
+    "description": "vue3计算属性写法"
+  },
+  "vue3计算属性get/set写法": {
+    "prefix": ["vcomputed","computed"],
+    "body": [
+      "const firstName = ref('John')",
+      "const lastName = ref('Doe')",
+      "const fullName = computed({",
+      "  // getter",
+      "  get() {",
+      "    return firstName.value + ' ' + lastName.value",
+      "  },",
+      "  // setter",
+      "  set(newValue) {",
+      "    [firstName.value, lastName.value] = newValue.split(' ')",
+      "  }",
+      "})"
+    ],
+    "description": "vue3计算属性get/set写法"
+  },
+  "vue3watch": {
+    "prefix": ["vwatch3","watch3"],
+    "body": [
+      "watch(${1:count}, (newVal, oldVal) => {",
+      "  console.log('---- watch ----:${1:count}', newVal, oldVal);",
+      "},{immediate: true})"
+    ],
+    "description": "vue3watch"
+  },
+  "vue2watch": {
+    "prefix": ["vwatch2","watch2"],
+    "body": [
+      "${1:count}(newVal, oldVal) {",
+      "  console.log('---- watch ----:${1:count}', newVal, oldVal);",
+      "}"
+    ],
+    "description": "vue2watch"
+  },
+  "vue2watch配置写法": {
+    "prefix": ["vwatch2","watch2"],
+    "body": [
+      "${1:count}: {",
+      "  hander(newVal, oldVal) {",
+      "    console.log('---- watch ----:${1:count}', newVal, oldVal);",
+      "  },",
+      "  deep: true,",
+      "  immediate: true",
+      "}"
+    ],
+    "description": "vue2watch配置写法"
+  },
+  "vue2生命周期": {
+    "prefix": ["vlife2","life2"],
+    "body": [
+      "${1|beforeCreate,created,beforeMount,mounted,beforeUpdate,updated,destroyed,activated,deactivated|}(() => {",
+      "  console.log('---- ${1:example} ----:');",
+      "})"
+    ],
+    "description": "vue2生命周期"
+  },
+  "vue3生命周期": {
+    "prefix": ["vlife3","life3"],
+    "body": [
+      "${1|onBeforeMount,onMounted,onBeforeUpdate,onUpdated,onBeforeUnmount,onUnmounted,onActivated,onDeactivated|}(() => {",
+      "  console.log('---- ${1:example} ----:');",
+      "})"
+    ],
+    "description": "vue3生命周期"
+  },
+  "vue2emit": {
+    "prefix": ["vemit2","emit2","emit"],
+    "body": [
+      "this.$emit('${1:myEvent}')"
+    ],
+    "description": "vue2emit"
+  },
+  "vue3emit": {
+    "prefix": ["vemit3","emit3","emit"],
+    "body": [
+      "${1|const emit = defineEmits(['submit']);,emits: ['submit']\,|}"
+    ],
+    "description": "vue3emit"
   },
 
   "ifplus": {

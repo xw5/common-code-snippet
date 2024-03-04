@@ -1,5 +1,41 @@
 # Change Log
 更新日志记录
+## [0.0.35] - 2024-3-4
+### Added
+- vue文件下的代码段
+   - vue2基础模板: 关键字："vinit2","vue2","vue2模板"
+   - vue3基础模板: 关键字："vinit3","vue3","vue3模板"
+   - vue3基础模板SFC: 关键字："vinitsfc3","vue3","vue3模板sfc"
+
+- js代码段
+   - vueref: 关键字："vref","ref"
+   - vreactive: 关键字："vreactive", "reactive"
+   - vue3计算属性写法: 关键字："vcomputed","computed"
+   - vue3计算属性get/set写法: 关键字："vcomputed","computed"
+   - vue3watch: 关键字："vwatch3","watch3"
+   - vue2生命周期: 关键字："vlife2","life2"
+   - vue3生命周期: 关键字："vlife3","life3"
+   - vue3watch: 关键字："vwatch3","watch3"
+   - vue2watch: 关键字："vwatch2","watch2"
+   - vue2watch配置写法: 关键字："vwatch2","watch2"
+   - vue2emit: 关键字："vemit2","emit2","emit"
+
+- html代码段
+   - vueclass写法: 关键字："vclass","class"
+   - vue行间写法: 关键字："vstyle","style"
+   - vueif写法: 关键字："vif","if","v-if"
+
+### Changed
+    - 优化一些代码段
+
+## [0.0.34] - 2024-2-28
+### Added
+- css代码段
+   - 阴影滤镜: 关键字："cssfiltershadow","filtershadow","阴影滤镜"
+
+### Changed
+    - 优化一些代码段
+
 ## [0.0.33] - 2023-12-16
 ### Added
 - js代码段

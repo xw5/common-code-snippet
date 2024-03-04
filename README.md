@@ -1,10 +1,10 @@
 # 前端开发常用代码段插件
->根据缩写快速提供代码模板，提高开发速度，代码段持续更新中......
+>根据缩写快速提供代码片段，提高开发速度，代码段持续更新中......
 <br />
 
 ## 使用建议
 >考虑到用户的记忆成本，用户无需记忆所有代码段的缩写，输入特殊开头字符则会带出当前类别下的代码段，优化使用体验，定义如下使用规则：
->- 在js/jsx下输入js则会带出所有属于js的代码段
+>- 在js/jsx下输入js则会带出所有属于js的代码段，例外vue相关的代码段需要以v开头，如vlife2就是vue2生命周期代码段
 >- 在jsx下输入r则会带出所有属于react的代码段
 >- css,less,scss下输入css则会带出所有属于css的代码段
 >- html下输入html会带出所有属于html的代码段
@@ -124,6 +124,17 @@
 |  元素滚动到可视范围之内  | 元素滚动到可视范围之内 关键字: "jsscrollintoview","scrollintoview"
 |  获取元素样式  | 获取元素样式 关键字: "jsgetstyle","getstyle"
 |  vite sever配置  | vite sever配置 关键字: "jsviteserver","viteserver","jsserver","server"
+|  vueref  | vueref 关键字: "vref","ref"
+|  vuereactive  | vuereactive 关键字: "vreactive", "reactive"
+|  vue3计算属性写法  | vue3计算属性写法 关键字: "vcomputed","computed"
+|  vue3计算属性get/set写法  | vue3计算属性get/set写法 关键字: "vcomputed","computed"
+|  vue3watch  | vue3watch 关键字: "vwatch3","watch3"
+|  vue2生命周期  | vue2生命周期 关键字: "vlife2","life2"
+|  vue3生命周期  | vue3生命周期 关键字: "vlife3","life3"
+|  vue3watch  | vue3watch 关键字: "vwatch3","watch3"
+|  vue2watch  | vue2watch 关键字: "vwatch2","watch2"
+|  vue2watch配置写法  | vue2watch配置写法 关键字: "vwatch2","watch2"
+|  vue2emit  | vue2emit 关键字: "vemit2","emit2","emit"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
@@ -179,6 +190,7 @@
 |  cssrectbg  |  方格背景 关键字: "cssrectbg","rectbg","cssbg","bg"
 |  毛玻璃效果  |  毛玻璃效果 关键字: "cssmbl", "mbl", "毛玻璃"
 |  渐变文字  |  渐变文字 关键字: "cssjbtext","jbtext","渐变文字"
+|  阴影滤镜  |  阴影滤镜 关键字: "cssfiltershadow","filtershadow","阴影滤镜"
 |  ifplus  |  ccs样式下专为ifplus-loader定义的条件代码段 关键字: "ifplus","cssifplus"
 <br />
 
@@ -214,6 +226,9 @@
 |  htmlseo  |  html添加描述和关键字mate 关键字："htmlseo", "seo"
 |  htmlvue  |  vue单文件组件模板 关键字："htmlvue","vue"
 |  htmlvfor  |  vue框架的v-for语句段 关键字："htmlvfor","vfor"
+|  vueif写法  |  vueif写法 关键字："vif","if","v-if"
+|  vueclass写法  |  vueclass写法 关键字："vclass","class"
+|  vue行间样式写法  |  vue行间样式写法 关键字："vstyle","style"
 |  htmlmetatelephone | mate 关闭自动识别数字为手机号 关键字："htmltelephone","metatelephone","关掉电话识别"
 |  htmlmetaemail | mate 关闭自动识别邮箱地址 关键字："htmlmetaemail","metaemail","关掉邮件识别"
 |  htmlatelphone | a标签拨打电话 关键字："htmlatelphone","atelphone","打电话"

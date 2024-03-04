@@ -60,11 +60,32 @@
   },
 
   "htmlvfor": {
-    "prefix": ["htmlvfor","vfor"],
+    "prefix": ["htmlvfor","vfor","v-for","for"],
     "body": [
       "v-for=\"(${2:item}, ${3:index}) in ${1:list}\""
     ],
     "description": "vue框架的v-for语句段"
+  },
+  "vueif写法": {
+    "prefix": ["vif","if","v-if"],
+    "body": [
+      "${1|v-if=\"\",v-else-if=\"\",v-else|}"
+    ],
+    "description": "vueif写法"
+  },
+  "vueclass写法": {
+    "prefix": ["vclass","class"],
+    "body": [
+      ":class=\"${1|{ active: isActive },[activeClass\\, errorClass],[{ active: isActive }\\, errorClass],[isActive ? activeClass : ''\\, errorClass]|}\""
+    ],
+    "description": "vueclass写法"
+  },
+  "vue行间写法": {
+    "prefix": ["vstyle","style"],
+    "body": [
+      ":style=\"${1|{ color: activeColor\\, fontSize: fontSize + 'px' },{ 'font-size': fontSize + 'px' },[baseStyles\, overridingStyles]|}\""
+    ],
+    "description": "vue行间写法"
   },
 
   "htmlmetatelephone": {
