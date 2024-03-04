@@ -1,5 +1,14 @@
 # Change Log
 更新日志记录
+## [0.0.36] - 2024-3-5
+### Added
+
+- js代码段
+   - fetch用法: 关键字："jsfetch","fetch"
+
+### Changed
+    - 优化一些代码段
+
 ## [0.0.35] - 2024-3-4
 ### Added
 - vue文件下的代码段

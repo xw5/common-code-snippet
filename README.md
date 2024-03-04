@@ -87,6 +87,7 @@
 |  jssystemType  |  获取操作系统类型 关键字: "jssystemType", "systemType","获取系统类型","系统类型"
 |  jswxapiauthorization  |  微信api授权封装，关键字：jswxapiauthorization, jswx, wx
 |  jsaxios  |  简易axios封装，支持重复请求取消 关键字: "jsaxios","axios"
+|  fetch用法  |  fetch用法 关键字: "jsfetch","fetch"
 |  jsnumToMillennials  |  数字转千分位 关键字: "jsnumToMillennials", "numToMillennials", "jsnum", "数字转千分位","千分位"
 |  jsgetDataType  |  获取数据类型 关键字: "jsgetDataType","getDataType","jsdataType","dataType","获取数据类型","数据类型"
 |  jsfullscreen  |  指定元素全屏实现代码 关键字: "jsfullscreen","fullscreen","全屏"
@@ -135,6 +136,7 @@
 |  vue2watch  | vue2watch 关键字: "vwatch2","watch2"
 |  vue2watch配置写法  | vue2watch配置写法 关键字: "vwatch2","watch2"
 |  vue2emit  | vue2emit 关键字: "vemit2","emit2","emit"
+|  vue3全局组件  | vue3全局组件 关键字: "vueglobalcomponents","globalcomponents"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 

@@ -1426,6 +1426,23 @@
     ],
     "description": "axios简易封装"
   },
+
+  "fetch用法": {
+    "prefix": ["jsfetch","fetch"],
+    "body": [
+      "const res = await fetch(url, {",
+      "  method: '${1|POST,GET|}',",
+      "  mode: 'cors',",
+      "  // 跨域是否携带cookie",
+      "  credentials: 'include',",
+      "  headers: {",
+      "    'Content-Type': '${2|application/x-www-form-urlencoded,text/plain,multipart/form-data|}'",
+      "  },",
+      "  body: ${3|qs.stringify,JSON.stringify|}({key: 'value'})",
+      "}).then(res => res.json())"
+    ],
+    "description": "fetch用法"
+  },
   "jsnumToMillennials": {
     "prefix": ["jsnumToMillennials", "numToMillennials", "jsnum", "数字转千分位","千分位"],
     "body": [
@@ -2964,6 +2981,54 @@
       "${1|const emit = defineEmits(['submit']);,emits: ['submit']\,|}"
     ],
     "description": "vue3emit"
+  },
+  "vue2全局组件": {
+    "prefix": ["vueglobalcomponents2","globalcomponents2"],
+    "body": [
+      "// 方式1",
+      "import Vue from 'vue';",
+      "// 引入封装的复用的组件 注意xxx组件名应采用大驼峰命名法",
+      "Vue.component('GTable', GTable); ",
+      "// 在全局用Vue.component()方法全局注册",
+      "import GTable from '@/components/g-table/index.vue';",
+      "",
+      "// 方式2 components/index",
+      "import GTable from '@/components/g-table/index.vue'",
+      "export default {",
+      "  install(Vue) {",
+      "    Vue.component('GTable', GTable)",
+      "  }",
+      "}",
+      "",
+      "import components from '@/components/index';",
+      "Vue.use(components);"
+    ],
+    "description": "vue2全局组件"
+  },
+
+  "vue3全局组件": {
+    "prefix": ["vueglobalcomponents3","globalcomponents3"],
+    "body": [
+      "// 方式1",
+      "import { createApp } from 'vue'",
+      "import App from './App.vue'",
+      "import GTable from '@/components/g-table/index.vue'",
+      "const app = createApp(App)",
+      "app.component('GTable',GTable)",
+      "app.mount('#app')",
+      "",
+      "// 方式2 components/index",
+      "import GTable from './g-table/index.vue'",
+      "export default function install(app) {",
+      "  app.component('GTable',GTable)",
+      "}",
+      "",
+      "import { createApp } from 'vue'",
+      "import App from './App.vue'",
+      "import components from '@/components/index'",
+      "createApp(App).use(components).mount('#app')"
+    ],
+    "description": "vue3全局组件"
   },
 
   "ifplus": {
