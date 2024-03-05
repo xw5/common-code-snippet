@@ -3031,6 +3031,41 @@
     "description": "vue3全局组件"
   },
 
+  "网页复制文本": {
+    "prefix": ["jscopy","copy"],
+    "body": [
+      "function copyPersonURL(content) {",
+      "  try {",
+      "    if (window.ClipboardData) {",
+      "        const status = window.clipboardData.setData('text', content);",
+      "        if (status) {",
+      "          alert('链接复制成功');",
+      "          return;",
+      "        }",
+      "        alert('复制失败，可手动选择复制');",
+      "    } else {",
+      "        ;(function (content) {",
+      "            document.oncopy = function (e) {",
+      "                e.clipboardData.setData('text', content)",
+      "                e.preventDefault()",
+      "                document.oncopy = null",
+      "                alert('链接复制成功')",
+      "            }",
+      "        })(content)",
+      "       let status = document.execCommand('Copy');",
+      "       if (!status) {",
+      "        alert('复制失败，可手动选择复制');",
+      "       }",
+      "    }",
+      "  }",
+      "  catch(err){",
+      "    alert('复制失败，可手动选择复制')",
+      "  }",
+      "}"
+    ],
+    "description": "网页复制文本"
+  },
+
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],
     "body": [

@@ -5,6 +5,7 @@
 
 - js代码段
    - fetch用法: 关键字："jsfetch","fetch"
+   - 网页复制文本: 关键字："jscopy","copy"
 
 ### Changed
     - 优化一些代码段

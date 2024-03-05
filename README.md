@@ -137,6 +137,7 @@
 |  vue2watch配置写法  | vue2watch配置写法 关键字: "vwatch2","watch2"
 |  vue2emit  | vue2emit 关键字: "vemit2","emit2","emit"
 |  vue3全局组件  | vue3全局组件 关键字: "vueglobalcomponents","globalcomponents"
+|  网页复制文本  | 网页复制文本 关键字: "jscopy","copy"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
