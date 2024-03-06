@@ -3066,6 +3066,144 @@
     "description": "网页复制文本"
   },
 
+  "数组map": {
+    "prefix": ["jsmap", "map"],
+    "body": [
+      "${1:array}.map((item, index) => console.log('---- ${1:array} ----:', item, index))"
+    ],
+    "description": "数组map"
+  },
+
+  "数组foreach": {
+    "prefix": ["jsforeach","foreach"],
+    "body": [
+      "${1:array}.forEach((item, index) => console.log('---- ${1:array} ----:', item, index));"
+    ],
+    "description": "数组foreach"
+  },
+
+  "ie浏览器": {
+    "prefix": ["jsie","ie"],
+    "body": [
+      " if (!!window.ActiveXObject || \"ActiveXObject\" in window){",
+      "     alert('IE浏览器')",
+      " }else{",
+      "     alert('不是IE浏览器')",
+      " }"
+    ],
+    "description": "ie浏览器"
+  },
+
+  "随机颜色": {
+    "prefix": ["jsrandomcolor","randomcolor"],
+    "body": [
+      "const randomColor = () => `#${Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, \"0\")}`;"
+    ],
+    "description": "随机颜色"
+  },
+
+  "对象是否有key": {
+    "prefix": ["jsemptyobj", "emptyobj"],
+    "body": [
+      "const isEmptyObj = obj => Reflect.ownKeys(obj).length === 0 && obj.constructor === Object;"
+    ],
+    "description": "对象是否有key"
+  },
+
+  "数组去重": {
+    "prefix": ["jsarrayunique","arrayunique","数组去重"],
+    "body": [
+      "const uniqueArr = (arr) => [...new Set(arr)];"
+    ],
+    "description": "数组去重"
+  },
+
+  "称动端禁止滚动": {
+    "prefix": ["jsdisablescroll", "disablescroll"],
+    "body": [
+      "<body ontouchmove=\"event.preventDefault()\"></body>",
+      "document.addEventListener('touchmove', function(event) {",
+      "  event.preventDefault();",
+      "});"
+    ],
+    "description": "称动端禁止滚动"
+  },
+
+  "代码运行时间统计": {
+    "prefix": ["jstimestatistics", "timestatistics"],
+    "body": [
+      "console.time('testStart');",
+      "console.log('test');",
+      "console.timeEnd('testStart');"
+    ],
+    "description": "代码运行时间统计"
+  },
+
+  "添加事件": {
+    "prefix": ["jsaddevent","addevent"],
+    "body": [
+      "//跨浏览器添加事件",
+      "function addEvent(obj,type,fn){",
+      "    if(obj.addEventListener){",
+      "        obj.addEventListener(type,fn,false);",
+      "    }else if(obj.attachEvent){//IE",
+      "        obj.attchEvent('on'+type,fn);",
+      "    }",
+      "}"
+    ],
+    "description": "添加事件"
+  },
+
+  "移除事件": {
+    "prefix": ["jsremoveevent","removeevent"],
+    "body": [
+      "//跨浏览器移除事件",
+      "function removeEvent(obj,type,fn){",
+      "    if(obj.removeEventListener){",
+      "        obj.removeEventListener(type,fn,false);",
+      "    }else if(obj.detachEvent){//兼容IE",
+      "        obj.detachEvent('on'+type,fn);",
+      "    }",
+      "}"
+    ],
+    "description": "移除事件"
+  },
+
+  "滚动条位置": {
+    "prefix": ["jsscrollpos","scrollpos","滚动条位置"],
+    "body": [
+      "//跨浏览器获取滚动条位置",
+      "function getScrollPos(){",
+      "    return{",
+      "        top: document.documentElement.scrollTop || document.body.scrollTop,",
+      "        left : document.documentElement.scrollLeft || document.body.scrollLeft;",
+      "    }",
+      "}"
+    ],
+    "description": "获取滚动条位置"
+  },
+
+  "窗口大小": {
+    "prefix": ["jswindowsize", "windowsize", "窗口大小"],
+    "body": [
+      "//跨浏览器获取可视窗口大小",
+      "function  getWindowSize () {",
+      "    if(typeof window.innerWidth !='undefined') { //IE8及以下undefined",
+      "        return{",
+      "            width : window.innerWidth,",
+      "            height : window.innerHeight",
+      "        }",
+      "    }else{",
+      "        return {",
+      "            width : document.documentElement.clientWidth,",
+      "            height : document.documentElement.clientHeight",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "获取窗口大小"
+  },
+
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],
     "body": [

@@ -559,21 +559,22 @@
     "description": "提示用户横屏浏览"
   },
 
-  "cssfont": {
-    "prefix": ["cssfont", "font","字体引入","字体"],
+  "自定义字体": {
+    "prefix": ["cssfont","font","自定义字体","字体"],
     "body": [
       "@font-face {",
-      "  font-family: \"WebFontName\";",
-      "  src: url(\"WebFontName.ttf\") format(\"truetype\");",
-      "  font-weight: normal;",
-      "  font-style: normal;",
+      "    font-family: 'MyWebFont';",
+      "    src: url('webfont.eot'); /* IE9 Compat Modes */",
+      "    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */",
+      "    url('webfont.woff') format('woff'), /* Modern Browsers */",
+      "    url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */",
+      "    url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */",
       "}",
-      "",
-      ".WebFontName {",
-      "  font-family: \"WebFontName\";",
+      ".test{",
+      "    font-family: 'MyWebFont';",
       "}"
     ],
-    "description": "web自定义字体"
+    "description": "自定义字体"
   },
 
   "csscdbg": {
@@ -651,6 +652,171 @@
       "filter: drop-shadow(0px 2px 20px #ecf6ff);",
     ],
     "description": "阴影滤镜"
+  },
+
+  "省略号动画": {
+    "prefix": ["cssloadinganimation","loadinganimation","省略号动画"],
+    "body": [
+      ".loading:after {",
+      "    overflow: hidden;",
+      "    display: inline-block;",
+      "    vertical-align: bottom;",
+      "    animation: ellipsis 2s infinite;",
+      "    content: \"\\2026\"; /* ascii code for the ellipsis character */",
+      "}",
+      "@keyframes ellipsis {    ",
+      "  from {",
+      "    width: 2px;",
+      "  }",
+      "  to {",
+      "    width: 15px;",
+      "  }",
+      "}"
+    ],
+    "description": "省略号动画"
+  },
+
+  "选中文本样式": {
+    "prefix": ["cssslection","slection","选中文本样式"],
+    "body": [
+      ".test::selection { ",
+      "  background: red; ",
+      "  color:white; ",
+      "}",
+      ".test::-moz-selection { ",
+      "  background: red; ",
+      "  color:white; ",
+      "}",
+      ".test::-webkit-selection { ",
+      "  background: red; ",
+      "  color:white; ",
+      "}"
+    ],
+    "description": "选中文本样式"
+  },
+
+  "三角图标列表": {
+    "prefix": ["csslisttriangle", "listtriangle", "三角图标列表"],
+    "body": [
+      "ul {",
+      "    margin: 0.75em 0;",
+      "    padding: 0 1em;",
+      "    list-style: none;",
+      "}",
+      "li:before {",
+      "    content: \"\";",
+      "    border-color: transparent green;",
+      "    border-style: solid;",
+      "    border-width: 0.35em 0 0.35em 0.45em;",
+      "    display: block;",
+      "    height: 0;",
+      "    width: 0;",
+      "    left: -1em;",
+      "    top: 1em;",
+      "    position: relative;",
+      "}"
+    ],
+    "description": "三角图标列表"
+  },
+
+  "input输入美化": {
+    "prefix": ["cssinputstyle","inputstyle","input输入美化"],
+    "body": [
+      "input[type=text], textarea {",
+      "    -webkit-transition: all 0.30s ease-in-out;",
+      "    -moz-transition: all 0.30s ease-in-out;",
+      "    -ms-transition: all 0.30s ease-in-out;",
+      "    -o-transition: all 0.30s ease-in-out;",
+      "    outline: none;",
+      "    padding: 3px 0px 3px 3px;",
+      "    margin: 5px 1px 3px 0px;",
+      "    border: 1px solid #ddd;}",
+      "input[type=text]:focus, textarea:focus {",
+      "    box-shadow: 0 0 5px rgba(81, 203, 238, 1);",
+      "    padding: 3px 0px 3px 3px;",
+      "    margin: 5px 1px 3px 0px;",
+      "    border: 1px solid rgba(81, 203, 238, 1);",
+      "}"
+    ],
+    "description": "表单输入美化"
+  },
+
+  "消息对话框": {
+    "prefix": ["csschatbubble", "chatbubble", "消息对话框"],
+    "body": [
+      ".chat-bubble {",
+      "    background-color: #ededed;",
+      "    border: 2px solid #666;",
+      "    font-size: 32px;",
+      "    line-height: 1.3em;",
+      "    margin: 10px auto;",
+      "    padding: 10px;",
+      "    position: relative;",
+      "    text-align: left;",
+      "    width: 300px;",
+      "    -moz-border-radius: 20px;",
+      "    -webkit-border-radius: 20px;",
+      "    -moz-box-shadow: 0 0 5px #888;",
+      "    -webkit-box-shadow: 0 0 5px #888;",
+      "    font-family: 'Bangers', arial, serif;",
+      "}",
+      ".chat-bubble-arrow-border {",
+      "    border-color: #666 transparent transparent transparent;",
+      "    border-style: solid;",
+      "    border-width: 20px;",
+      "    height: 0;",
+      "    width: 0;",
+      "    position: absolute;",
+      "    bottom: -42px;",
+      "    left: 30px;",
+      "}",
+      ".chat-bubble-arrow {",
+      "    border-color: #ededed transparent transparent transparent;",
+      "    border-style: solid;",
+      "    border-width: 20px;",
+      "    height: 0;",
+      "    width: 0;",
+      "    position: absolute;",
+      "    bottom: -39px;",
+      "    left: 30px;",
+      "}"
+    ],
+    "description": "消息对话框"
+  },
+
+  "标签样式": {
+    "prefix": ["csstag", "tag"],
+    "body": [
+      ".tag {",
+      "    position: relative;",
+      "    margin: 20px",
+      "}",
+      ".tag:before {",
+      "    content: \"Featured\";",
+      "    position: absolute;",
+      "    top: 5px;",
+      "    left: -8px;",
+      "    padding-right: 10px;",
+      "    color: #232323;",
+      "    font-weight: bold;",
+      "    height: 0px;",
+      "    border: 15px solid #ffa200;",
+      "    border-right-color: transparent;",
+      "    line-height: 0px;",
+      "    box-shadow: -0px 5px 5px -5px #000;",
+      "    z-index: 1;",
+      "}",
+      ".tag:after {",
+      "    content: \"\";",
+      "    position: absolute;",
+      "    top: 35px;",
+      "    left: -8px;",
+      "    border: 4px solid #89540c;",
+      "    border-left-color: transparent;",
+      "    border-bottom-color: transparent;",
+      "}"
+    ],
+    "description": "标签样式"
   },
   
   "ifplus": {

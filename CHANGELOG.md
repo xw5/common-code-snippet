@@ -1,11 +1,34 @@
 # Change Log
 更新日志记录
-## [0.0.36] - 2024-3-5
+## [0.0.36] - 2024-3-6
 ### Added
+
+- html代码段
+   - scriptsrc: 关键字："htmlscriptsrc","scriptsrc","script"
 
 - js代码段
    - fetch用法: 关键字："jsfetch","fetch"
    - 网页复制文本: 关键字："jscopy","copy"
+   - 数组map: 关键字："jsmap", "map"
+   - 数组foreach: 关键字："jsforeach","foreach"
+   - ie浏览器: 关键字："jsie","ie"
+   - 随机颜色: 关键字："jsrandomcolor","randomcolor"
+   - 对象是否有key: 关键字："jsemptyobj", "emptyobj"
+   - 数组去重: 关键字："jsarrayunique","arrayunique","数组去重"
+   - 称动端禁止滚动: 关键字："jsdisablescroll", "disablescroll"
+   - 代码运行时间统计: 关键字："jstimestatistics", "timestatistics"
+   - 添加事件: 关键字："jsaddevent","addevent"
+   - 移除事件: 关键字："jsremoveevent","removeevent"
+   - 滚动条位置: 关键字："jsscrollpos","scrollpos","滚动条位置"
+   - 窗口大小: 关键字："jswindowsize", "windowsize", "窗口大小"
+
+- css代码段
+   - 省略号动画: 关键字："cssloadinganimation","loadinganimation","省略号动画"
+   - 选中文本样式: 关键字："cssslection","slection","选中文本样式"
+   - 三角图标列表: 关键字："csslisttriangle", "listtriangle", "三角图标列表"
+   - input输入美化: 关键字："cssinputstyle","inputstyle","input输入美化"
+   - 消息对话框: 关键字："csschatbubble", "chatbubble", "消息对话框"
+   - 标签样式: 关键字："csstag", "tag", "标签样式"
 
 ### Changed
     - 优化一些代码段
