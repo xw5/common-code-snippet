@@ -1443,23 +1443,25 @@
     ],
     "description": "fetch用法"
   },
+
   "jsnumToMillennials": {
-    "prefix": ["jsnumToMillennials", "numToMillennials", "jsnum", "数字转千分位","千分位"],
+    "prefix": ["jsnumToMillennials", "numToMillennials", "jsnum", "数字转千分位", "千分位"],
     "body": [
-      "export const numToMillennials = (n) => {",
-      "  let num = n.toString();",
-      "  let len = num.length;",
-      "  if (len <= 3) {",
-      "    return num;",
-      "  } else {",
-      "    let temp = '';",
-      "    let remainder = len % 3;",
-      "    if (remainder > 0) { // 不是3的整数倍",
-      "      return num.slice(0, remainder) + ',' + num.slice(remainder, len).match(/\\d{3}/g).join(',') + temp;",
-      "    } else { // 3的整数倍",
-      "      return num.slice(0, len).match(/\\d{3}/g).join(',') + temp; ",
-      "    }",
-      "  }",
+      "/**",
+      " * 数字转千分位",
+      " * @param {number} num ",
+      " * @returns ",
+      " */",
+      "const numToMillennials=(num)=>{",
+      "  if(!num){",
+      "      return '0.00';",
+      "  };",
+      "  let str = parseFloat(num).toFixed(2);",
+      "  return str && str",
+      "      .toString()",
+      "      .replace(/(\\d)(?=(\\d{3})+\\.)/g, function($0, $1) {",
+      "          return $1 + \",\";",
+      "      });",
       "}"
     ],
     "description": "数字转千分位"
@@ -1850,15 +1852,15 @@
     "description": "localstorage封装,支持设置过期时间"
   },
 
-  "jsdeepcopy": {
-    "prefix": ["jsdeepcopy", "deepcopy", "skb", "深拷贝"],
+  "深拷贝": {
+    "prefix": ["jscloneDeep", "cloneDeep", "jsskb", "skb", "深拷贝"],
     "body": [
       "/**",
       " * 深拷贝",
       " * @param obj ",
       " * @returns 新拷贝的对象",
       " */",
-      "function DeepCopy(obj) {",
+      "function cloneDeep(obj) {",
       "  // Hash表 记录所有的对象引用关系",
       "  let map = new WeakMap();",
       "  function dp(obj) {",
@@ -1894,7 +1896,15 @@
       "}"
     ],
     "description": "对象深拷贝"
-  }
+  },
+
+  "深拷贝stringify+parse": {
+    "prefix": ["jscloneDeep", "cloneDeep", "jsskb", "skb", "深拷贝"],
+    "body": [
+      "JSON.parse(JSON.stringify(${1:obj}))"
+    ],
+    "description": "深拷贝stringify+parse"
+  },
 
   "jsstoppropagation": {
     "prefix": ["jsstoppropagation", "stoppropagation", "jsstop", "stop", "阻止冒泡"],
@@ -3202,6 +3212,85 @@
       "}"
     ],
     "description": "获取窗口大小"
+  },
+
+  "数组浅拷贝": {
+    "prefix": ["jsclonearray", "clonearray","浅拷贝数组"],
+    "body": [
+      "const ${2:copyArray}= ${1:copyArray}.slice(0);",
+      "const ${2:copyArray}= ${1:copyArray}.concat();",
+      "const ${2:copyArray}= [...${1:copyArray}];"
+    ],
+    "description": "数组浅拷贝"
+  },
+
+  "对象浅拷贝": {
+    "prefix": ["jscloneobj","cloneobj","浅拷贝对象"],
+    "body": [
+      "let ${1:mergeObj} = Object.assign({}, ${1:copyObj});"
+    ],
+    "description": "对象浅拷贝"
+  },
+
+  "随机数字数组": {
+    "prefix": ["jsrandomnumarray", "randomnumarray", "随机数字数组"],
+    "body": [
+      "const getNumArr = (length, limit) => Array.from({ length }, () => Math.floor(Math.random() * limit));"
+    ],
+    "description": "随机数字数组（可指定数组个数和最大值）"
+  },
+
+  "指定时间点的倒计时": {
+    "prefix": ["jscountdown", "countdown"],
+    "body": [
+      "/**",
+      " * 倒计时函数",
+      " * @param {string|number} date ",
+      " * @returns ",
+      " */",
+      "function countdown(date){",
+      "  var endtime = new Date(date);",
+      "  var nowtime = new Date();",
+      "  if (nowtime >= endtime) {",
+      "      return null;",
+      "  }",
+      "  var leftmillisecond = endtime.getTime() - nowtime.getTime();",
+      "  var leftsecond = parseInt(leftmillisecond / 1000);",
+      "  if (leftsecond < 0) {",
+      "      leftsecond = 0;",
+      "  }",
+      "  const days = parseInt(leftsecond / 3600 / 24);",
+      "  const hours = parseInt((leftsecond / 3600) % 24);",
+      "  const minutes = parseInt((leftsecond / 60) % 60); ",
+      "  const seconds = parseInt(leftsecond % 60);",
+      "  const milliseconds = leftmillisecond % 1000;",
+      "  return {",
+      "    days,",
+      "    hours,",
+      "    minutes,",
+      "    seconds,",
+      "    milliseconds",
+      "  }",
+      "}"
+    ],
+    "description": "指定时间点的倒计时"
+  },
+
+  "随机数字": {
+    "prefix": ["jsrandomnum", "randomnum"],
+    "body": [
+      "/**",
+      " * 随机产生一个数字",
+      " * @param {number} lower ",
+      " * @param {number} upper ",
+      " * @returns ",
+      " */",
+      "function randomNum(lower, upper) {",
+      "  var sum = upper - lower + 1; //总数-第一个数+1",
+      "  return Math.floor(Math.random() * sum + lower);",
+      "};"
+    ],
+    "description": "随机数字"
   },
 
   "ifplus": {

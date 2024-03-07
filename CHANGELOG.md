@@ -1,5 +1,19 @@
 # Change Log
 更新日志记录
+## [0.0.37] - 2024-3-8
+### Added
+
+- js代码段
+   - 数组浅拷贝: 关键字："jsclonearray", "clonearray","浅拷贝数组"
+   - 对象浅拷贝: 关键字："jscloneobj","cloneobj","浅拷贝对象"
+   - 随机数字数组: 关键字："jsrandomnumarray", "randomnumarray", "随机数字数组"
+   - 指定时间点的倒计时: 关键字："jscountdown", "countdown"
+   - 随机数字: 关键字："jsrandomnum", "randomnum"
+
+### Changed
+    - 深拷贝: 关键字: "jscloneDeep", "cloneDeep", "jsskb", "skb", "深拷贝"（调整）
+    - 优化一些代码段
+
 ## [0.0.36] - 2024-3-6
 ### Added
 

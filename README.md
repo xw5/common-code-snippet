@@ -93,7 +93,7 @@
 |  jsfullscreen  |  指定元素全屏实现代码 关键字: "jsfullscreen","fullscreen","全屏"
 |  jscookie  |  cookie封装(mdn) 关键字: "jscookie","cookie"
 |  jslocalstorage  |  localstorage封装,支持设置过期时间 关键字: "jslocalstorage","localstorage","jsstorage","storage","本地存储"
-|  jsdeepcopy  |  对象深拷贝 关键字: "jsdeepcopy", "deepcopy", "skb", "深拷贝"
+|  深拷贝  |  深拷贝 关键字: "jsdeepclone", "deepclone", "jsclone", "clone", "jsskb", "skb", "深拷贝"
 |  jsstoppropagation  |  阻止事件冒泡，兼容ie 关键字: "jsstoppropagation", "stoppropagation", "jsstop", "stop", "阻止冒泡"
 |  jspreventdefault  |  阻止事件默认行为，兼容ie 关键字: "jspreventdefault", "preventdefault", "jsstop", "stop", "阻止默认行为"
 |  jsgetboundingclientrect  |  阻获取元素位置大小 关键字: "jsgetboundingclientrect", "getboundingclientrect", "jsgetdomrect", "getdomrect", "元素位置大小"
@@ -149,6 +149,11 @@
 |  移除事件  | 移除事件 关键字: "jsremoveevent","removeevent"
 |  滚动条位置  | 滚动条位置 关键字: "jsscrollpos","scrollpos","滚动条位置"
 |  窗口大小  | 窗口大小 关键字: "jswindowsize", "windowsize", "窗口大小"
+|  数组浅拷贝  | 数组浅拷贝 关键字: "jsclonearray", "clonearray","浅拷贝数组"
+|  对象浅拷贝  | 数组浅拷贝 关键字: "jscloneobj","cloneobj","浅拷贝对象"
+|  随机数字数组  | 随机数字数组（可指定数组个数和最大值） 关键字: "jsrandomnumarray", "randomnumarray", "随机数字数组"
+|  指定时间点的倒计时  | 指定时间点的倒计时 关键字: "jscountdown", "countdown"
+|  随机数字  | 随机数字 关键字: "jsrandomnum", "randomnum"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
