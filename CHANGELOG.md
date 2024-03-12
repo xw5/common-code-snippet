@@ -6,10 +6,12 @@
 - js代码段
    - 延时器: 关键字："jssettimeout","settimeout","jstime","time"
    - 定时器: 关键字："jssetinterval","setinterval","jstime","time"
+   - 事件绑定: 关键字："jsaddeventlistener","addeventlistener"
+   - 事件移除: 关键字："jsremoveeventlistener","removeeventlistener"
 
 ### Changed
    - jsonp请求: 关键字："jsjsonp","jsonp"
-    - 优化一些代码段
+   - 优化一些代码段
 
 ## [0.0.37] - 2024-3-8
 ### Added

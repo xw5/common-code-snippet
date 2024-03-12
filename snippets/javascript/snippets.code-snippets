@@ -3312,6 +3312,23 @@
     ],
     "description": "每隔多长时间执行一次"
   },
+  "事件绑定": {
+    "prefix": ["jsaddeventlistener","addeventlistener"],
+    "body": [
+      "${1:code...}.addEventListener('${2:click}', function() {",
+      "  ${4:code...}",
+      "}, ${3|false,true|});"
+    ],
+    "description": "事件绑定"
+  },
+
+  "事件移除": {
+    "prefix": ["jsremoveeventlistener","removeeventlistener"],
+    "body": [
+      "${1:dom}.removeEventListener('${2:click}', ${3:fn}, ${4|false,true|});"
+    ],
+    "description": "事件移除"
+  },
 
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],

@@ -156,6 +156,8 @@
 |  随机数字  | 随机数字 关键字: "jsrandomnum", "randomnum"
 |  延时器  | 延时多少毫秒后执行 关键字: "jssettimeout","settimeout","jstime","time"
 |  定时器  | 每隔多长时间执行一次 关键字: "jssetinterval","setinterval","jstime","time"
+|  事件绑定  | 事件绑定 关键字: "jsaddeventlistener","addeventlistener"
+|  事件移除  | 事件移除 关键字: "jsremoveeventlistener","removeeventlistener"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
