@@ -1974,10 +1974,10 @@
       "}); "
     ],
     "description": "事件委托"
-  }
+  },
 
-  "jsjsonp": {
-    "prefix": ["jsjsonp","jsjsonp"],
+  "jsonp请求": {
+    "prefix": ["jsjsonp","jsonp"],
     "body": [
       "/**",
       " * jsonp的原理就是生成一个script,赋值请求url，再带上回调，服务端会返：回调（数据）",
@@ -3291,6 +3291,26 @@
       "};"
     ],
     "description": "随机数字"
+  },
+
+  "延时器": {
+    "prefix": ["jssettimeout","settimeout","jstime","time"],
+    "body": [
+      "const ${2:timer} = setTimeout(() => {",
+      "  ${3:code...}",
+      "}, ${1:300});"
+    ],
+    "description": "延时多少毫秒后执行"
+  },
+
+  "定时器": {
+    "prefix": ["jssetinterval","setinterval","jstime","time"],
+    "body": [
+      "const ${2:timer} = setInterval(() => {",
+      "  ${3:code...}",
+      "}, ${1:300});"
+    ],
+    "description": "每隔多长时间执行一次"
   },
 
   "ifplus": {

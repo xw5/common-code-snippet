@@ -154,6 +154,8 @@
 |  随机数字数组  | 随机数字数组（可指定数组个数和最大值） 关键字: "jsrandomnumarray", "randomnumarray", "随机数字数组"
 |  指定时间点的倒计时  | 指定时间点的倒计时 关键字: "jscountdown", "countdown"
 |  随机数字  | 随机数字 关键字: "jsrandomnum", "randomnum"
+|  延时器  | 延时多少毫秒后执行 关键字: "jssettimeout","settimeout","jstime","time"
+|  定时器  | 每隔多长时间执行一次 关键字: "jssetinterval","setinterval","jstime","time"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
