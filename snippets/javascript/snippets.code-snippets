@@ -3409,6 +3409,17 @@
     "description": "判断当前窗口是否是父窗口"
   },
 
+  "禁止移动端滚动": {
+    "prefix": ["jsdisablescroll","disablescroll"],
+    "body": [
+      "// 禁止移动端滚动",
+      "document.addEventListener('touchmove', function(event) {",
+      "  event.preventDefault();",
+      "});"
+    ],
+    "description": "禁止移动端滚动"
+  },
+
   "ifplus": {
     "prefix": ["ifplus","jsifplus"],
     "body": [

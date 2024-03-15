@@ -161,6 +161,7 @@
 |  实现拖拽  | 实现拖拽  关键字: "jsdrag","drag"
 |  获取鼠标相对于文挡的位置  | 获取鼠标相对于文挡的位置  关键字: "jsgetpagepos","getpagepos","jspagepos","pagepos"
 |  判断当前窗口是否是父窗口  | 判断当前窗口是否是父窗口  关键字: "jsistop", "istop"
+|  禁止移动端滚动  | 禁止移动端滚动  关键字: "jsdisablescroll","disablescroll"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 

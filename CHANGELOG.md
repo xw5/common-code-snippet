@@ -7,6 +7,7 @@
    - 实现最基本拖拽: 关键字："jsdrag","drag"
    - 获取鼠标相对于文挡的位置: 关键字："jsgetpagepos","getpagepos","jspagepos","pagepos"
    - 判断当前窗口是否是父窗口: 关键字："jsistop", "istop"
+   - 禁止移动端滚动: 关键字："jsdisablescroll","disablescroll"
 
 - html代码段
    - http请求强制https: 关键字："htmlmetahttps","metahttps"
