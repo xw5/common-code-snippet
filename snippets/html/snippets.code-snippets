@@ -229,6 +229,14 @@
     "description": "页面控制台eruda"
   },
 
+  "http请求强制https": {
+    "prefix": ["htmlmetahttps","metahttps"],
+    "body": [
+      "<meta http-equiv =\"Content-Security-Policy\" content=\"upgrade-insecure-requests\">"
+    ],
+    "description": "http请求强制https"
+  },
+
   "ifplus": {
     "prefix": ["htmlifplus","ifplus"],
     "body": [

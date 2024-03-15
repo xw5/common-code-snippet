@@ -1,5 +1,21 @@
 # Change Log
 更新日志记录
+## [0.0.39] - 2024-3-14
+### Added
+
+- js代码段
+   - 实现最基本拖拽: 关键字："jsdrag","drag"
+   - 获取鼠标相对于文挡的位置: 关键字："jsgetpagepos","getpagepos","jspagepos","pagepos"
+   - 判断当前窗口是否是父窗口: 关键字："jsistop", "istop"
+
+- html代码段
+   - http请求强制https: 关键字："htmlmetahttps","metahttps"
+
+### Changed
+   - 获取元素样式: 关键字："jsgetstyle","getstyle","jsstyle","style"
+   - 补充开源协议
+   - 优化一些代码段
+
 ## [0.0.38] - 2024-3-10
 ### Added
 

@@ -2,7 +2,7 @@
     "name": "common-code-snippet",
     "displayName": "Common-Code-Snippet",
     "description": "前端开发日常使用代码片段插件",
-    "version": "0.0.38",
+    "version": "0.0.39",
     "publisher":"msxw",
     "engines": {
         "vscode": "^1.46.0"
@@ -11,6 +11,7 @@
         "Snippets"
     ],
     "icon": "assets/icon.png",
+    "pricing": "Free",
     "keywords": ["common", "code-snippet", "snippet", "common-code-snippet"],
     "homepage": "https://gitee.com/github-9819409/common-code-snippet",
     "repository": {
@@ -64,6 +65,7 @@
             }
         ]
     },
+    "license": "MIT",
     "scripts": {
         "login": "vsce login msxw",
         "package": "vsce package",

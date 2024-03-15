@@ -158,6 +158,9 @@
 |  定时器  | 每隔多长时间执行一次 关键字: "jssetinterval","setinterval","jstime","time"
 |  事件绑定  | 事件绑定 关键字: "jsaddeventlistener","addeventlistener"
 |  事件移除  | 事件移除 关键字: "jsremoveeventlistener","removeeventlistener"
+|  实现拖拽  | 实现拖拽  关键字: "jsdrag","drag"
+|  获取鼠标相对于文挡的位置  | 获取鼠标相对于文挡的位置  关键字: "jsgetpagepos","getpagepos","jspagepos","pagepos"
+|  判断当前窗口是否是父窗口  | 判断当前窗口是否是父窗口  关键字: "jsistop", "istop"
 |  ifplus  |  js代码下专为ifplus-loader定义的条件代码段  关键字: "ifplus","jsifplus"
 <br />
 
@@ -272,6 +275,7 @@
 |  htmllinkcss | 外链css 关键字："htmllinkcss","linkcss","外链css"
 |  页面控制台vconsole | 页面控制台vconsole 关键字："htmlconsole","console","控制台"
 |  页面控制台eruda | 页面控制台eruda 关键字："htmlconsole","console","控制台"
+|  http请求强制https | http请求强制https 关键字："htmlmetahttps","metahttps"
 |  ifplus  |  html下专为ifplus-loader定义的条件代码段 关键字："htmlifplus","ifplus"
 <br />
 

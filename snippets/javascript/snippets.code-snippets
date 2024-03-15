@@ -2847,7 +2847,7 @@
   },
 
   "获取元素样式": {
-    "prefix": ["jsgetstyle","getstyle"],
+    "prefix": ["jsgetstyle","getstyle","jsstyle","style"],
     "body": [
       "/**",
       " * 获取元素样式",
@@ -3328,6 +3328,85 @@
       "${1:dom}.removeEventListener('${2:click}', ${3:fn}, ${4|false,true|});"
     ],
     "description": "事件移除"
+  },
+
+  "实现最基本拖拽": {
+    "prefix": ["jsdrag","drag"],
+    "body": [
+      "/**",
+      "     * 元素实现基本拖拽效果",
+      "     * @description: 拖拽",
+      "     * @param {type} element",
+      "     * @return: ",
+      "     */",
+      "    function drag(element) {",
+      "      var dragitem = typeof element == 'string' ? document.querySelector(element) : element;",
+      "      var x1, x2, y1, y2;    ",
+      "      dragitem.ontouchstart = dragitem.onmousedown = function (e) {",
+      "        e = e || window.event;",
+      "        if (e.type == 'touchstart') {//移动端",
+      "          x1 = e.changedTouches[0].clientX;",
+      "          y1 = e.changedTouches[0].clientY;",
+      "        } else if (e.type == 'mousedown') {//pc端",
+      "          x1 = e.clientX;",
+      "          y1 = e.clientY;",
+      "        }",
+      "        var diffX = x1 - dragitem.offsetLeft;//获取鼠标点击的位置到所选对象的边框的水平距离",
+      "        var diffY = y1 - dragitem.offsetTop;",
+      "        document.ontouchmove = document.onmousemove = function (e) {",
+      "          if (e.type == 'touchmove') {//移动端",
+      "            x2 = e.changedTouches[0].clientX;",
+      "            y2 = e.changedTouches[0].clientY;",
+      "          } else if (e.type == 'mousemove') {//pc端",
+      "            x2 = e.clientX;",
+      "            y2 = e.clientY;",
+      "          }",
+      "          dragitem.style.left = x2 - diffX + 'px';//style.left表示所选对象的边框到浏览器左侧距离",
+      "          dragitem.style.top = y2 -diffY + 'px';",
+      "        }",
+      "        document.ontouchend = document.onmouseup = function (e) {",
+      "          document.ontouchmove = document.onmousemove = null;",
+      "          document.ontouchend = document.onmouseup = null;",
+      "        }",
+      "      }",
+      "    }"
+    ],
+    "description": "实现最基本拖拽"
+  },
+
+  "获取鼠标相对于文挡的位置": {
+    "prefix": ["jsgetpagepos","getpagepos","jspagepos","pagepos"],
+    "body": [
+      "/**",
+      "     * 获取鼠标相对于文挡的位置",
+      "     * @description: 获取鼠标点击的位置",
+      "     * @param {type} event",
+      "     * @return: ",
+      "     */",
+      "    function getPagePos(event) {",
+      "      var e = event || window.event;",
+      "      var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;",
+      "      var scrollY = document.documentElement.scrollTop || document.body.scrollTop;",
+      "      var x = e.pageX || e.clientX + scrollX;",
+      "      var y = e.pageY || e.clientY + scrollY;",
+      "      return { 'x': x, 'y': y };",
+      "    }"
+    ],
+    "description": "获取鼠标相对于文挡的位置"
+  },
+
+  "判断当前窗口是否是父窗口": {
+    "prefix": ["jsistop", "istop"],
+    "body": [
+      "/**",
+      " * 判断当前窗口是否是父窗口",
+      " * @returns Boolean",
+      " */",
+      "function isTop() {",
+      "  return top.location === self.location;",
+      "}"
+    ],
+    "description": "判断当前窗口是否是父窗口"
   },
 
   "ifplus": {

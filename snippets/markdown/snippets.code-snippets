@@ -44,7 +44,7 @@
   "mdimg": {
     "prefix": ["mdimg","img"],
     "body": [
-      "![${2:图片名称}](${1:https://5b0988e595225.cdn.sohucs.com/images/20180517/0928ec21b688419eac099a5ef087dd0d.jpeg} \"${图片Title}\")"
+      "![${2:图片名称}](${1:https://5b0988e595225.cdn.sohucs.com/images/20180517/0928ec21b688419eac099a5ef087dd0d.jpeg} \"${3:图片Title}\")"
     ],
     "description": "图片插入"
   },
