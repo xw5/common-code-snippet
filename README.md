@@ -124,18 +124,6 @@
 |  元素滚动到可视范围之内  | 元素滚动到可视范围之内 关键字: "jsscrollintoview","scrollintoview"
 |  获取元素样式  | 获取元素样式 关键字: "jsgetstyle","getstyle"
 |  vite sever配置  | vite sever配置 关键字: "jsviteserver","viteserver","jsserver","server"
-|  vueref  | vueref 关键字: "vref","ref"
-|  vuereactive  | vuereactive 关键字: "vreactive", "reactive"
-|  vue3计算属性写法  | vue3计算属性写法 关键字: "vcomputed","computed"
-|  vue3计算属性get/set写法  | vue3计算属性get/set写法 关键字: "vcomputed","computed"
-|  vue3watch  | vue3watch 关键字: "vwatch3","watch3"
-|  vue2生命周期  | vue2生命周期 关键字: "vlife2","life2"
-|  vue3生命周期  | vue3生命周期 关键字: "vlife3","life3"
-|  vue3watch  | vue3watch 关键字: "vwatch3","watch3"
-|  vue2watch  | vue2watch 关键字: "vwatch2","watch2"
-|  vue2watch配置写法  | vue2watch配置写法 关键字: "vwatch2","watch2"
-|  vue2emit  | vue2emit 关键字: "vemit2","emit2","emit"
-|  vue3全局组件  | vue3全局组件 关键字: "vueglobalcomponents","globalcomponents"
 |  网页复制文本  | 网页复制文本 关键字: "jscopy","copy"
 |  数组map  | 数组map 关键字: "jsmap", "map"
 |  数组foreach  | 数组foreach 关键字: "jsforeach","foreach"
@@ -248,6 +236,31 @@
 |  ruseRef   |  useRef代码段  关键字："ruseref", "useref"
 |  ruseContext   |  useContext代码段 关键字："rusecontext", "usecontext"
 |  rmap   |  react map批量渲染 关键字："rmap","map"
+
+<br />
+
+### Vue代码段
+
+|  缩写  |  模板  
+|  ----  |  ----  
+|  vue2基础模板(全生命周期)  |  vue2基础模板(全生命周期) 关键字："vinit2","vue2","vue2模板"
+|  vue2基础模板(简易版)  |  vue2基础模板(简易版) 关键字："vinit2base","vue2","vue2模板"
+|  vue3基础模板(全生命周期)  |  vue3基础模板(全生命周期) 关键字："vinit3","vue3","vue3模板"
+|  vue3基础模板(简易版)  |  vue3基础模板(简易版) 关键字："vinit3base","vue3","vue3模板"
+|  vue3基础模板setup(全生命周期)  |  vue3基础模板setup(全生命周期) 关键字："vinit3setup","vue3","vue3模板"
+|  vue3基础模板setup(简易版) |  vue3基础模板setup(简易版) 关键字："vinit3setupbase","vue3","vue3模板"
+|  vueref  | vueref 关键字: "vref","ref"
+|  vuereactive  | vuereactive 关键字: "vreactive", "reactive"
+|  vue3计算属性写法  | vue3计算属性写法 关键字: "vcomputed","computed"
+|  vue3计算属性get/set写法  | vue3计算属性get/set写法 关键字: "vcomputed","computed"
+|  vue3watch  | vue3watch 关键字: "vwatch3","watch3"
+|  vue2生命周期  | vue2生命周期 关键字: "vlife2","life2"
+|  vue3生命周期  | vue3生命周期 关键字: "vlife3","life3"
+|  vue3watch  | vue3watch 关键字: "vwatch3","watch3"
+|  vue2watch  | vue2watch 关键字: "vwatch2","watch2"
+|  vue2watch配置写法  | vue2watch配置写法 关键字: "vwatch2","watch2"
+|  vue2emit  | vue2emit 关键字: "vemit2","emit2","emit"
+|  vue3全局组件  | vue3全局组件 关键字: "vueglobalcomponents","globalcomponents"
 
 <br />
 
