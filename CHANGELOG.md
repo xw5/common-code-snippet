@@ -1,5 +1,22 @@
 # Change Log
 更新日志记录
+## [0.0.40] - 2024-3-28
+### Added
+
+- js代码段
+   - vuerouter基础模板: 关键字："vrouterinit","routerinit"
+
+- vue代码段
+   - vue2基础模板(简易版): 关键字："vinit2base","vue2","vue2模板"
+   - vue3基础模板(简易版): 关键字："vinit3base","vue3","vue3模板"
+   - vue3基础模板setup(简易版): 关键字："vinit3setupbase","vue3","vue3模板"
+   - vuestorepnia基础模板: 关键字："vstorepinia","storepinia","vpinia"
+   - vuestorevux基础模板: 关键字："vstorevuex","storevuex","vvuex"
+
+### Changed
+   - 整理优化vue相关代码段
+   - 优化一些代码段
+
 ## [0.0.39] - 2024-3-14
 ### Added
 
