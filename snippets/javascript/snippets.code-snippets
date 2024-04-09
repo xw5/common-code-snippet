@@ -3118,6 +3118,35 @@
     "description": "vuestorevux基础模板"
   },
 
+  "vue3的props定义": {
+    "prefix": ["vue3props","props3","props"],
+    "body": [
+      "props: defineProps({",
+      "  ${1:example}: {",
+      "    type: ${2:String},",
+      "    default: '${3:hello world}'",
+      "  }",
+      "})",
+      "      "
+    ],
+    "description": "vue3的props定义"
+  },
+
+  "vue3setup语法糖下props定义": {
+    "prefix": ["vue3props","props3","props"],
+    "body": [
+      "const props = defineProps({",
+      "  ${1:example}: { ",
+      "    type: ${2:String}, ",
+      "    default: '${3:Hello World}',",
+      "    required: true",
+      "  },",
+      "})",
+      "      "
+    ],
+    "description": "vue3setup语法糖下props定义"
+  },
+
   "网页复制文本": {
     "prefix": ["jscopy","copy"],
     "body": [
