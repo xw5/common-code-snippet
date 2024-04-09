@@ -3147,6 +3147,28 @@
     "description": "vue3setup语法糖下props定义"
   },
 
+  "vue3setup语法糖下emit定义": {
+    "prefix": ["vue3emit","emit3","emit"],
+    "body": [
+      "const emits = defineEmits([\"${1:click}\"]);",
+      "emits(\"${1:click}\", \"${2:Hello World}\");",
+      "      "
+    ],
+    "description": "vue3setup语法糖下emit定义"
+  },
+
+  "vue3emit定义": {
+    "prefix": ["vue3emit","emit3","emit"],
+    "body": [
+      "emits:['${1:click}'],",
+      "// setup(props,{emit}){",
+      "//   emit('${1:click}', '${2:Hello World}');",
+      "// }",
+      "      "
+    ],
+    "description": "vue3emit定义"
+  },
+
   "网页复制文本": {
     "prefix": ["jscopy","copy"],
     "body": [
