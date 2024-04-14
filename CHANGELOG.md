@@ -10,6 +10,9 @@
    - vue3的props定义: 关键字："vue3props","props3","props"
    - vue3setup语法糖下props定义: 关键字："vue3props","props3","props"
    - vuestorepnia基础模板函数式: 关键字："piniastoreinit","piniainit","pinia"
+   - vue3组件暴露属性和方法: 关键字："defineexpose","define","expose"
+   - vue2nextTick: 关键字："vue2nextTick","nexttick"
+   - vue3nextTick: 关键字："vue3nexttick","nexttick"
 
 ### Changed
    - 优化一些代码段

@@ -3177,6 +3177,37 @@
     "description": "vue3emit定义"
   },
 
+  "vue3组件暴露属性和方法": {
+    "prefix": ["defineexpose","define","expose"],
+    "body": [
+      "defineExpose({",
+      "  ${1:show},",
+      "  ${2:hide}",
+      "}); "
+    ],
+    "description": "vue3组件暴露属性和方法"
+  },
+
+  "vue3nextTick": {
+    "prefix": ["vue3nexttick","nexttick"],
+    "body": [
+      "nextTick(() => {",
+      "${1:code}",
+      "})"
+    ],
+    "description": "vue3nextTick"
+  },
+
+  "vue2nextTick": {
+    "prefix": ["vue2nextTick","nexttick"],
+    "body": [
+      "this.$nextTick(function(){",
+      "  ${1:code}",
+      "});"
+    ],
+    "description": "vue2nextTick"
+  },
+
   "网页复制文本": {
     "prefix": ["jscopy","copy"],
     "body": [
