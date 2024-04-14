@@ -1,5 +1,19 @@
 # Change Log
 更新日志记录
+## [1.0.0] - 2024-4-14
+### Added
+
+- vue代码段
+   - vue2emit: 关键字："vue2emit","emit2","emit"
+   - vue3setup语法糖下emit定义: 关键字："vue3emit","emit3","emit"
+   - vue3emit定义: 关键字："vue3emit","emit3","emit"
+   - vue3的props定义: 关键字："vue3props","props3","props"
+   - vue3setup语法糖下props定义: 关键字："vue3props","props3","props"
+   - vuestorepnia基础模板函数式: 关键字："piniastoreinit","piniainit","pinia"
+
+### Changed
+   - 优化一些代码段
+
 ## [0.0.40] - 2024-3-28
 ### Added
 

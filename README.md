@@ -259,11 +259,16 @@
 |  vue3watch  | vue3watch 关键字: "vwatch3","watch3"
 |  vue2watch  | vue2watch 关键字: "vwatch2","watch2"
 |  vue2watch配置写法  | vue2watch配置写法 关键字: "vwatch2","watch2"
-|  vue2emit  | vue2emit 关键字: "vemit2","emit2","emit"
+|  vue2emit  | vue2emit 关键字: "vue2emit","emit2","emit"
+|  vue3setup语法糖下emit定义  | vue3setup语法糖下emit定义 关键字: "vue3emit","emit3","emit"
+|  vue3emit定义  | vue3emit定义 关键字: "vue3emit","emit3","emit"
 |  vue3全局组件  | vue3全局组件 关键字: "vueglobalcomponents","globalcomponents"
 |  vuerouter基础模板  | vuerouter基础模板 关键字: "vrouterinit","routerinit"
-|  vuestorepnia基础模板  | vuestorepnia基础模板 关键字: "vstorepinia","storepinia","vpinia"
-|  vuestorevux基础模板  | vuestorevux基础模板 关键字: "vstorevuex","storevuex","vvuex"
+|  vuestorepnia基础模板  | vuestorepnia基础模板 关键字: "piniastoreinit","piniainit","pinia"
+|  vuestorevux基础模板  | vuestorevux基础模板 关键字: "vuexstoreinit","vuexinit","vuex"
+|  vue3的props定义  | vue3的props定义 关键字: "vue3props","props3","props"
+|  vue3setup语法糖下props定义  | vue3setup语法糖下props定义 关键字: "vue3props","props3","props"
+|  vuestorepnia基础模板函数式  | vuestorepnia基础模板函数式 关键字: "piniastoreinit","piniainit","pinia"
 
 <br />
 
